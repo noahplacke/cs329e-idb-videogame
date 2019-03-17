@@ -21,6 +21,10 @@ def genres():
 @app.route('/companies/')
 def companies():
 	return render_template('companies.html')
+	
+@app.route('/about/')
+def about():
+	return render_template('about.html')
 
 if __name__ == "__main__":
   app.run()
