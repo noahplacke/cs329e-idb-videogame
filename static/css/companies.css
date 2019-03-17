@@ -1,0 +1,45 @@
+
+
+
+
+
+
+#header {
+	text-align: center;
+	font-size: 40px;	
+}
+
+
+
+
+
+
+
+.companiesGrid{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.company {
+	display: flex;
+	background-color: rgb(240, 240, 240);
+	width: 800px;
+	padding: 20px;
+
+	margin: 20px;
+}
+
+.company img {
+	height: 300px;
+	margin-right: 20px;
+}
+
+.description {
+	text-align: left;
+	margin-right: 20px;
+}
+
+
+
+

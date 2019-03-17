@@ -1,0 +1,45 @@
+
+
+
+
+
+
+#header {
+	text-align: center;
+	font-size: 40px;	
+}
+
+
+
+
+
+
+
+.genresGrid{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.genre {
+	display: flex;
+	background-color: rgb(240, 240, 240);
+	width: 800px;
+	padding: 20px;
+
+	margin: 20px;
+}
+
+.genre img {
+	height: 300px;
+	margin-right: 20px;
+}
+
+.description {
+	text-align: left;
+	margin-right: 20px;
+}
+
+
+
+
