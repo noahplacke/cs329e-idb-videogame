@@ -31,11 +31,11 @@ where rating != null & genres != null & summary != null & involved_companies != 
 
 printf "]\n}" >> games.json
 
-printf "{\n\"Genres\": [\n" > genres.json
+printf "{\n\"Genres\": " > genres.json
 
 curl -H 'user-key: 401df87a02a8f4c13842a135bad415a4' \
--d 'fields name, url;' \
-'https://api-v3.igdb.com/genres/' | jq '.[]' >> genres.json
+-d 'fields name, url; limit 50;' \
+'https://api-v3.igdb.com/genres/' >> genres.json
 
-printf "]\n}" >> genres.json
+printf "\n}" >> genres.json
 
