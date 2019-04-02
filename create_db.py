@@ -1,6 +1,6 @@
 import json
 #from models import app, db, Game, Genre, Company
-from models import app, db, Genre, Game
+from models import app, db, Genre, Game, Company
 
 def load_json(filename):
     with open(filename) as file:
@@ -49,23 +49,30 @@ def create_genres():
 create_genres()
 
 """
+  company_id = db.Column(db.Integer, primary_key = True)
+  name = db.Column(db.String(250), nullable = True)
+  description = db.Column(db.String(1000), nullable = True)
+  logo = db.Column(db.Integer, nullable = True)
+  country = db.Column(db.Integer, nullable = True)
+  games = db.Column(db.String(1000), nullable = True)
+"""
 def create_companies():
-    companies = load_json('companies.json')
+  companies = load_json('companies.json')
 
-    for oneCompany in companies['Companies']:
-        title = oneCompany['title']
-        id = oneCompany['id']
-        games = oneCompany['games']
-        genres = oneCompany['genres']
+  for oneCompany in companies['Companies']:
+    company_id = oneCompany['id']
+    name = oneCompany['name']
+    description = oneCompany['description']
+    logo = oneCompany['logo']
+    games = oneCompany['developed']
 
 
-        newCompany = Company(title = title, id = id, games = games, genres = genres)
+    newCompany = Company(company_id = company_id, name = name, description = description, logo = logo, games = games)
 
-        # After I create the book, I can then add it to my session.
-        db.session.add(newCompany)
-        # commit the session to my DB.
-        db.session.commit()
+    # After I create the book, I can then add it to my session.
+    db.session.add(newCompany)
+    # commit the session to my DB.
+    db.session.commit()
 
 create_companies()
-"""
 # end of create_db.py

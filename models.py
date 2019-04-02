@@ -33,15 +33,16 @@ class Genre(db.Model):
 	id = db.Column(db.Integer, primary_key = True)
 	name = db.Column(db.String(250), nullable = False)
 	url = db.Column(db.String(500), nullable = False)
-"""
-class Company(db.Model):
-	__tablename__ = 'companies'
 
-	title = db.Column(db.String(80), nullable = False)
-	id = db.Column(db.Integer, primary_key = True)
-	games = db.Column(db.String(250), nullable = False)
-	genres = db.Column(db.String(250), nullable = False)
-"""
+class Company(db.Model):
+  __tablename__ = 'companies'
+
+  company_id = db.Column(db.Integer, primary_key = True)
+  name = db.Column(db.String(250), nullable = True)
+  description = db.Column(db.String(5000), nullable = True)
+  logo = db.Column(db.Integer, nullable = True)
+  country = db.Column(db.Integer, nullable = True)
+  games = db.Column(db.String(1000), nullable = True)
 
 db.drop_all()
 db.create_all()
