@@ -10,6 +10,13 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
 	<link rel = "stylesheet" href = "../static/css/about.css">
+	<style>
+	#more1 {display: none;}
+	#more2 {display: none;}
+	#more3 {display: none;}
+	#more4 {display: none;}
+	#more5 {display: none;}
+	</style>
 
 	<!--<script type="text/javascript" src="../static/js/about.js"></script>-->
 
@@ -27,39 +34,100 @@
 
 		<div class = "person">
 			<img src = "../static/images/temp.jpeg">
-			<div class = "description"><h2>Brandon Ford</h2><p>Vestibulum varius consequat diam, vitae euismod dui commodo non. In ac hendrerit elit. Suspendisse luctus id urna in sodales. Aliquam tempor mi congue diam lobortis, in luctus sapien semper. Nulla at quam ac purus convallis vulputate. Etiam at pulvinar odio. Quisque ut lacus porttitor sem blandit mattis. Nunc interdum mollis risus, et suscipit felis consequat at. Donec sed nunc ut libero volutpat porta id eget metus. Nullam at mi tellus. Quisque et maximus risus.</p>
-				<button type="button" class="btn btn-primary">Read More</button>
+			<div class = "description"><h2>Brandon Ford</h2><p>This is some text here and after this you'll see more info.</br>
+				<span id="dots1">...</span>
+				<span id="more1">
+				Major:</br>
+				Major Responsibilites:</br>
+				No. of Commits:</br>
+				No. of Issues:</br>
+				No. of Unit Tests:</br>
+				</span></p>
+				<button onclick="more(this)" id="0" type="button" class="btn btn-primary">Read More</button>
 			</div>
 		</div>
 
 		<div class = "person">
 			<img src = "../static/images/temp.jpeg">
-			<div class = "description"><h2>William Kwon</h2><p>Vestibulum varius consequat diam, vitae euismod dui commodo non. In ac hendrerit elit. Suspendisse luctus id urna in sodales. Aliquam tempor mi congue diam lobortis, in luctus sapien semper. Nulla at quam ac purus convallis vulputate. Etiam at pulvinar odio. Quisque ut lacus porttitor sem blandit mattis. Nunc interdum mollis risus, et suscipit felis consequat at. Donec sed nunc ut libero volutpat porta id eget metus. Nullam at mi tellus. Quisque et maximus risus.</p>
-				<button type="button" class="btn btn-primary">Read More</button>
+			<div class = "description"><h2>William Kwon</h2><p>This is some text here and after this you'll see more info.</br>
+				<span id="dots2">...</span>
+				<span id="more2">
+				Major:</br>
+				Major Responsibilites:</br>
+				No. of Commits:</br>
+				No. of Issues:</br>
+				No. of Unit Tests:</br>
+				</span></p>
+				<button onclick="more(this)" id="1" type="button" class="btn btn-primary">Read More</button>
 			</div>
 		</div>
 
 		<div class = "person">
 			<img src = "../static/images/temp.jpeg">
-			<div class = "description"><h2>Madalyn Marabella</h2><p>Vestibulum varius consequat diam, vitae euismod dui commodo non. In ac hendrerit elit. Suspendisse luctus id urna in sodales. Aliquam tempor mi congue diam lobortis, in luctus sapien semper. Nulla at quam ac purus convallis vulputate. Etiam at pulvinar odio. Quisque ut lacus porttitor sem blandit mattis. Nunc interdum mollis risus, et suscipit felis consequat at. Donec sed nunc ut libero volutpat porta id eget metus. Nullam at mi tellus. Quisque et maximus risus.</p>
-				<button type="button" class="btn btn-primary">Read More</button>
+			<div class = "description"><h2>Madalyn Marabella</h2><p>This is some text here and after this you'll see more info.</br>
+				<span id="dots3">...</span>
+				<span id="more3">
+				Major:</br>
+				Major Responsibilites:</br>
+				No. of Commits:</br>
+				No. of Issues:</br>
+				No. of Unit Tests:</br>
+				</span></p>
+				<button onclick="more(this)" id="2" type="button" class="btn btn-primary">Read More</button>
 			</div>
 		</div>
 
 		<div class = "person">
 			<img src = "../static/images/temp.jpeg">
-			<div class = "description"><h2>Alex Palacios</h2><p>Vestibulum varius consequat diam, vitae euismod dui commodo non. In ac hendrerit elit. Suspendisse luctus id urna in sodales. Aliquam tempor mi congue diam lobortis, in luctus sapien semper. Nulla at quam ac purus convallis vulputate. Etiam at pulvinar odio. Quisque ut lacus porttitor sem blandit mattis. Nunc interdum mollis risus, et suscipit felis consequat at. Donec sed nunc ut libero volutpat porta id eget metus. Nullam at mi tellus. Quisque et maximus risus.</p>
-				<button type="button" class="btn btn-primary">Read More</button>
+			<div class = "description"><h2>Alex Palacios</h2><p>This is some text here and after this you'll see more info.</br>
+				<span id="dots4">...</span>
+				<span id="more4">
+				Major:</br>
+				Major Responsibilites:</br>
+				No. of Commits:</br>
+				No. of Issues:</br>
+				No. of Unit Tests:</br>
+				</span></p>
+				<button onclick="more(this)" id="3" type="button" class="btn btn-primary">Read More</button>
 			</div>
 		</div>
 
 		<div class = "person">
 			<img src = "../static/images/temp.jpeg">
-			<div class = "description"><h2>Noah Placke</h2><p>Vestibulum varius consequat diam, vitae euismod dui commodo non. In ac hendrerit elit. Suspendisse luctus id urna in sodales. Aliquam tempor mi congue diam lobortis, in luctus sapien semper. Nulla at quam ac purus convallis vulputate. Etiam at pulvinar odio. Quisque ut lacus porttitor sem blandit mattis. Nunc interdum mollis risus, et suscipit felis consequat at. Donec sed nunc ut libero volutpat porta id eget metus. Nullam at mi tellus. Quisque et maximus risus.</p>
-				<button type="button" class="btn btn-primary">Read More</button>
+			<div class = "description"><h2>Noah Placke</h2><p>This is some text here and after this you'll see more info.</br>
+				<span id="dots5">...</span>
+				<span id="more5">
+				Major: Economics</br>
+				Major Responsibilites: Back End - Technical Report - Database Use</br>
+				No. of Commits:</br>
+				No. of Issues:</br>
+				No. of Unit Tests:</br>
+				</span></p>
+				<button onclick="more(this)" id="4" type="button" class="btn btn-primary">Read More</button>
 			</div>
 		</div>
 	</div>
+
+<script>
+function more(elem) {
+  var x = elem.id
+  const dotvals = ["dots1", "dots2", "dots3", "dots4", "dots5"]
+  const morevals = ["more1", "more2", "more3", "more4", "more5"]
+  var dots = document.getElementById(dotvals[x]);
+  var moreText = document.getElementById(morevals[x]);
+  var btnText = elem;
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read More"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read Less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
 
 {% endblock %}
 </body>
