@@ -9,9 +9,8 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-	<link rel = "stylesheet" href = "../static/css/companies.css">
+	<link rel = "stylesheet" href = "../static/css/pillars.css">
 
-	<!--<script type="text/javascript" src="../static/js/companies.js"></script>-->
 
 </head>
 
@@ -19,79 +18,140 @@
 
 {% extends "navbar.html" %}
 {% block content %}
+
+
+
 	<div id = "header">Companies</div>
 
-	<div class = "companiesGrid">
 
-		<div class = "company">
-			<div class="img-div">
-				<img src = "../static/images/nintendo.jpg">
-			</div>
-			<div id = "nintendo" class = "description"><h2>Nintendo</h2><p>Nintendo Co., Ltd. is a Japanese multinational consumer electronics and video game company headquartered in Kyoto. Nintendo is one of the world's largest video game companies by market capitalization, creating some of the best-known and top-selling video game franchises, such as Mario, The Legend of Zelda, and Pokémon. Founded on 23 September 1889 by Fusajiro Yamauchi, it originally produced handmade hanafuda playing cards. By 1963, the company had tried several small niche businesses, such as cab services and love hotels.</p>
-				<p>Games Developed: <a href="{{url_for('games')}}#super_smash_bros">Super Smash Bros</a> - The Legend of Zelda: Breath of the Wild - Mario Kart 8 Deluxe - Splatoon 2 - <a href="{{url_for('games')}}#super_mario_odyssey">Super Mario Odyssey</a></p>
-				<p>Main Genre(s): <a href="{{url_for('genres')}}#platform">Platformer</a> - Adventure</p>
-				<button onclick="location.href='./nintendo/'" type="button" class="btn btn-primary">Read More</button>
-			</div>
+
+
+
+	<div class = "cardGrid">
+
+
+
+		<div class="card w-25" id = "nintendo">
+			<div class = "cropImage">
+		 		<img src = "../static/images/nintendo.jpg" class = "card-img-top">
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Nintendo</h5>
+		    	<p class="card-text">
+					Nintendo Co., Ltd. is a Japanese multinational consumer electronics and video game company headquartered in Kyoto. Nintendo is one of the world's largest video game companies by market capitalization, creating some of the best-known and top-selling video game franchises, such as Mario, The Legend of Zelda, and Pokémon. Founded on 23 September 1889 by Fusajiro Yamauchi, it originally produced handmade hanafuda playing cards. By 1963, the company had tried several small niche businesses, such as cab services and love hotels.
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">Games Developed: <a href="{{url_for('games')}}#super_smash_bros">Super Smash Bros. Ultimate</a>, <a href="{{url_for('games')}}#breath_of_the_wild">The Legend of Zelda: Breath of the Wild</a>, <a href="{{url_for('games')}}#mario_kart_8_deluxe">Mario Kart 8 Deluxe</a>, <a href="{{url_for('games')}}#splatoon_2">Splatoon 2</a>, <a href="{{url_for('games')}}#super_mario_odyssey">Super Mario Odyssey</a></li>
+				<li class="list-group-item">Main Genres: <a href="{{url_for('genres')}}#platformer">Platformer</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Subgenres: </div>
 		</div>
 
 
-		<div class = "company">
-			<div class="img-div">
-				<img src = "../static/images/valve.jpg">
-			</div>
-			<div id = "valve" class = "description"><h2>Valve Corporation</h2><p>Valve was founded in 1996 by former Microsoft employees Gabe Newell and Mike Harrington. Their debut product, the PC first-person shooter Half-Life, was released in 1998 to critical acclaim and commercial success, after which Harrington left the company. In 2003, Valve launched Steam, which accounted for around half of digital PC game sales by 2011. By 2012, Valve employed around 250 people and was reportedly worth over US$3 billion, making it the most profitable company per employee in the United States. In 2015, Valve entered the game hardware market with the Steam Machine, a line of third-party built gaming PCs running Valve's SteamOS operating system.</p>
-				<p>Games Developed: Half-Life - Portal - Team Fortress 2</p>
-				<p>Main Genre(s): <a href="{{url_for('genres')}}#shooter">Shooter</a> - Adventure</p>
-				<button onclick="location.href='./valve/'" type="button" class="btn btn-primary">Read More</button>
-			</div>
-		</div>
 
-		<div class = "company">
-			<div class="img-div">
-				<img src = "../static/images/rockstar.png">
-			</div>
-			<div id = "rockstar" class = "description"><h2>Rockstar Games</h2><p>Rockstar Games, Inc. is an American video game publisher based in New York City. The company was established in December 1998 as a subsidiary of Take-Two Interactive, and as successor to BMG Interactive, a dormant video game publisher of which Take-Two had previously acquired the assets. Founding members of the company were Sam and Dan Houser, Terry Donovan and Jamie King, who worked for Take-Two at the time, and of which the Houser brothers were previously executives at BMG Interactive. Co-founders Sam and Dan Houser head the studio as president and vice-president for creative, respectively.</p>
-				<p>Games Developed: <a href="{{url_for('games')}}#grand_theft_auto_v">Grand Theft Auto V</a> - Red Dead Redemption 2</p>
-				<p>Main Genre(s): RPG - <a href="{{url_for('genres')}}#shooter">Shooter</a></p>
-				<button onclick="location.href='./rockstar/'" type="button" class="btn btn-primary">Read More</button>
-			</div>
+		<div class="card w-25" id = "valve">
+			<div class = "cropImage">
+		 		<img src = "../static/images/valve.jpg" class = "card-img-top">
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Valve</h5>
+		    	<p class="card-text">
+					Valve was founded in 1996 by former Microsoft employees Gabe Newell and Mike Harrington. Their debut product, the PC first-person shooter Half-Life, was released in 1998 to critical acclaim and commercial success, after which Harrington left the company. In 2003, Valve launched Steam, which accounted for around half of digital PC game sales by 2011. By 2012, Valve employed around 250 people and was reportedly worth over US$3 billion, making it the most profitable company per employee in the United States. In 2015, Valve entered the game hardware market with the Steam Machine, a line of third-party built gaming PCs running Valve's SteamOS operating system.
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">Games Developed: Half-Life, Team Fortress 2, Portal</li>
+				<li class="list-group-item">Main Genres: <a href="{{url_for('genres')}}#shooter">Shooter</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Subgenres: </div>
 		</div>
 
 
-		<div class = "company">
-			<div class="img-div">
-				<img src = "../static/images/ea.png">
-			</div>
-			<div id = "electronic_arts" class = "description"><h2>Electronic Arts</h2><p>Founded and incorporated on May 27, 1982, by Apple employee Trip Hawkins, the company was a pioneer of the early home computer games industry and was notable for promoting the designers and programmers responsible for its games. EA was a heavy supporter of the Commodore Amiga, and published numerous games and productivity software for the computer line to utilize and demonstrate its technological power.</p>
-				<p>Games Developed: Apex Legends - FIFA 19 - Anthem</p>
-				<p>Main Genre(s): <a href="{{url_for('genres')}}#shooter">Shooter</a> - Sports</p>
-				<button onclick="location.href='./ea/'" type="button" class="btn btn-primary">Read More</button>
-			</div>
+
+		<div class="card w-25" id = "rockstar_games">
+			<div class = "cropImage">
+		 		<img src = "../static/images/rockstar.png" class = "card-img-top">
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Rockstar Games</h5>
+		    	<p class="card-text">
+					Rockstar Games, Inc. is an American video game publisher based in New York City. The company was established in December 1998 as a subsidiary of Take-Two Interactive, and as successor to BMG Interactive, a dormant video game publisher of which Take-Two had previously acquired the assets. Founding members of the company were Sam and Dan Houser, Terry Donovan and Jamie King, who worked for Take-Two at the time, and of which the Houser brothers were previously executives at BMG Interactive. Co-founders Sam and Dan Houser head the studio as president and vice-president for creative, respectively.
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">Games Developed: <a href="{{url_for('games')}}#grand_theft_auto_v">Grand Theft Auto V</a>, <a href="{{url_for('games')}}#red_dead_redemption_2">Red Dead Redemption 2</a></li>
+				<li class="list-group-item">Main Genres: <a href="{{url_for('genres')}}#shooter">Shooter</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Subgenres: </div>
 		</div>
 
-		<div class = "company">
-			<div class="img-div">
-				<img src = "../static/images/blizzard.png">
-			</div>
-			<div id = "blizzard" class = "description"><h2>Blizzard Entertainment</h2><p>Blizzard Entertainment, Inc. is an American video game developer and publisher based in Irvine, California, and is a subsidiary of the American company Activision Blizzard. The company was founded on February 8, 1991, under the name Silicon & Synapse, Inc. by three graduates of the University of California, Los Angeles: Michael Morhaime, Frank Pearce and Allen Adham.</p>
-				<p>Games Developed: <a href="{{url_for('games')}}#world_of_warcraft">World of Warcraft - Hearthstone</a></p>
-				<p>Main Genre(s): MMO - Strategy</p>
-				<button onclick="location.href='./blizzard/'" type="button" class="btn btn-primary">Read More</button>
-			</div>
+
+
+		<div class="card w-25" id = "electronic_arts">
+			<div class = "cropImage">
+		 		<img src = "../static/images/ea.png" class = "card-img-top">
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Electronic Arts</h5>
+		    	<p class="card-text">
+					Founded and incorporated on May 27, 1982, by Apple employee Trip Hawkins, the company was a pioneer of the early home computer games industry and was notable for promoting the designers and programmers responsible for its games. EA was a heavy supporter of the Commodore Amiga, and published numerous games and productivity software for the computer line to utilize and demonstrate its technological power.
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">Games Developed: Apex Legends, FIFA 19, Anthem</li>
+				<li class="list-group-item">Main Genres: <a href="{{url_for('genres')}}#shooter">Shooter</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Subgenres: </div>
 		</div>
 
-		<div class = "company">
-			<div class="img-div">
-				<img src = "../static/images/ubisoft.png">
-			</div>
-			<div id = "ubisoft" class = "description"><h2>Ubisoft</h2><p>Ubisoft Entertainment is a French video game company headquartered in Montreuil with several development studios across the world. It is known for publishing games for several acclaimed video game franchises, including Assassin's Creed, Far Cry, Just Dance, Prince of Persia, Rayman, Raving Rabbids, and Tom Clancy's. As of March 2018, Ubisoft is the fourth largest publicly-traded game company in the Americas and Europe after Activision Blizzard, Electronic Arts, and Take-Two Interactive in terms of revenue and market capitalisation.</p>
-				<p>Games Developed: Assassin's Creed Odyssey - The Division 2 - The Crew 2</p>
-				<p>Main Genre(s): Adventure - Shooter</p>
-				<button onclick="location.href='./ubisoft/'" type="button" class="btn btn-primary">Read More</button>
-			</div>
+
+
+		<div class="card w-25" id = "blizzard_entertainment">
+			<div class = "cropImage">
+		 		<img src = "../static/images/blizzard.jpg" class = "card-img-top">
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Blizzard Entertainment</h5>
+		    	<p class="card-text">
+					Blizzard Entertainment, Inc. is an American video game developer and publisher based in Irvine, California, and is a subsidiary of the American company Activision Blizzard. The company was founded on February 8, 1991, under the name Silicon & Synapse, Inc. by three graduates of the University of California, Los Angeles: Michael Morhaime, Frank Pearce and Allen Adham.
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">Games Developed: <a href="{{url_for('games')}}#world_of_warcraft">World of Warcraft</a>, <a href="{{url_for('games')}}#hearthstone">Hearthstone</a></li>
+				<li class="list-group-item">Main Genres: <a href="{{url_for('genres')}}#rpg">RPG</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Subgenres: </div>
 		</div>
 
+
+
+		<div class="card w-25" id = "ubisoft">
+			<div class = "cropImage">
+		 		<img src = "../static/images/ubisoft.png" class = "card-img-top">
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Ubisoft</h5>
+		    	<p class="card-text">
+					Ubisoft Entertainment is a French video game company headquartered in Montreuil with several development studios across the world. It is known for publishing games for several acclaimed video game franchises, including Assassin's Creed, Far Cry, Just Dance, Prince of Persia, Rayman, Raving Rabbids, and Tom Clancy's. As of March 2018, Ubisoft is the fourth largest publicly-traded game company in the Americas and Europe after Activision Blizzard, Electronic Arts, and Take-Two Interactive in terms of revenue and market capitalisation.
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">Games Developed: Assassin's Creed Odyssey, The Division 2, The Crew 2</li>
+				<li class="list-group-item">Main Genres: <a href="{{url_for('genres')}}#shooter">Shooter</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Subgenres: </div>
+		</div>
+
+
+		
 	</div>
+
+
+
+
+
+
 
   <div class="citation">
     <p>Content for this page from Wikipedia</p>
