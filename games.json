@@ -1,0 +1,760 @@
+{
+"Games": [
+{
+  "title": "Invalid Field",
+  "status": 400,
+  "cause": "Invalid field name: 'developed'"
+}
+{
+  "id": 17749,
+  "genres": [
+    15,
+    32
+  ],
+  "involved_companies": [
+    32667,
+    32668
+  ],
+  "name": "Hunters Of The Dead",
+  "rating": 50,
+  "summary": "“Hunters of the Dead” is a survival/roguelike tower defense game with some micro management elements. You have to rescue your fellow Hunters and with their help locate and destroy Dracula. Dracula has raised an army of undead and has taken the whole city. You must defend your base while in the meantime you have to explore the buildings around and salvage what you can. However, better stay close to your base because as you get further and further you will be finding harder and more frequent battles.\n\nYou can send your hunters to get healed in the hospitals or trained in the graveyards, but you won’t be able to use them in the battle. That means that you will have fewer units to defend your base in case a battle occurs! So you should manage your Hunters with caution. In case your base gets destroyed, you shouldn’t be discouraged. You will be able to use what resources you have acquired to make upgrades and restart stronger.",
+  "url": "https://www.igdb.com/games/hunters-of-the-dead"
+}
+{
+  "id": 4566,
+  "genres": [
+    12,
+    15,
+    24
+  ],
+  "involved_companies": [
+    10995,
+    10996,
+    10997
+  ],
+  "name": "Pokémon Mystery Dungeon: Gates to Infinity",
+  "rating": 69.127393783282,
+  "summary": "Discover the incredible 3D world of Pokemon Mystery Dungeon: Gates to Infinity, where Pokemon speak and amazing adventures are always nearby! What's more, you will become a Pokemon yourself! You'll meet all kinds of Pokemon throughout the game, both in the towns you'll visit and the Mystery Dungeons you'll explore.",
+  "url": "https://www.igdb.com/games/pokemon-mystery-dungeon-gates-to-infinity"
+}
+{
+  "id": 6580,
+  "genres": [
+    8,
+    9,
+    31,
+    32
+  ],
+  "involved_companies": [
+    15638
+  ],
+  "name": "Life Goes On",
+  "rating": 62.81900682315271,
+  "summary": "A comical puzzle platformer where you must die to progress. The bodies you leave behind are your only tools to solve puzzles on your quest to find the Cup of Life.",
+  "url": "https://www.igdb.com/games/life-goes-on"
+}
+{
+  "id": 27033,
+  "genres": [
+    8
+  ],
+  "involved_companies": [
+    44036,
+    44037
+  ],
+  "name": "Poochy & Yoshi's Woolly World",
+  "rating": 87,
+  "summary": "The 3DS port of Yoshi's Woolly World from the Wii U.",
+  "url": "https://www.igdb.com/games/poochy-and-yoshis-woolly-world"
+}
+{
+  "id": 17769,
+  "genres": [
+    10
+  ],
+  "involved_companies": [
+    32696
+  ],
+  "name": "The Collider",
+  "rating": 80,
+  "summary": "Get inside a particle accelerator and experience unbelievable speed previously reserved for only the most advanced laboratories on Earth! The Collider is a fast-paced and compelling arcade game that will put your reflexes to the test. Tune in with the energizing electronic music and beat your friends'",
+  "url": "https://www.igdb.com/games/the-collider"
+}
+{
+  "id": 17772,
+  "genres": [
+    13,
+    32
+  ],
+  "involved_companies": [
+    32698,
+    32699
+  ],
+  "name": "AX:EL - Air XenoDawn",
+  "rating": 50,
+  "summary": "Build your own aircraft and prepare to fight. Combining the very best of sci-fi and aerial dogfighting gameplay, AX:EL delivers a totally new gaming experience. Create your very own shape-shifting vehicle and dominate both the sky and the ocean. \n \nBuild your own bespoke aircraft, from mainframe to wings. Dominate the skies then watch your aircraft morph in to a silent underwater killing machine as you chase the enemy from the blue skies in to the darkest depths of the ocean.",
+  "url": "https://www.igdb.com/games/ax-el-air-xenodawn"
+}
+{
+  "id": 17777,
+  "genres": [
+    13
+  ],
+  "involved_companies": [
+    32705
+  ],
+  "name": "Train Town",
+  "rating": 60,
+  "summary": "Train Town is traintastic fun for everyone. Build your world, choose your train, go on exciting adventures through cityscapes, jungles and deserts...and even crash and blow things up!",
+  "url": "https://www.igdb.com/games/train-town"
+}
+{
+  "id": 17787,
+  "genres": [
+    31
+  ],
+  "involved_companies": [
+    32719,
+    32720
+  ],
+  "name": "Season Match",
+  "rating": 50,
+  "summary": "The story of Season Match starts when the Snow Queen has her magic mirror broken, and decides to make cold winter stay forever in the fairy-land. You will set out on a legendary journey to find the pieces of the broken mirror, put them together and beat the Snow Queen.",
+  "url": "https://www.igdb.com/games/season-match"
+}
+{
+  "id": 17788,
+  "genres": [
+    31
+  ],
+  "involved_companies": [
+    32721,
+    32722
+  ],
+  "name": "Season Match 2",
+  "rating": 50,
+  "summary": "Bring the celebration of seasons back to the Fairytale Kingdom! Join forces with the Snow Queen and Princesses of Seasons to battle the despotic Prince January and save the Fairytale Kingdom from eternal winter!",
+  "url": "https://www.igdb.com/games/season-match-2"
+}
+{
+  "id": 17789,
+  "genres": [
+    31
+  ],
+  "involved_companies": [
+    32723,
+    32724
+  ],
+  "name": "Season Match 3 - Curse of the Witch Crow",
+  "rating": 60,
+  "summary": "Enter a magical fairy-tale world and overcome the evil Crow Witch! After the Crow Witch captures the Months, the world may never see a New Year again!",
+  "url": "https://www.igdb.com/games/season-match-3-curse-of-the-witch-crow"
+}
+{
+  "id": 28548,
+  "genres": [
+    31,
+    32
+  ],
+  "involved_companies": [
+    46662,
+    46663
+  ],
+  "name": "Remothered: Tormented Fathers",
+  "rating": 80,
+  "summary": "Remothered: Tormented Fathers is the first chapter of the long-awaited third person game trilogy. Playing as Rosemary, you will have to face psychopaths and fanatics. A web of lies where murders and obsessions come to life. A revolutionary experience created for survival-horror fans.",
+  "url": "https://www.igdb.com/games/remothered-tormented-fathers"
+}
+{
+  "id": 17802,
+  "genres": [
+    32
+  ],
+  "involved_companies": [
+    32751,
+    32752
+  ],
+  "name": "ENYO Arcade",
+  "rating": 50,
+  "summary": "Do you enjoy, hard and responsive 2D action games? Can you get lost in a hazardous jungle and return to tell the tale? Then ENYO Arcade invites you deep down into the rabbit hole...WARNING: THIS GAME CAN BE DIFFICULT!\n\nENYO Arcade resembles a modern 2D parkour shooter game. The game is notable for its depth in atmosphere and merciless fast action. Fight or avoid various enemy types and find your way to the exit. Inspired by popular 2D action games from the 90'ties mashed with modern day platform agility and speed.",
+  "url": "https://www.igdb.com/games/enyo-arcade"
+}
+{
+  "id": 30487,
+  "genres": [
+    31,
+    32
+  ],
+  "involved_companies": [
+    48234
+  ],
+  "name": "Charlie's Adventure",
+  "rating": 50,
+  "summary": "In this hard to master platformer you will slay zombies, avoid deadly traps and unleash your true potential through a variety of skills and abilities.",
+  "url": "https://www.igdb.com/games/charlies-adventure"
+}
+{
+  "id": 97079,
+  "genres": [
+    12,
+    32
+  ],
+  "involved_companies": [
+    70864
+  ],
+  "name": "Knight Bewitched",
+  "rating": 70,
+  "summary": "Follow the tale of Ruth, fearless knight of Halonia, and Gwen, feisty witch of the Underbog. As the two and their companions journey together to save the world, love begins to ignite in Ruth's heart. But is this true love, or is Ruth truly bewitched?",
+  "url": "https://www.igdb.com/games/knight-bewitched"
+}
+{
+  "id": 30484,
+  "genres": [
+    31,
+    32
+  ],
+  "involved_companies": [
+    75748
+  ],
+  "name": "Marrow",
+  "rating": 60,
+  "summary": "Marrow is a 2D, Cosmic-Horror themed, action-adventure game emphasizing challenge, puzzles, platforming, combat and navigation. Leap, crawl, slash and blast your way through the cavernous bowels of a menacing mountain in a quest to find your lost friends.",
+  "url": "https://www.igdb.com/games/marrow"
+}
+{
+  "id": 10948,
+  "genres": [
+    12,
+    31
+  ],
+  "involved_companies": [
+    24112,
+    24113,
+    24115,
+    52144,
+    52894
+  ],
+  "name": "Ys Seven",
+  "rating": 80.0571867152618,
+  "summary": "The kingdom of Altago is rebuilding their kingdom around a newfound peace after years of war against the merciless armies of Romn. The classic adventuresome duo, Adol and Dogi, arrive in the harbor of Altago City, and quickly find themselves in a scuffle with the Dragon Knights, the kingdom's military police body, when attempting to save a local girl from harassment by one of their commanding officers. Upset by the interruption and subsequent humiliation, the commander arrests Adol and Dogi, charging them with espionage. \n \nThe king of Altago, having known of the duo's pending arrival from an old trusted friend, quickly releases the pair from prison and summons them to his chambers. He tells the men about an ancient shrine that was uncovered after a recent earthquake, and asks for their help in investigating this mysterious new find. Adol and Dogi oblige, unaware that they are about to take the first steps on a long journey to save all of Altago from long-forgotten ancient forces, and to reunite the estranged five tribes who serve and protect the Five Great Dragons deified beings who may well be the world's last hope. \n \nYs Seven is the latest installment in the long-running Ys series which first debuted on PC in 1987. This is the first iteration to be built specifically for the PSP system, taking full advantage of the widescreen format and hardware. The battle system consists of a three-member battle party with enemies engaged on the field map in real-time for fast-paced combat. Old fans of the series and new players alike will be immersed into the rich vibrant world containing over 30 hours of gameplay.",
+  "url": "https://www.igdb.com/games/ys-seven"
+}
+{
+  "id": 54342,
+  "genres": [
+    13,
+    15,
+    32
+  ],
+  "involved_companies": [
+    72849
+  ],
+  "name": "Trivia Vault: 1980's Trivia",
+  "rating": 50,
+  "summary": "Welcome to the Trivia Vault contestant! Play as a contestant in a gameshow called Trivia Vault 1980's Trivia and bring your thinking hat. Answer questions about 1980's trivia as quickly as you can, the faster you answer the higher the cash value. Correct answers lock in the digit code for the vault, 10 correct answers cracks the vault and awards bonus cash.",
+  "url": "https://www.igdb.com/games/trivia-vault-1980-s-trivia"
+}
+{
+  "id": 2324,
+  "genres": [
+    5,
+    13
+  ],
+  "involved_companies": [
+    43380,
+    43381,
+    43382,
+    43383,
+    43384
+  ],
+  "name": "Pokémon Snap",
+  "rating": 76.8346883023386,
+  "summary": "Traverse various areas and take photographs of different types of Pokémon by discovering their secrets. Capture the perfect frame to gain bonus points from Professor Oak in order to unlock helpful items and locate and photograph the elusive Mew, a legendary Pokémon whose existence has never been recorded.",
+  "url": "https://www.igdb.com/games/pokemon-snap"
+}
+{
+  "id": 86936,
+  "genres": [
+    9,
+    15
+  ],
+  "involved_companies": [
+    75897
+  ],
+  "name": "Simon's Cat - Crunch Time",
+  "rating": 90,
+  "summary": "Simon’s Cat in Crunch Time! - a Match 3 puzzle adventure\nPublished by Strawdog.\n\nThe devilish crows have swiped Simon’s Cat’s favourite Tasty Treats and only YOU can help him find them!\n\nJoin Simon’s Cat, Maisy, Chloe and Jazz, and a cast of determined kitties on a colourful adventure through some pawsome new places where Treats are just waiting to be eaten.\nBe ready to collect Tasty Treats, fight off big baddies and befriend a host of animal critters in this FREE puzzle game with added CATitude!\n\nSimple and addictive puzzle gameplay! Connect the same coloured Treats to make a delicious chain!\n\nPlay your way through the neighbourhood in six different game modes and hundreds of challenging levels!\n\nChallenge your friends! Can you beat your friends purrfect high score?\nCan you beat the villains? Use your Treats and special boosters to fight off Sir Royston the Pug, Mr Potts, hungry hedgehogs and even a treat crazed vacuum cleaner!\nPlay with Simon’s Cat featuring brand new animations\n\nSimon's Cat is the internet’s most mischievous cat and has become a global phenomenon. Star of over 60 films, which have been watched over 870 million times, and winner of several major industry awards, Simon's Cat has captured the hearts of a worldwide audience.\n\nWe are working hard to update the game with new levels that are purrfectly crafted and will leave you feline great!",
+  "url": "https://www.igdb.com/games/simons-cat-crunch-time"
+}
+{
+  "id": 7099,
+  "genres": [
+    4
+  ],
+  "involved_companies": [
+    16776,
+    16777
+  ],
+  "name": "Naruto Shippuden: Ultimate Ninja Storm 3",
+  "rating": 76.157313634874,
+  "summary": "Ultimate Ninja STORM 3 promises to unleash a tornado of ninja action and adventure that the franchise is known for, with over eighty playable characters, advanced online modes and enhanced fighting mechanics that allow anyone to become a ninja master.",
+  "url": "https://www.igdb.com/games/naruto-shippuden-ultimate-ninja-storm-3"
+}
+{
+  "id": 54502,
+  "genres": [
+    5,
+    32
+  ],
+  "involved_companies": [
+    66769
+  ],
+  "name": "CastleMiner Warfare",
+  "rating": 50,
+  "summary": "Build and fight against 15 of your friends and enemies in the PVP sequel of the CastleMiner series. Customize your character with a set of un-lockable weapons, kill streaks and perks, in levels that you can fully build, destroy or share online. Complete with fluid physics such as flowing water, and spreading fire. Build your own maps for PVP battles and share them online.",
+  "url": "https://www.igdb.com/games/castleminer-warfare"
+}
+{
+  "id": 17839,
+  "genres": [
+    13,
+    32
+  ],
+  "involved_companies": [
+    32813
+  ],
+  "name": "aerofly RC 7",
+  "rating": 50,
+  "summary": "Learn to fly radio controlled (R/C) models with aerofly RC 7. When it comes to learning and improving R/C flying skills, aerofly RC 7 is the number one choice for R/C pilots. Our state of the art physics simulation gives you a stunning level of realism. Together with our superb model details and awesome scenery quality you will feel as if standing on a real flying field.",
+  "url": "https://www.igdb.com/games/aerofly-rc-7"
+}
+{
+  "id": 8229,
+  "genres": [
+    10,
+    14
+  ],
+  "involved_companies": [
+    19955,
+    19956
+  ],
+  "name": "TrickStyle",
+  "rating": 70,
+  "summary": "Grab your board, surf through the air, show your stuff, and win eternal glory with your off-the-chain skills. Re-Live this Dreamcast Classic Today!",
+  "url": "https://www.igdb.com/games/trickstyle"
+}
+{
+  "id": 3662,
+  "genres": [
+    9,
+    15
+  ],
+  "involved_companies": [
+    9465,
+    9466
+  ],
+  "name": "Adventures of Lolo",
+  "rating": 81.66627613319801,
+  "summary": "Adventures of Lolo is a puzzle game released in 1989 by HAL Corporation for the Nintendo Entertainment System. It is based on the Japanese Eggerland video game series.",
+  "url": "https://www.igdb.com/games/adventures-of-lolo"
+}
+{
+  "id": 17849,
+  "genres": [
+    12,
+    31
+  ],
+  "involved_companies": [
+    68529,
+    68530,
+    68531,
+    68532
+  ],
+  "name": "Alphadia Genesis",
+  "rating": 70,
+  "summary": "Alphadia Genesis is the first JRPG from acclaimed developers KEMCO to be released on Steam. The story chronicles an epic adventure with Fray and his investigative team from the Archleign Kingdom as they set out to solve a mysterious murder case in a nearby city.",
+  "url": "https://www.igdb.com/games/alphadia-genesis"
+}
+{
+  "id": 16246,
+  "genres": [
+    15,
+    32
+  ],
+  "involved_companies": [
+    30463
+  ],
+  "name": "Alien Hallway",
+  "rating": 50,
+  "summary": "Alien Hallway is a totally new action- strategy shooting game for the PC developed by Alien Shooter series makers, Sigma Team company. Here, in Sigma's adrenaline-fueled game, players measure stamina with a never-ending stream of green creatures within the borders of a special military mission. The rules are severe and the fate of Humanity is put on the line.",
+  "url": "https://www.igdb.com/games/alien-hallway"
+}
+{
+  "id": 24989,
+  "genres": [
+    9,
+    12,
+    24,
+    31,
+    32
+  ],
+  "involved_companies": [
+    40783
+  ],
+  "name": "HellSign",
+  "rating": 70,
+  "summary": "\"You're a Hunter, the last line of defense between our world and the savage creatures that lurk just outside. By investigating the world around you and reading the evidence you’ll learn more about what you’re hunting and how to kill it. \n \nUse your wits, your experience and your arsenal of monster-hunting tools to rid the world of ghouls, ghosts, demons and everything that goes bump in the night - for the right price of course.\"",
+  "url": "https://www.igdb.com/games/hellsign"
+}
+{
+  "id": 52263,
+  "genres": [
+    10,
+    14,
+    32
+  ],
+  "involved_companies": [
+    63742,
+    63743,
+    69037
+  ],
+  "name": "All-Star Fruit Racing",
+  "rating": 60,
+  "summary": "All-Star Fruit Racing is the kart racing game you’ve been waiting for! Easy to learn but hard to master, choose your character, customize your kart and play the way that tempts you most!",
+  "url": "https://www.igdb.com/games/all-star-fruit-racing"
+}
+{
+  "id": 17856,
+  "genres": [
+    13
+  ],
+  "involved_companies": [
+    33343,
+    76045
+  ],
+  "name": "Fireworks Simulator",
+  "rating": 50,
+  "summary": "Fireworks fascination - All eyes are on the sky, the music starts, the first spectacular effects explode high in the air, open mouths, loud \"Ooohs\" and \"Aaahs\" from the crowd. Anyone who's ever witnessed live fireworks knows just how spellbinding a well put-together display can be.",
+  "url": "https://www.igdb.com/games/fireworks-simulator"
+}
+{
+  "id": 422,
+  "genres": [
+    10
+  ],
+  "involved_companies": [
+    221,
+    1218,
+    50982
+  ],
+  "name": "LEGO Racers",
+  "rating": 63.0050365361468,
+  "summary": "Lego Racers is set in the fictional Legoland universe, the game depicts Rocket Racer, the \"greatest racing champion\" in Legoland. After becoming bored from beating everyone at racing, he decides to create a racing contest, and finds the best racers in the history of Legoland using a dimensional warp machine created by his friend, Veronica Voltage, a genius scientist and mechanic. The player takes on the hosts and co-racers in an attempt to beat Rocket Racer and become the \"Greatest Lego Racer of All Time\".",
+  "url": "https://www.igdb.com/games/lego-racers"
+}
+{
+  "id": 17862,
+  "genres": [
+    31,
+    32
+  ],
+  "involved_companies": [
+    32847
+  ],
+  "name": "I Will Escape",
+  "rating": 50,
+  "summary": "You are Brian Lowfield, you awaken on the cold floor of a prison cell with no recollection of what happened in the past 24 hours. You've lost your memory and you're completely stripped from your gear. On the floor, you find a picture of a young girl. You don't know who she is, yet she looks familiar to you. You have no idea what's going on, but one thought strongly resounds in your mind: I Will Escape!",
+  "url": "https://www.igdb.com/games/i-will-escape"
+}
+{
+  "id": 30693,
+  "genres": [
+    31
+  ],
+  "involved_companies": [
+    48273
+  ],
+  "name": "The Shadows of Pygmalion",
+  "rating": 70,
+  "summary": "For as long as anyone knows, beings called “Puppets” have operated in service of a force unknown, quietly manipulating the course of history. \n \nOne day, Hajiro Mina has a chance encounter with one of these Puppets, ultimately changing her life forever.",
+  "url": "https://www.igdb.com/games/the-shadows-of-pygmalion"
+}
+{
+  "id": 4977,
+  "genres": [
+    8,
+    31
+  ],
+  "involved_companies": [
+    12003,
+    12004
+  ],
+  "name": "Looney Tunes: Acme Arsenal",
+  "rating": 80,
+  "summary": "Tag-team with the Tunes in the fight for their lives! Wield a major arsenal of ACME weapons as the tunes team-up to hunt down the mad scientist, chasing him through exotic locals from the past, present and future.Unite Bugs, Taz, Daffy, Marvin and more in a co-operative whack-and-smash romp through time - including online play!Melee and projectile weapons: Each character's weapon/melee skills can power up three times on the fly as you go.Vehicle Based Action: Race a jet scooter across an alien environment or wage battle on top of a giant flying Pterodactyl...the possibilities are endless!Travel to various locations such as Camelot, Ancient Egypt, Mars, the Wild West and more!Top-notch voice talent provides the characters with their classic voices and an authentic Looney Tunes slapstick adventure, while giving their look an updated, next-generation, modern edge.",
+  "url": "https://www.igdb.com/games/looney-tunes-acme-arsenal"
+}
+{
+  "id": 17898,
+  "genres": [
+    9,
+    31,
+    32
+  ],
+  "involved_companies": [
+    32899
+  ],
+  "name": "Sinister City",
+  "rating": 50,
+  "summary": "Who would name their town Sinister City? Vampires, of course! When John discovers his bride-to-be has been kidnapped by Sinister City's number one bloodsucker, there's only one thing to do - search for hidden objects! And kill vampires! Or at least insult them until they give your girl back.",
+  "url": "https://www.igdb.com/games/sinister-city"
+}
+{
+  "id": 17903,
+  "genres": [
+    31,
+    32
+  ],
+  "involved_companies": [
+    32905
+  ],
+  "name": "Sam Glyph: Private Eye!",
+  "rating": 40,
+  "summary": "Bear witness to a mysterious phone call that will pull Sam into a dangerous underworld, where life itself is actually threatened and physical harm is a serious \npossibility! Revel in the popular First-Person view, as you investigate Sam's environment and poke things with your mouse and human interface devices! Listen to Sam say things in a fairly amusing manner! Grr, he's an angry chap isn't he?! Escape danger at least twice! Move around with your legs and push things with your hands! Yes! This actually happens! \n\nEpisodic format! What will/can/does happen next?! Classic Film Noir stylings! Suprises and actual music! From the creators of INIT. and The Tower! Also Polarium! Three games that you will never have heard of! Bust punks and celebrate with confetti showers! That's telling them! Twice!",
+  "url": "https://www.igdb.com/games/sam-glyph-private-eye"
+}
+{
+  "id": 2209,
+  "genres": [
+    9,
+    31
+  ],
+  "involved_companies": [
+    4681,
+    4682
+  ],
+  "name": "Atlantis: The Lost Tales",
+  "rating": 87.2900339706753,
+  "summary": "Atlantis: The Lost Tales is a fantasy adventure computer game developed by Cryo Interactive and published by DreamCatcher Interactive, and released on September 30, 1997. The game is named after its initial and most important setting, Atlantis. It is the first in a Myst-like series, and is followed by Atlantis II (Beyond Atlantis outside Europe), Atlantis III: The New World (Beyond Atlantis II), Atlantis Evolution and The Secrets of Atlantis: The Sacred Legacy.",
+  "url": "https://www.igdb.com/games/atlantis-the-lost-tales"
+}
+{
+  "id": 474,
+  "genres": [
+    5,
+    31
+  ],
+  "involved_companies": [
+    830,
+    831,
+    832
+  ],
+  "name": "Metal Gear Solid 2: Substance",
+  "rating": 87.712513094239,
+  "summary": "Metal Gear Solid 2: Substance is a re-vamped and revised edition of the original Metal Gear Solid 2: Sons of Liberty, in which Solid Snake must recover the stolen Metal Gear Ray from a group of terrorists bent on using its power for unthinkable reasons. \n \nAlong with the original espionage shooter comes a collection of 200 virtual reality (VR) missions. Missions range from killing certain targets and using particular weapons, as well as seeing the world of Solid Snake from different perspectives and styles, with first-person target modes and a variety mode including crazy characters of different shapes and sizes. \n \nAlso included are various alternative missions, ranging from the protagonist sneaking around and snapping photos of targets to bomb disposal, all out destruction, and more.",
+  "url": "https://www.igdb.com/games/metal-gear-solid-2-substance"
+}
+{
+  "id": 17909,
+  "genres": [
+    13,
+    14,
+    15
+  ],
+  "involved_companies": [
+    32913,
+    32914
+  ],
+  "name": "Club Manager 2015",
+  "rating": 40,
+  "summary": "In Club Manager 2015 you slip into the role of an up-and-coming football manager. You can start with a new team in the eighth league or take over an existing team from one of the higher leagues. It's your choice, but in the end only one thing matters: get promoted, win the Championship and take home the trophy!  \n \nClub Manager 2015 returns to the simpler virtues of classic football manager games – without fancy gimmicks. Put together a team that can pack a punch. Ecstatic fans and the skillful marketing of your club will make for gushing profits. Convince sponsors, take care of the youth academy and participate in international tournaments. Upgrade your stadium from a rudimentary football field to a real arena.  \n \n \nMade in Germany – developed in the homeland of the current World Champions  \n'54, '74, '90, 2014 – Germans know what it takes to be World Champions. So who better to choose than a German developer team? Over 20 years of know-how from enthusiastic fans and at least one hundred times as much pure footballing passion have gone into this version of Club Manager. \n \nThere's more to it than you imagine \nIf you really like to get your hands dirty, then Club Manager 2015 is just the place for you. Eight leagues and numerous championships in over 200 countries allow for plenty of variety. Bring in sponsors, make use of skillful marketing strategies for healthy bank accounts, and don't forget to turn your stadium into a veritable footballing palace. \n \nExtensive editor \nThe included editor enables fans across the globe to expand the game on their own, create their own teams, and modify existing teams without any complications!",
+  "url": "https://www.igdb.com/games/club-manager-2015"
+}
+{
+  "id": 8955,
+  "genres": [
+    12,
+    13,
+    15,
+    32
+  ],
+  "involved_companies": [
+    21977
+  ],
+  "name": "Kingdom Wars",
+  "rating": 50,
+  "summary": "Kingdom Wars is a free to play 3D MMORTS with real-time siege combat, without the pay to win element so common in the genre. Kingdom Wars offers beautiful 3D online world, where players construct strongholds, direct citizens, complete quests and eventually manage a global empire.",
+  "url": "https://www.igdb.com/games/kingdom-wars"
+}
+{
+  "id": 54977,
+  "genres": [
+    10,
+    33
+  ],
+  "involved_companies": [
+    73848
+  ],
+  "name": "SkidStorm",
+  "rating": 60,
+  "summary": "SkidStorm is a free worldwide multiplayer realtime racing game, and has simple graphics. You can challenge others online or play offline online. It offers the smooth operation that is very easy to master! In the game you can control the cars, wander all kinds of tracks and sweep your fingers to experience the exciting races. You can also fill nitro tanks to accelerate or catch up to become the champion.",
+  "url": "https://www.igdb.com/games/skidstorm"
+}
+{
+  "id": 78536,
+  "genres": [
+    13,
+    15,
+    31,
+    32
+  ],
+  "involved_companies": [
+    71615,
+    71616
+  ],
+  "name": "Beholder 2",
+  "rating": 70,
+  "summary": "Every citizen of our great State dreams of working at the Prime Ministry! \n \nYou are lucky, intern – your dream has come true! \nWhile you are at the bottom of the career ladder, that is more than many of your fellow citizens will ever achieve! \n \nHave you already decided what you're going to become? \nWill you become a diligent and responsible officer decorated by the Wise Leader himself? Or will you become a hardline careerist capable of destroying anyone who stands between you and the Prime Minister's seat? Or maybe you are just a whistle-blower? If so, who sent you? And why? \n \nWhatever the case, you are now part of the Ministry! \nFrom this moment on, no one beyond these walls has ascendance over you! You are free to shape your own future! \n \nSo, what are you going to become?",
+  "url": "https://www.igdb.com/games/beholder-2"
+}
+{
+  "id": 5526,
+  "genres": [
+    10,
+    13,
+    14
+  ],
+  "involved_companies": [
+    13384,
+    13385
+  ],
+  "name": "Indianapolis 500: The Simulation",
+  "rating": 81.4813451498869,
+  "summary": "Indianapolis 500: The Simulation is a 1989 computer game. It was hailed as the first step of differentiating racing games from the arcade realm and into racing simulation. It was developed by the Papyrus Design Group, consisting of David Kaemmer and Omar Khudari, and distributed by Electronic Arts. It first released for DOS and later for the Amiga in 1990.\n\nIndianapolis 500: The Simulation attempts to be a full simulation of the Indianapolis 500 race, with 33 cars and appropriate Indy car \"feel\". While racing, it only offers a first-person perspective, but the game offers a replay mode as well. Indy 500 offers the ability to realistically set up the car, and any changes made to the car directly affect how it handles.\n\nThe field is represented as realistic and the qualifying order stays true to the 1989 Indianapolis 500 starting grid.",
+  "url": "https://www.igdb.com/games/indianapolis-500-the-simulation"
+}
+{
+  "id": 443,
+  "genres": [
+    11,
+    15,
+    16,
+    24
+  ],
+  "involved_companies": [
+    1135,
+    1136
+  ],
+  "name": "Shogun: Total War - Mongol Invasion",
+  "rating": 82.4958502293952,
+  "summary": "Set in the Mongol invasion of Japan, this expansion pack features additional content, missions and the new playable faction of the Mongols. Historically the Kublai Khan, leader of the Mongols met catastrophic weather on the journey to Japan and so the invasion plan was abandoned before it ever truly began. In this expansion however, the Creative Assembly have re-written this detail in the name of strategy-based gaming. In the Mongol Invasion the invaders successfully land on the shores of Chikuzen. As either the Mongols or the ruling Hojo clan of Japan it is up to you to take Japan in the name of the Khan or repel the invading force and secure your homeland’s freedom.",
+  "url": "https://www.igdb.com/games/shogun-total-war-mongol-invasion"
+}
+{
+  "id": 17931,
+  "genres": [
+    12
+  ],
+  "involved_companies": [
+    32951,
+    32952
+  ],
+  "name": "Dragon Fantasy: The Volumes of Westeria",
+  "rating": 70,
+  "summary": "Experience an all-new old adventure! Fight your way through hordes of strange, silly, and scary monsters! Explore the caves, castles, and dungeons of an ancient evil! Meet warriors, princes, pirates, zombies, and crazy old woodsmen in a huge world of epic retro adventure! Authentic 8-bit artwork and an original soundtrack by renowned Bay Area 8-bit musician Crashfaster keeps the game true to its retro roots.",
+  "url": "https://www.igdb.com/games/dragon-fantasy-the-volumes-of-westeria"
+}
+{
+  "id": 25252,
+  "genres": [
+    32
+  ],
+  "involved_companies": [
+    41190
+  ],
+  "name": "Crush Crush",
+  "rating": 80,
+  "summary": "Hey there tiger! Looking to get into the dating scene, but worried about how time consuming it is to be so attractive and popular? The struggle is real. Well, your prayers have been answered! Just play Crush Crush - the dating game that lets you be charming and sexy-fine at your own pace! Get ready to meet lots of lovely ladies, get to know them, and ask them on dates! Work jobs to earn cash and advance your career, then buy gifts to boost affection. Grind hobbies to boost your stats (just like real life!) and best of all - the game keeps playing itself while you’re gone.",
+  "url": "https://www.igdb.com/games/crush-crush"
+}
+{
+  "id": 1146,
+  "genres": [
+    8,
+    31
+  ],
+  "involved_companies": [
+    2681,
+    2682
+  ],
+  "name": "Castlevania: The Adventure ReBirth",
+  "rating": 86.396584876733,
+  "summary": "The classic Castlevania game is reborn for the Wii with all-new upgrades. \n \nAnother 100 years has passed since the death of Count Dracula, but the revival of his curse has emerged once again within the realms of Transylvania. Play the role of the ultimate gothic hero from the long lineage of vampire hunters, the Belmont clan, and rid the universe of Dracula’s legion of darkness and doom. Based on the classic 1989 original Castlevania: The Adventure, the WiiWare version will allow players of a new generation and older fans to experience one of the most popular games within the storied Castlevania timeline from a new perspective.",
+  "url": "https://www.igdb.com/games/castlevania-the-adventure-rebirth"
+}
+{
+  "id": 2605,
+  "genres": [
+    8,
+    9,
+    31,
+    32
+  ],
+  "involved_companies": [
+    25073,
+    25074,
+    52157
+  ],
+  "name": "BattleBlock Theater",
+  "rating": 82.77202448772582,
+  "summary": "In BattleBlock Theater, players control a prisoner as they are forced to play through games devised by Hatty Hattington. Controls are simple, with the game largely consisting of running, jumping and punching. Levels are made up of various types of blocks, such as collapsing blocks, sticky walls, bouncy volcanic rocks and deadly spikes, and also feature hazards such as water and deadly creatures. \nThe main mode in the game is Adventure Mode, which can be played solo or co-operatively with a second player. During co-operative play, players are able to work together to overcome obstacles, which includes throwing them across gaps, using their heads as platforms and helping each other up ledges, although there is just as much opportunity to sabotage your partner. Adventure mode consists of various worlds each with a set of levels. In order to progress to the next world, players need to collect gems which can also be used to unlock new customiseable parts. Players can also collect balls of yarn which they can use to bribe cat guards and unlock new weapons, such as frisbees and vacuum cleaners. Collecting all gems and the yarn will get you an A++ in the level and two extra gems. Arena mode is a competitive mode for up to four players, which can be played free-for-all or in teams. There are several match types including: \nSoul: Steal enemy soul and run away. Capture and hold the enemy's souls to gain points. Kill a soul-carrier to release their souls to roam the level. \nMuckle: Beat and kill the enemy team to earn your team points. \nChallenge: Score the best time on a given level. \nKing Of The Hill: Stand on the crown blocks to gain your team points. \nColor The World: Color more blocks than the other team. \nGrab The Gold: Grab more gold from the golden whale than the other team and deposit it in the flying safe to score points for your team \nBall Game: Get the ball in the basket. \nHorse: Ride the opposing team's horse to your stables to gain points for your team. \nAlong with a Time Attack mode, the game also features a Level Editor, which allows players to create their own stages for any game type. These levels can be assembled into a playlist, consisting of various Adventure and Arena levels, and uploaded to the community for others to download. There is also additional content unlocked for players who also own Castle Crashers and Alien Hominid HD.[3][4]",
+  "url": "https://www.igdb.com/games/battleblock-theater"
+}
+{
+  "id": 103324,
+  "genres": [
+    5,
+    8,
+    32
+  ],
+  "involved_companies": [
+    65603,
+    65604
+  ],
+  "name": "Overwhelm",
+  "rating": 60,
+  "summary": "You're outnumbered, low on ammunition and the paranoia sets in. This is an action horror-world where enemies get power-ups and you don’t.",
+  "url": "https://www.igdb.com/games/overwhelm"
+}
+{
+  "id": 17951,
+  "genres": [
+    13
+  ],
+  "involved_companies": [
+    32986,
+    32987,
+    32988
+  ],
+  "name": "Fleet Defender: The F-14 Tomcat Simulation",
+  "rating": 70,
+  "summary": "Fleet Defender is the first flight simulator to accurately recreate carrier-based operations. Experience all the excitement of a catapult launch, realistic air-to-air combat and the challenge of landing on a pitching deck. You'll be drawn into the high-stakes world of Navy's top guns.",
+  "url": "https://www.igdb.com/games/fleet-defender-the-f-14-tomcat-simulation"
+}
+{
+  "id": 105011,
+  "genres": [
+    13,
+    31,
+    32
+  ],
+  "involved_companies": [
+    71846
+  ],
+  "name": "Dude Simulator 2",
+  "rating": 40,
+  "summary": "Dude Simulator 2 is an open world sandbox game. This is a life simulator. The main objective is to enjoy what you are doing.",
+  "url": "https://www.igdb.com/games/dude-simulator-2"
+}
+]
+}

@@ -1,0 +1,54 @@
+{
+"Genres": [
+{
+  "id": 13,
+  "name": "Simulator",
+  "url": "https://www.igdb.com/genres/simulator"
+}
+{
+  "id": 24,
+  "name": "Tactical",
+  "url": "https://www.igdb.com/genres/tactical"
+}
+{
+  "id": 26,
+  "name": "Quiz/Trivia",
+  "url": "https://www.igdb.com/genres/quiz-trivia"
+}
+{
+  "id": 4,
+  "name": "Fighting",
+  "url": "https://www.igdb.com/genres/fighting"
+}
+{
+  "id": 15,
+  "name": "Strategy",
+  "url": "https://www.igdb.com/genres/strategy"
+}
+{
+  "id": 31,
+  "name": "Adventure",
+  "url": "https://www.igdb.com/genres/adventure"
+}
+{
+  "id": 12,
+  "name": "Role-playing (RPG)",
+  "url": "https://www.igdb.com/genres/role-playing-rpg"
+}
+{
+  "id": 5,
+  "name": "Shooter",
+  "url": "https://www.igdb.com/genres/shooter"
+}
+{
+  "id": 7,
+  "name": "Music",
+  "url": "https://www.igdb.com/genres/music"
+}
+{
+  "id": 32,
+  "name": "Indie",
+  "url": "https://www.igdb.com/genres/indie"
+}
+]
+}
