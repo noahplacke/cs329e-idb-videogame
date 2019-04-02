@@ -8,16 +8,25 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_STRING",'postgres://postgres:abc123@localhost:5433/gamesdb')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True # to suppress a warning message
 db = SQLAlchemy(app)
-"""
-class Game(db.Model):
-	__tablename__ = 'games'
 
-	title = db.Column(db.String(80), nullable = False)
-	id = db.Column(db.Integer, primary_key = True)
-	genre = db.Column(db.String(80), nullable = False)
-	company = db.Column(db.String(80), nullable = False)
-	rating = db.Column(db.String(80), nullable = True)
 """
+game_genre_bridge = Table('association', Base.metaData,
+  Column('game_id', Integer, ForeignKey('games.id')),
+  Column('genres_id', Integer, ForeignKey('genres.id'))
+)
+"""
+
+class Game(db.Model):
+  __tablename__ = 'games'
+
+  game_id = db.Column(db.Integer, primary_key = True)
+  name = db.Column(db.String(100), nullable = False)
+  rating = db.Column(db.Float(5), nullable = True)
+  summary = db.Column(db.String(5000), nullable = True)
+  url = db.Column(db.String(250), nullable = True)
+  genres = db.Column(db.String(80), nullable = True)
+  companies = db.Column(db.String(250), nullable = True)
+
 class Genre(db.Model):
 	__tablename__ = 'genres'
 

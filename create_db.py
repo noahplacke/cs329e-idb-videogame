@@ -1,6 +1,6 @@
 import json
 #from models import app, db, Game, Genre, Company
-from models import app, db, Genre
+from models import app, db, Genre, Game
 
 def load_json(filename):
     with open(filename) as file:
@@ -9,27 +9,26 @@ def load_json(filename):
 
     return jsn
 
-"""
 def create_games():
-    games = load_json('games.json')
+  games = load_json('games.json')
 
-    for oneGame in games['Games']:
-        title = oneGame['title']
-        id = oneGame['id']
-        genre = oneGame['genre']
-        company = oneGame['company']
-        rating = oneGame['rating']
+  for oneGame in games['Games']:
 
+    game_id = oneGame['id']
+    name = oneGame['name']
+    rating = oneGame['rating']
+    summary = oneGame['summary']
+    url = oneGame['url']
+    genres = oneGame['genres']
+    companies = oneGame['involved_companies']
 
-        newGame = Game(title = title, id = id, genre = genre, company = company, rating = rating)
-
-        # After I create the book, I can then add it to my session.
-        db.session.add(newGame)
-        # commit the session to my DB.
-        db.session.commit()
+    newGame = Game(game_id = game_id, name = name, rating = rating, summary = summary, url = url, genres = genres, companies = companies)
+    # After I create the book, I can then add it to my session.
+    db.session.add(newGame)
+    # commit the session to my DB.
+    db.session.commit()
 
 create_games()
-"""
 
 def create_genres():
     genres = load_json('genres.json')
