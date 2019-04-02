@@ -9,7 +9,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-	<link rel = "stylesheet" href = "../static/css/genres.css">
+	<link rel = "stylesheet" href = "../static/css/pillars.css">
 
 	<!-- <script type="text/javascript" src="../static/js/genres.js"></script>-->
 
@@ -22,65 +22,133 @@
 
 	<div id = "header">Genres</div>
 
-	<div class = "genresGrid">
 
-		<div id="platform" class = "genre">
-			<img src = "../static/images/platform.jpeg">
-			<div class = "description"><h2>Platform</h2><p>Platform games (or platformers) have gameplay primarily centered around jumping and climbing to navigate the character's environment while avoiding obstacles and enemies. Generally the player's character in a platform game is able to jump many times their own height and player is offered some control over their movement in midair as well as the height and distance of their jumps. Settings tend to be vertically exaggerated with lots of uneven terrain that the player can leap to or fall off of.</p>
-				<p>Games in Genre: <a href="{{url_for('games')}}#super_mario_odyssey">Super Mario Odyssey</a></p>
-				<p>Companies: <a href="{{url_for('companies')}}#nintendo">Nintendo</a></p>
-				<button onclick="location.href='./platform/'" type="button" class="btn btn-primary">Read More</button>
-			</div>
+
+
+	<div class = "cardGrid">
+
+
+
+		<div class="card w-25" id = "platformer">
+			<div class = "cropImage">
+		 		<img src = "../static/images/platform.jpeg" class = "card-img-top">
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Platformer</h5>
+		    	<p class="card-text">
+					Platform games (or platformers) have gameplay primarily centered around jumping and climbing to navigate the character's environment while avoiding obstacles and enemies. Generally the player's character in a platform game is able to jump many times their own height and player is offered some control over their movement in midair as well as the height and distance of their jumps. Settings tend to be vertically exaggerated with lots of uneven terrain that the player can leap to or fall off of.
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">Games in Genre: <a href="{{url_for('games')}}#super_mario_odyssey">Super Mario Odyssey</a></li>
+				<li class="list-group-item">Companies: <a href="{{url_for('companies')}}#nintendo">Nintendo</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Subgenres: </div>
 		</div>
 
 
-		<div id="shooter" class = "genre">
-			<img src = "../static/images/shooter.jpeg">
-			<div class = "description"><h2>Shooter</h2><p>In shooter games (or simply shooters), players use ranged weapons to participate in the action, which takes place at a distance. Most shooters involve violent gameplay; lethal weaponry is used to damage opponents. However, some shooters, such as Splatoon, have non-violent objectives.</p>
-				<p>Games in Genre: <a href="{{url_for('games')}}#grand_theft_auto_v">Grand Theft Auto V</a> - <a href="{{url_for('games')}}#overwatch">Overwatch</a> - Call of Duty: Black Ops 4 - Red Dead Redemption 2 - Fortnite</p>
-				<p>Companies: <a href="{{url_for('companies')}}#valve">Valve Corporation</a> - <a href="{{url_for('companies')}}#rockstar">Rockstar Games</a> - <a href="{{url_for('companies')}}#electronic_arts">Electronic Arts</a> - <a href="{{url_for('companies')}}#ubisoft">Ubisoft</a></p>
-				<button onclick="location.href='./shooter/'" type="button" class="btn btn-primary">Read More</button>
-			</div>
-		</div>
-
-		<div id="fighting" class = "genre">
-			<img src = "../static/images/fighting.jpeg">
-			<div class = "description"><h2>Fighting</h2><p>Fighting games center around close-ranged combat typically one on one fights or against a small number of equally powerful opponents, often involving violent and exaggerated unarmed attacks. Most fighting games feature a large number of playable characters and a competitive multiplayer mode. While most fighting games emphasize hand-to-hand combat, some fighting games such as Soulcalibur and Samurai Shodown center around combat with melee weapons.</p>
-				<p>Games in Genre: <a href="{{url_for('games')}}#super_smash_bros">Super Smash Bros.</a> - Mortal Kombat 11</p>
-				<p>Companies: <a href="{{url_for('companies')}}#nintendo">Nintendo</a> - NetherRealm Studios</p>
-				<button onclick="location.href='./fighting/'" type="button" class="btn btn-primary">Read More</button>
-			</div>
-		</div>
 
 
-		<div id="stealth" class = "genre">
-			<img src = "../static/images/stealth.jpeg">
-			<div class = "description"><h2>Stealth</h2><p>These games tend to emphasize subterfuge and precision strikes over the more overt mayhem of shooters, for example, the Metal Gear series, and the Sly Cooper series. In a Stealth game, players are usually still able to engage in loud, conspicuous combat, but are often punished for it. Other games, such as Dishonored, the player can obtain their goal with or without stealth, but stealth is encouraged. The inclusion of stealth as a mechanic in a game does not necessarily make it a Stealth Game.</p>
-				<p>Games in Genre:Assassin's Creed Odyssey - Metal Gear Solid V: The Phantom Pain</p>
-				<p>Companies: Ubisoft - Konami</p>
-				<button onclick="location.href='./stealth/'" type="button" class="btn btn-primary">Read More</button>
-			</div>
+
+		<div class="card w-25" id = "shooter">
+			<div class = "cropImage">
+		 		<img src = "../static/images/shooter.jpeg" class = "card-img-top">
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Shooter</h5>
+		    	<p class="card-text">
+					In shooter games (or simply shooters), players use ranged weapons to participate in the action, which takes place at a distance. Most shooters involve violent gameplay; lethal weaponry is used to damage opponents. However, some shooters, such as Splatoon, have non-violent objectives.
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">Games in Genre: <a href="{{url_for('games')}}#grand_theft_auto_v">Grand Theft Auto V</a>, <a href="{{url_for('games')}}#overwatch">Overwatch</a>, <a href="{{url_for('games')}}#cod">Call of Duty: Black Ops 4</a>, <a href="{{url_for('games')}}#red_dead_redemption_2">Red Dead Redemption 2</a>, <a href="{{url_for('games')}}#fortnite">Fortnite</a></li>
+				<li class="list-group-item">Companies: <a href="{{url_for('companies')}}#valve">Valve Corporation</a>, <a href="{{url_for('companies')}}#rockstar">Rockstar Games</a>, <a href="{{url_for('companies')}}#electronic_arts">Electronic Arts</a>, <a href="{{url_for('companies')}}#ubisoft">Ubisoft</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Subgenres: </div>
 		</div>
 
-		<div id="survival" class = "genre">
-			<img src = "../static/images/survival.jpeg">
-			<div class = "description"><h2>Survival</h2><p>Survival games start the player off with minimal resources, in a hostile, open-world environment, and require them to collect resources, craft tools, weapons, and shelter, in order to survive as long as possible. Many are set in procedurally-generated environments, and are open-ended with no set goals. They may overlap with the survival horror genre, in which the player must survive within a supernatural setting, such as a zombie apocalypse.</p>
-				<p>Games in Genre: The Legend of Zelda: Breath of the Wild - Fallout 3</p>
-				<p>Companies: Nintendo - Bethesda Softworks</p>
-				<button onclick="location.href='./survival/'" type="button" class="btn btn-primary">Read More</button>
-			</div>
+
+
+		<div class="card w-25" id = "fighting">
+			<div class = "cropImage">
+		 		<img src = "../static/images/fighting.jpeg" class = "card-img-top">
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Fighting</h5>
+		    	<p class="card-text">
+					Fighting games center around close-ranged combat typically one on one fights or against a small number of equally powerful opponents, often involving violent and exaggerated unarmed attacks. Most fighting games feature a large number of playable characters and a competitive multiplayer mode. While most fighting games emphasize hand-to-hand combat, some fighting games such as Soulcalibur and Samurai Shodown center around combat with melee weapons.
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">Games in Genre: <a href="{{url_for('games')}}#super_smash_bros">Super Smash Bros. Ultimate</a>
+				</li>
+				<li class="list-group-item">Companies: <a href="{{url_for('companies')}}#nintendo">Nintendo</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Subgenres: </div>
 		</div>
 
-		<div id="rhythm" class = "genre">
-			<img src = "../static/images/rhythm.jpeg">
-			<div class = "description"><h2>Rhythm</h2><p>Rhythm game or rhythm action is a genre of music-themed action video game that challenges a player's sense of rhythm. The genre includes dance games such as Dance Dance Revolution and music-based games such as Donkey Konga and Guitar Hero. Games in the genre challenge the player to press buttons at precise times: the screen shows which button the player is required to press, and the game awards points both for accuracy and for synchronization with the beat.</p>
-				<p>Games in Genre: Guitar Hero 3 - Rock Band 4</p>
-				<p>Companies: Neversoft - Harmonix Music Systems</p>
-				<button onclick="location.href='./rhythm/'" type="button" class="btn btn-primary">Read More</button>
-			</div>
+
+
+		<div class="card w-25" id = "stealth">
+			<div class = "cropImage">
+		 		<img src = "../static/images/stealth.jpeg" class = "card-img-top">
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Stealth</h5>
+		    	<p class="card-text">
+					These games tend to emphasize subterfuge and precision strikes over the more overt mayhem of shooters, for example, the Metal Gear series, and the Sly Cooper series. In a Stealth game, players are usually still able to engage in loud, conspicuous combat, but are often punished for it. Other games, such as Dishonored, the player can obtain their goal with or without stealth, but stealth is encouraged. The inclusion of stealth as a mechanic in a game does not necessarily make it a Stealth Game.
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">Games in Genre: Assassin's Creed Odyssey, Metal Gear Solid V: The Phantom Pain</li>
+				<li class="list-group-item">Companies: <a href="{{url_for('companies')}}#ubisoft">Ubisoft</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Subgenres: </div>
 		</div>
+
+
+
+		<div class="card w-25" id = "survival">
+			<div class = "cropImage">
+		 		<img src = "../static/images/survival.jpeg" class = "card-img-top">
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Survival</h5>
+		    	<p class="card-text">
+					Survival games start the player off with minimal resources, in a hostile, open-world environment, and require them to collect resources, craft tools, weapons, and shelter, in order to survive as long as possible. Many are set in procedurally-generated environments, and are open-ended with no set goals. They may overlap with the survival horror genre, in which the player must survive within a supernatural setting, such as a zombie apocalypse.
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">Games in Genre: <a href="{{url_for('games')}}#breath_of_the_wild">The Legend of Zelda: Breath of the Wild</a></li>
+				<li class="list-group-item">Companies: <a href="{{url_for('companies')}}#nintendo">Nintendo</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Subgenres: </div>
+		</div>
+
+
+
+
+		<div class="card w-25" id = "rpg">
+			<div class = "cropImage">
+		 		<img src = "../static/images/rpg.jpeg" class = "card-img-top">
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">RPG</h5>
+		    	<p class="card-text">
+					A role-playing video game (commonly referred to as simply a role-playing game or an RPG as well as a computer role-playing game or a CRPG) is a video game genre where the player controls the actions of a character (and/or several party members) immersed in some well-defined world
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item">Games in Genre: <a href="{{url_for('games')}}#world_of_warcraft">World of Warcraft</a></li>
+				<li class="list-group-item">Companies: <a href="{{url_for('companies')}}#blizzard_entertainment">Blizzard Entertainment</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Subgenres: </div>
+		</div>
+
 
 	</div>
+
+
 
  <div class="citation">
     <p>Content for this page from Wikipedia</p>

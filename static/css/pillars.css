@@ -1,0 +1,57 @@
+#header {
+	text-align: center;
+	font-size: 40px;	
+}
+
+
+
+.cardGrid {	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+
+.card {
+	margin: 20px;
+}
+
+
+.card-title {
+	font-size: 32px;
+
+}
+
+
+
+.cropImage {
+	height: 350px;
+	overflow: hidden;
+}
+
+.cropImage img {
+	object-fit: cover;
+	height: 100%;
+
+	transition-duration: 200ms;
+	transition-property: transform;
+}
+
+.cropImage img:hover {
+	transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+

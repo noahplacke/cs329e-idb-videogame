@@ -10,8 +10,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-	<link rel = "stylesheet" href = "../static/css/games.css">
-	<script type="text/javascript" src="../static/js/games.js"></script>
+	<link rel = "stylesheet" href = "../static/css/pillars.css">
 
 </head>
 
@@ -20,165 +19,309 @@
 {% extends "navbar.html" %}
 {% block content %}
 
-	<div id = "header">
-		Games
+
+
+
+
+
+
+
+	<div id = "header">Games</div>
+
+
+
+	<div class = "cardGrid">
+
+
+
+		<div class="card w-25" id = "super_smash_bros">
+			<div class = "cropImage">
+		 		<img src = "../static/images/supersmashbros.jpg" class = "card-img-top">
+		  	</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Super Smash Bros. Ultimate</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Nintendo</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">Fighting</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Everyone 10+</div>
+		</div>
+
+
+		<div class="card w-25" id = "grand_theft_auto_v">
+			<div class = "cropImage">
+				<img src = "../static/images/gtav.jpg" class = "card-img-top">
+			</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Grand Theft Auto V</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Rockstar Games</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">Shooter</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Mature</div>
+		</div>
+
+
+
+		<div class="card w-25" id = "overwatch">
+			<div class = "cropImage">
+				<img src = "../static/images/overwatch.jpeg" class = "card-img-top">
+			</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Overwatch</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Blizzard Entertainment</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">Shooter</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Teen</div>
+		</div>
+
+
+
+		<div class="card w-25" id = "fortnite">
+			<div class = "cropImage">
+				<img src = "../static/images/fortnite.jpg" class = "card-img-top">
+			</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Fortnite</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Epic Games</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">Shooter</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Teen</div>
+		</div>
+
+
+
+		<div class="card w-25" id = "world_of_warcraft">
+			<div class = "cropImage">
+				<img src = "../static/images/wow.jpg" class = "card-img-top">
+			</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">World of Warcraft</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Blizzard Entertainment</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">MMO/RPG</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Teen</div>
+		</div>
+
+
+
+
+		<div class="card w-25" id = "cod">
+			<div class = "cropImage">
+				<img src = "../static/images/cod.jpg" class = "card-img-top">
+			</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Call of Duty: Black Ops 4</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Treyarch</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">Shooter</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Mature</div>
+		</div>
+
+
+
+		<div class="card w-25" id = "breath_of_the_wild">
+			<div class = "cropImage">
+				<img src = "../static/images/botw.jpg" class = "card-img-top">
+			</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">The Legend of Zelda: Breath of the Wild</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Nintendo</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">Survival/RPG</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Everyone 10+</div>
+		</div>
+
+
+
+		<div class="card w-25" id = "mario_kart_8_deluxe">
+			<div class = "cropImage">
+				<img src = "../static/images/mariokart.jpg" class = "card-img-top">
+			</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Mario Kart 8 Deluxe</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Nintendo</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">Racing</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Everyone</div>
+		</div>
+
+
+		<div class="card w-25" id = "hearthstone">
+			<div class = "cropImage">
+				<img src = "../static/images/hearthstone.jpg" class = "card-img-top">
+			</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Hearthstone</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Blizzard Entertainment</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">Strategy</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Teen</div>
+		</div>
+
+
+
+		<div class="card w-25" id = "red_dead_redemption_2">
+			<div class = "cropImage">
+				<img src = "../static/images/reddead.jpeg" class = "card-img-top">
+			</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Red Dead Redemption 2</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Rockstar Games</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">Shooter/RPG</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Mature</div>
+		</div>
+
+
+
+		<div class="card w-25" id = "splatoon_2">
+			<div class = "cropImage">
+				<img src = "../static/images/splatoon.jpg" class = "card-img-top">
+			</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Splatoon 2</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Nintendo</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">Shooter</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Everyone 10+</div>
+		</div>
+
+
+
+		<div class="card w-25" id = "uncharted_4">
+			<div class = "cropImage">
+				<img src = "../static/images/uncharted.png" class = "card-img-top">
+			</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Uncharted 4</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Naughty Dog</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">Adventure/Shooter</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Teen</div>
+		</div>
+
+
+
+		<div class="card w-25" id = "super_mario_odyssey">
+			<div class = "cropImage">
+				<img src = "../static/images/odyssey.jpg" class = "card-img-top">
+			</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Super Mario Odyssey</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Nintendo</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">Platformer</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Everyone 10+</div>
+		</div>
+
+
+
+		<div class="card w-25" id = "spiderman">
+			<div class = "cropImage">
+				<img src = "../static/images/spider-man.jpg" class = "card-img-top">
+			</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">Spider-man</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Insomniac Games</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">Adventure</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Teen</div>
+		</div>
+
+
+
+		<div class="card w-25" id = "god_of_war">
+			<div class = "cropImage">
+				<img src = "../static/images/godofwar.jpg" class = "card-img-top">
+			</div>
+		  	<div class="card-body">
+		    	<h5 class="card-title">God of War</h5>
+		    	<p class="card-text">
+					Description...
+		    	</p>
+		  	</div>
+			<ul class="list-group list-group-flush">
+				<li class="list-group-item"><a href="#" class="card-link">Santa Monica Studios</a></li>
+				<li class="list-group-item"><a href="#" class="card-link">Adventure</a></li>
+			</ul>
+		  	<div class="card-footer text-muted">Rated Mature</div>
+		</div>
+
 	</div>
 
-	<div class = "gamesGrid">
 
-		<div id = "super_smash_bros" class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-      <div>
-				<img src = "../static/images/supersmashbros.jpg"/>
-				<div class="description"><h3>Super Smash Brothers</h3>
-				  <h5><a href = "{{url_for('companies')}}#nintendo">Nintendo</a></h5><h5><a href = "{{url_for('genres')}}#fighting">Fighting</a></h5>
-          <h5>Rated Everyone 10+</h5>
-				</div>
-      </div>
-		</div>
 
-		<div id = "grand_theft_auto_v" class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-      <div>
-				<img src = "../static/images/gtav.jpg"/>
-				<div class="description">
-          <h3>Grand Theft Auto V</h3>
-				  <h5><a href = "{{url_for('companies')}}#rockstar">Rockstar Games</a></h5><h5><a href = "{{url_for('genres')}}#shooter">Shooter</a></h5>
-          <h5>Rated Mature</h5>
-				</div>
-			</div>
-		</div>
 
-		<div id = "overwatch" class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-			<div>
-				<img src = "../static/images/overwatch.jpeg"/>
-				<div class="description"><h3>Overwatch</h3>
-				<h5><a href = "{{url_for('companies')}}#blizzard">Blizzard Entertainment</a></h5><h5><a href = "{{url_for('genres')}}#shooter">Shooter</a></h5>
-        <h5>Rated 12+</h5>
-				</div>
-			</div>
-		</div>
 
-		<div class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-      <div>
-				<img src = "../static/images/fortnite.jpg"/>
-				<div class="description"><h3>Fortnite</h3>
-				<h5>Epic Games</h5><h5>Shooter</h5>
-        <h5>Rated 12+</h5>
-				</div>
-			</div>
-		</div>
-
-		<div id="world_of_warcraft" class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-      <div>
-				<img src = "../static/images/wow.jpg"/>
-				<div class="description">
-          <h3>World of Warcraft</h3>
-				  <h5><a href = "{{url_for('companies')}}#blizzard">Blizzard Entertainment</a></h5><h5>MMO/RPG</h5>
-          <h5>Rated Teen</h5>
-				</div>
-			</div>
-		</div>
-
-		<div class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-			<a href = "#">
-				<img src = "../static/images/cod.jpg"/>
-				<div class="description"><h3>Call of Duty: Black Ops 4</h3>
-				<h5>Treyarch</h5><h5>Shooter</h5>
-        <h5>Rated Mature</h5>
-				</div>
-			</a>
-		</div>
-
-		<div class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-			<a href = "#">
-				<img src = "../static/images/botw.jpg"/>
-				<div class="description"><h4>The Legend of Zelda: Breath of the Wild</h4>
-				<h5>Nintendo</h5><h5>Survival/RPG</h5>
-        <h5>Rated 12+</h5>
-				</div>
-			</a>
-		</div>
-
-		<div class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-			<a href = "#">
-				<img src = "../static/images/mariokart.jpg"/>
-				<div class="description"><h3>Mario Kart 8 Deluxe</h3>
-				<h5>Nintendo</h5><h5>Racing</h5>
-        <h5>Rated Everyone 10+</h5>
-				</div>
-			</a>
-		</div>
-
-		<div class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-			<a href = "#">
-				<img src = "../static/images/hearthstone.jpg"/>
-				<div class="description"><h3>Hearthstone</h3>
-				<h5>Blizzard Entertainment</h5><h5>Strategy</h5>
-        <h5>Rated 12+</h5>
-				</div>
-			</a>
-		</div>
-
-		<div class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-			<a href = "#">
-				<img src = "../static/images/reddead.jpeg"/>
-				<div class="description"><h3>Red Dead Redemption 2</h3>
-				<h5>Rockstar Games</h5><h5>Shooter/RPG</h5>
-        <h5>Rated Adults Only</h5>
-				</div>
-			</a>
-		</div>
-
-		<div class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-			<a href = "#">
-				<img src = "../static/images/splatoon.jpg"/>
-				<div class="description"><h3>Splatoon 2</h3>
-				<h5>Nintendo</h5><h5>Shooter</h5>
-        <h5>Rated 12+</h5>
-				</div>
-			</a>
-		</div>
-
-		<div class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-			<a href = "#">
-				<img src = "../static/images/uncharted.png"/>
-				<div class="description"><h3>Uncharted 4</h3>
-				<h5>Naughty Dog</h5><h5>Adventure/Shooter</h5>
-        <h5>Rated 12+</h5>
-				</div>
-			</a>
-		</div>
-
-		<div id = "super_mario_odyssey" class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-			<div>
-				<img src = "../static/images/odyssey.jpg"/>
-				<div class="description"><h3>Super Mario Odyssey</h3>
-				<h5>Nintendo</h5><h5>Platformer</h5>
-        <h5>Rated Everyone 10+</h5>
-				</div>
-			</div>
-		</div>
-
-		<div class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-			<a href = "#">
-				<img src = "../static/images/spider-man.jpg"/>
-				<div class="description"><h3>Spider-Man</h3>
-				<h5>Insomniac Games</h5><h5>Adventure</h5>
-        <h5>Rated 12+</h5>
-				</div>
-			</a>
-		</div>
-
-		<div class = "game" onmouseover = "displayDescription(event)" onmouseout = "hideDescription(event)">
-			<a href = "#">
-				<img src = "../static/images/godofwar.jpg"/>
-				<div class="description"><h3>God of War</h3>
-				<h5>Santa Monica Studio</h5><h5>Adventure</h5>
-        <h5>Rated 12+</h5>
-				</div>
-			</a>
-		</div>
-
-	</div>
 
 {% endblock %}
 
