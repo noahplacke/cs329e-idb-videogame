@@ -34,12 +34,15 @@ def create_games():
       statement = game_genres.insert().values(game_id = game_id, genre_id = genre_id)
       db.session.execute(statement)
       db.session.commit()
-
+    """
     for company_id in companies:
-      statement = game_companies.insert().values(game_id = game_id, company_id = company_id)
-      db.session.execute(statement)
-      db.session.commit()
-
+      try:
+        statement = game_companies.insert().values(game_id = game_id, company_id = company_id)
+        db.session.execute(statement)
+        db.session.commit()
+      except:
+        print("failed for", game_id, company_id)
+    """
 def create_genres():
     genres = load_json('genres.json')
 
