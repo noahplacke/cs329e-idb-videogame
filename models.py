@@ -14,6 +14,11 @@ game_genres = db.Table('game_genres',
   db.Column('genre_id', db.Integer, db.ForeignKey('genres.genre_id'), primary_key = True)
 )
 
+game_companies = db.Table('game_companies',
+  db.Column('game_id', db.Integer, db.ForeignKey('games.game_id'), primary_key = True),
+  db.Column('company_id', db.Integer, db.ForeignKey('companies.company_id'), primary_key = True)
+)
+
 class Game(db.Model):
   __tablename__ = 'games'
 
@@ -22,8 +27,9 @@ class Game(db.Model):
   rating = db.Column(db.Float(5), nullable = True)
   summary = db.Column(db.String(5000), nullable = True)
   url = db.Column(db.String(250), nullable = True)
-  companies = db.Column(db.String(250), nullable = True)
   genres = db.relationship('Genre', secondary=game_genres, lazy='subquery',
+    backref=db.backref('games', lazy=True))
+  companies = db.relationship('Company', secondary=game_companies, lazy='subquery',
     backref=db.backref('games', lazy=True))
 
 class Genre(db.Model):
@@ -41,7 +47,6 @@ class Company(db.Model):
   description = db.Column(db.String(5000), nullable = True)
   logo = db.Column(db.Integer, nullable = True)
   country = db.Column(db.Integer, nullable = True)
-  games = db.Column(db.String(1000), nullable = True)
 
 db.drop_all()
 db.create_all()

@@ -1,6 +1,6 @@
 import json
 #from models import app, db, Game, Genre, Company
-from models import app, db, Genre, Game, Company, game_genres
+from models import app, db, Genre, Game, Company, game_genres, game_companies
 
 def load_json(filename):
     with open(filename) as file:
@@ -26,7 +26,7 @@ def create_games():
     genres = oneGame['genres']
     companies = oneGame['involved_companies']
 
-    newGame = Game(game_id = game_id, name = name, rating = rating, summary = summary, url = url, companies = companies)
+    newGame = Game(game_id = game_id, name = name, rating = rating, summary = summary, url = url)
     db.session.add(newGame)
     db.session.commit()
 
@@ -35,6 +35,10 @@ def create_games():
       db.session.execute(statement)
       db.session.commit()
 
+    for company_id in companies:
+      statement = game_companies.insert().values(game_id = game_id, company_id = company_id)
+      db.session.execute(statement)
+      db.session.commit()
 
 def create_genres():
     genres = load_json('genres.json')
@@ -72,7 +76,7 @@ def create_companies():
     games = oneCompany['developed']
 
 
-    newCompany = Company(company_id = company_id, name = name, description = description, logo = logo, games = games)
+    newCompany = Company(company_id = company_id, name = name, description = description, logo = logo)
 
     # After I create the book, I can then add it to my session.
     db.session.add(newCompany)
@@ -81,6 +85,6 @@ def create_companies():
 
 
 create_genres()
-create_games()
 create_companies()
+create_games()
 # end of create_db.py
