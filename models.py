@@ -9,12 +9,10 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_STRING",'postgres://p
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True # to suppress a warning message
 db = SQLAlchemy(app)
 
-"""
-game_genre_bridge = Table('association', Base.metaData,
-  Column('game_id', Integer, ForeignKey('games.id')),
-  Column('genres_id', Integer, ForeignKey('genres.id'))
+game_genres = db.Table('game_genres',
+  db.Column('game_id', db.Integer, db.ForeignKey('games.game_id'), primary_key = True),
+  db.Column('genre_id', db.Integer, db.ForeignKey('genres.genre_id'), primary_key = True)
 )
-"""
 
 class Game(db.Model):
   __tablename__ = 'games'
@@ -24,13 +22,14 @@ class Game(db.Model):
   rating = db.Column(db.Float(5), nullable = True)
   summary = db.Column(db.String(5000), nullable = True)
   url = db.Column(db.String(250), nullable = True)
-  genres = db.Column(db.String(80), nullable = True)
   companies = db.Column(db.String(250), nullable = True)
+  genres = db.relationship('Genre', secondary=game_genres, lazy='subquery',
+    backref=db.backref('games', lazy=True))
 
 class Genre(db.Model):
 	__tablename__ = 'genres'
 
-	id = db.Column(db.Integer, primary_key = True)
+	genre_id = db.Column(db.Integer, primary_key = True)
 	name = db.Column(db.String(250), nullable = False)
 	url = db.Column(db.String(500), nullable = False)
 

@@ -1,6 +1,6 @@
 import json
 #from models import app, db, Game, Genre, Company
-from models import app, db, Genre, Game, Company
+from models import app, db, Genre, Game, Company, game_genres
 
 def load_json(filename):
     with open(filename) as file:
@@ -9,11 +9,15 @@ def load_json(filename):
 
     return jsn
 
+# channel1.subscribers.append(user1)
+# genre1.games.append(game1)
+# game1.genres.append(genre1)
+
 def create_games():
   games = load_json('games.json')
 
   for oneGame in games['Games']:
-
+  
     game_id = oneGame['id']
     name = oneGame['name']
     rating = oneGame['rating']
@@ -22,13 +26,15 @@ def create_games():
     genres = oneGame['genres']
     companies = oneGame['involved_companies']
 
-    newGame = Game(game_id = game_id, name = name, rating = rating, summary = summary, url = url, genres = genres, companies = companies)
-    # After I create the book, I can then add it to my session.
+    newGame = Game(game_id = game_id, name = name, rating = rating, summary = summary, url = url, companies = companies)
     db.session.add(newGame)
-    # commit the session to my DB.
     db.session.commit()
 
-create_games()
+    for genre_id in genres:
+      statement = game_genres.insert().values(game_id = game_id, genre_id = genre_id)
+      db.session.execute(statement)
+      db.session.commit()
+
 
 def create_genres():
     genres = load_json('genres.json')
@@ -39,14 +45,13 @@ def create_genres():
         url = oneGenre['url']
 
 
-        newGenre = Genre(id = id, name = name, url = url)
+        newGenre = Genre(genre_id = id, name = name, url = url)
 
         # After I create the book, I can then add it to my session.
         db.session.add(newGenre)
         # commit the session to my DB.
         db.session.commit()
 
-create_genres()
 
 """
   company_id = db.Column(db.Integer, primary_key = True)
@@ -74,5 +79,8 @@ def create_companies():
     # commit the session to my DB.
     db.session.commit()
 
+
+create_genres()
+create_games()
 create_companies()
 # end of create_db.py
