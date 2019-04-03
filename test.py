@@ -1,7 +1,7 @@
 import os
 import sys
 import unittest
-from models import db, Game
+from models import db, Game, Genre
 
 class DBTestCases(unittest.TestCase):
   def test_source_insert_1(self):
@@ -37,6 +37,18 @@ class DBTestCases(unittest.TestCase):
     self.assertEqual(str(r.rating), '4.3')
     self.assertEqual(str(r.companies), 'Rockstar Games')
     db.session.query(Game).filter_by(game_id = '99').delete()
+    db.session.commit()
+
+  def test_source_insert_4(self):
+    
+    s = Genre(id='9999', name = 'GenreTest', url = 'google.com')
+    db.session.add(s)
+    db.session.commit()
+    r = db.session.query(Genre).filter_by(id = '9999').one()
+    self.assertEqual(str(r.id), '9999')
+    self.assertEqual(str(r.name), 'GenreTest')
+    self.assertEqual(str(r.url), 'google.com')
+    db.session.query(Genre).filter_by(game_id = '99').delete()
     db.session.commit()
     
 	
