@@ -38,18 +38,30 @@
 			</ul>
 		  	<div class="card-footer text-muted">Rated Everyone 10+</div>
 		</div>
-	</div>
 
   {% if games == [] %}
     <p>No games exist</p>
   {% else %}
     {% for i in games %}
-      <div>
-        {{i.name}}
-        <br/><br/>
+      <div class="card w-25" id = {{i.game_id}}>
+        <div class = "cropImage">
+          <img src = "../static/images/supersmashbros.jpg" class = "card-img-top">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{i.name}}</h5>
+            <p class="card-text">
+              {{i.summary}}
+            </p>
+          </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="#" class="card-link">{{i.companies}}</a></li>
+          <li class="list-group-item"><a href="#" class="card-link">{{i.genres}}</a></li>
+        </ul>
+          <div class="card-footer text-muted">Rating: {{i.rating}}</div>
       </div>
     {% endfor %}
   {% endif %}
+  </div>
 {% endblock %}
 
 </body>
