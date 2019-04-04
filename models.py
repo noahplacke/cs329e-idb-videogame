@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 import os
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_STRING",'postgres://postgres:abc123@localhost:5433/gamesdb')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("DB_STRING",'postgres://postgres:abc123@localhost:5432/gamesdb')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True # to suppress a warning message
 db = SQLAlchemy(app)
 
