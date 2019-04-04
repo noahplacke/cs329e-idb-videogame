@@ -4,19 +4,10 @@ import unittest
 from models import db, Game, Genre
 
 class DBTestCases(unittest.TestCase):
-  def test_source_insert_1(self):
-    """
-    s = Book(id='20', title = 'C++')
-    db.session.add(s)
-    db.session.commit()
-    r = db.session.query(Book).filter_by(id = '20').one()
-    self.assertEqual(str(r.id), '20')
-    db.session.query(Book).filter_by(id = '20').delete()
-    db.session.commit()
-    """
+  def test_self_1(self):
     self.assertTrue(True)
 	
-  def test_source_insert_2(self):
+  def test_game_insert_1(self):
     
     s = Game(game_id='20', name = 'The Game')
     db.session.add(s)
@@ -27,7 +18,7 @@ class DBTestCases(unittest.TestCase):
     db.session.query(Game).filter_by(game_id = '20').delete()
     db.session.commit()
 	
-  def test_source_insert_3(self):
+  def test_game_insert_2(self):
     
     s = Game(game_id='99', name = '99th Game', rating = '4.3', companies = 'Rockstar Games')
     db.session.add(s)
@@ -39,7 +30,7 @@ class DBTestCases(unittest.TestCase):
     db.session.query(Game).filter_by(game_id = '99').delete()
     db.session.commit()
 
-  def test_source_insert_4(self):
+  def test_game_insert_3(self):
     
     s = Genre(id='9999', name = 'GenreTest', url = 'google.com')
     db.session.add(s)
