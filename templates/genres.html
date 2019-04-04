@@ -70,109 +70,39 @@
 		  	<div class="card-footer text-muted">Subgenres: </div>
 		</div>
 
+  {% if genres == [] %}
+    <p>No genres exist</p>
 
 
 
-
-		<div class="card w-25" id = "shooter">
-			<div class = "cropImage">
-		 		<img src = "../static/images/shooter.jpeg" class = "card-img-top">
-		  	</div>
-		  	<div class="card-body">
-		    	<h5 class="card-title">Shooter</h5>
-		    	<p class="card-text">
-					In shooter games (or simply shooters), players use ranged weapons to participate in the action, which takes place at a distance. Most shooters involve violent gameplay; lethal weaponry is used to damage opponents. However, some shooters, such as Splatoon, have non-violent objectives.
-		    	</p>
-		  	</div>
-			<ul class="list-group list-group-flush">
-				<li class="list-group-item">Games in Genre: <a href="{{url_for('games')}}#grand_theft_auto_v">Grand Theft Auto V</a>, <a href="{{url_for('games')}}#overwatch">Overwatch</a>, <a href="{{url_for('games')}}#cod">Call of Duty: Black Ops 4</a>, <a href="{{url_for('games')}}#red_dead_redemption_2">Red Dead Redemption 2</a>, <a href="{{url_for('games')}}#fortnite">Fortnite</a></li>
-				<li class="list-group-item">Companies: <a href="{{url_for('companies')}}#valve">Valve Corporation</a>, <a href="{{url_for('companies')}}#rockstar">Rockstar Games</a>, <a href="{{url_for('companies')}}#electronic_arts">Electronic Arts</a>, <a href="{{url_for('companies')}}#ubisoft">Ubisoft</a></li>
-			</ul>
-		  	<div class="card-footer text-muted">Subgenres: </div>
-		</div>
+  {% else %}
+    {% for genre in genres %}
 
 
-
-		<div class="card w-25" id = "fighting">
-			<div class = "cropImage">
-		 		<img src = "../static/images/fighting.jpeg" class = "card-img-top">
-		  	</div>
-		  	<div class="card-body">
-		    	<h5 class="card-title">Fighting</h5>
-		    	<p class="card-text">
-					Fighting games center around close-ranged combat typically one on one fights or against a small number of equally powerful opponents, often involving violent and exaggerated unarmed attacks. Most fighting games feature a large number of playable characters and a competitive multiplayer mode. While most fighting games emphasize hand-to-hand combat, some fighting games such as Soulcalibur and Samurai Shodown center around combat with melee weapons.
-		    	</p>
-		  	</div>
-			<ul class="list-group list-group-flush">
-				<li class="list-group-item">Games in Genre: <a href="{{url_for('games')}}#super_smash_bros">Super Smash Bros. Ultimate</a>
-				</li>
-				<li class="list-group-item">Companies: <a href="{{url_for('companies')}}#nintendo">Nintendo</a></li>
-			</ul>
-		  	<div class="card-footer text-muted">Subgenres: </div>
-		</div>
-
-
-
-		<div class="card w-25" id = "stealth">
-			<div class = "cropImage">
-		 		<img src = "../static/images/stealth.jpeg" class = "card-img-top">
-		  	</div>
-		  	<div class="card-body">
-		    	<h5 class="card-title">Stealth</h5>
-		    	<p class="card-text">
-					These games tend to emphasize subterfuge and precision strikes over the more overt mayhem of shooters, for example, the Metal Gear series, and the Sly Cooper series. In a Stealth game, players are usually still able to engage in loud, conspicuous combat, but are often punished for it. Other games, such as Dishonored, the player can obtain their goal with or without stealth, but stealth is encouraged. The inclusion of stealth as a mechanic in a game does not necessarily make it a Stealth Game.
-		    	</p>
-		  	</div>
-			<ul class="list-group list-group-flush">
-				<li class="list-group-item">Games in Genre: Assassin's Creed Odyssey, Metal Gear Solid V: The Phantom Pain</li>
-				<li class="list-group-item">Companies: <a href="{{url_for('companies')}}#ubisoft">Ubisoft</a></li>
-			</ul>
-		  	<div class="card-footer text-muted">Subgenres: </div>
-		</div>
+      <div class="card w-25" id = {{genre.genre_id}}>
+        <div class = "cropImage">
+          <img src = "../static/images/platform.jpeg" class = "card-img-top">
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{genre.name}}</h5>
+            <p class="card-text">
+              {{genre.description}}
+            </p>
+          </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            {% for game in genre.games %}
+              <a href = "{{url_for('games')}}#{{game.game_id}}">{{game.name}}{{", " if not loop.last}}</a>
+            {% endfor %}
+          </li>
+        </ul>
+      </div>
 
 
-
-		<div class="card w-25" id = "survival">
-			<div class = "cropImage">
-		 		<img src = "../static/images/survival.jpeg" class = "card-img-top">
-		  	</div>
-		  	<div class="card-body">
-		    	<h5 class="card-title">Survival</h5>
-		    	<p class="card-text">
-					Survival games start the player off with minimal resources, in a hostile, open-world environment, and require them to collect resources, craft tools, weapons, and shelter, in order to survive as long as possible. Many are set in procedurally-generated environments, and are open-ended with no set goals. They may overlap with the survival horror genre, in which the player must survive within a supernatural setting, such as a zombie apocalypse.
-		    	</p>
-		  	</div>
-			<ul class="list-group list-group-flush">
-				<li class="list-group-item">Games in Genre: <a href="{{url_for('games')}}#breath_of_the_wild">The Legend of Zelda: Breath of the Wild</a></li>
-				<li class="list-group-item">Companies: <a href="{{url_for('companies')}}#nintendo">Nintendo</a></li>
-			</ul>
-		  	<div class="card-footer text-muted">Subgenres: </div>
-		</div>
-
-
-
-
-		<div class="card w-25" id = "rpg">
-			<div class = "cropImage">
-		 		<img src = "../static/images/rpg.jpeg" class = "card-img-top">
-		  	</div>
-		  	<div class="card-body">
-		    	<h5 class="card-title">RPG</h5>
-		    	<p class="card-text">
-					A role-playing video game (commonly referred to as simply a role-playing game or an RPG as well as a computer role-playing game or a CRPG) is a video game genre where the player controls the actions of a character (and/or several party members) immersed in some well-defined world
-		    	</p>
-		  	</div>
-			<ul class="list-group list-group-flush">
-				<li class="list-group-item">Games in Genre: <a href="{{url_for('games')}}#world_of_warcraft">World of Warcraft</a></li>
-				<li class="list-group-item">Companies: <a href="{{url_for('companies')}}#blizzard_entertainment">Blizzard Entertainment</a></li>
-			</ul>
-		  	<div class="card-footer text-muted">Subgenres: </div>
-		</div>
-
+    {% endfor %}
+  {% endif %}
 
 	</div>
-
-
 
  <div class="citation">
     <p>Content for this page from Wikipedia</p>

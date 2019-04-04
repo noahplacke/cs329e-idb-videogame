@@ -97,7 +97,7 @@
           <li class="list-group-item"><a href="#" class="card-link">{{i.companies}}</a></li>
           <li class="list-group-item">
             {% for genre in i.genres %}
-              {{genre.name}}{{", " if not loop.last}}
+              <a href = '{{url_for('genres')}}#{{genre.genre_id}}'>{{genre.name}}{{", " if not loop.last}}</a>
             {% endfor %}
           </li>
         </ul>

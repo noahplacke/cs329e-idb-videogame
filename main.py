@@ -53,7 +53,8 @@ def games():
 
 @app.route('/genres/')
 def genres():
-	return render_template('genres.html')
+  genres = db.session.query(Genre).join((Game, Genre.games)).all()
+  return render_template('genres.html', genres = genres)
 
 @app.route('/companies/')
 def companies():
