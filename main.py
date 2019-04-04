@@ -11,9 +11,9 @@ def games():
   field = request.args.get('field')
   direction = request.args.get('direction')
   if field == "name":
-    games = db.session.query(Game).join((Genre, Game.genres)).order_by(Game.name.asc()).all()
+    games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.name.asc()).all()
   else:
-    games = db.session.query(Game).join((Genre, Game.genres)).all()
+    games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).all()
   return render_template('games.html', games = games)
 
 @app.route('/genres/')
