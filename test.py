@@ -41,7 +41,28 @@ class DBTestCases(unittest.TestCase):
     self.assertEqual(str(r.url), 'google.com')
     db.session.query(Genre).filter_by(id = '9999').delete()
     db.session.commit()
+  def test_game_insert_4(self):
     
+    s = Game(game_id='1234', name = '123th Game', rating = '4.7', companies = 'Nintendo')
+    db.session.add(s)
+    db.session.commit()
+    r = db.session.query(Game).filter_by(game_id = '123').one()
+    self.assertEqual(str(r.game_id), '1234')
+    self.assertEqual(str(r.rating), '4.7')
+    self.assertEqual(str(r.companies), 'Nintendo')
+    db.session.query(Game).filter_by(game_id = '1234').delete()
+    db.session.commit()
+  def test_game_insert_5(self):
+    
+    s = Genre(id='23', name = 'Shooting', url = 'google.com')
+    db.session.add(s)
+    db.session.commit()
+    r = db.session.query(Genre).filter_by(id = '23').one()
+    self.assertEqual(str(r.id), '23')
+    self.assertEqual(str(r.name), 'Shooting')
+    self.assertEqual(str(r.url), 'google.com')
+    db.session.query(Genre).filter_by(id = '23').delete()
+    db.session.commit()
 	
 if __name__ == '__main__':
   unittest.main() 
