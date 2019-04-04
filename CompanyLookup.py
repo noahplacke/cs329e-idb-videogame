@@ -17,6 +17,19 @@ def find_existing_companies():
 
   return company_ids
 
+def find_all_companies():
+  games = load_json('games.json')
+  existing_ids = find_existing_companies()
+  missing_ids = []
+
+  for game in games['Games']:
+    companies = game['involved_companies']
+
+    for company_id in companies:
+      missing_ids.append(company_id)
+
+  missing_ids_dedup = list(set(missing_ids))
+  return missing_ids_dedup
 
 def find_missing_companies():
   games = load_json('games.json')
@@ -33,7 +46,32 @@ def find_missing_companies():
   missing_ids_dedup = list(set(missing_ids))
   return missing_ids_dedup
 
+def find_existing_games():
+  games = load_json('games.json')
+  game_ids = []
+
+  for game in games['Games']:
+    game_ids.append(game['id'])
+
+  return game_ids
+
+def find_missing_games():
+  companies = load_json('companies.json')
+  existing_ids = find_existing_games()
+  missing_ids = []
+
+  for company in companies['Companies']:
+    games = company['developed']
+
+    for game_id in games:
+      if (game_id not in existing_ids) and (game_id not in missing_ids):
+        missing_ids.append(game_id)
+
+  return missing_ids
+
 def split_list(l):
+  missing_ids_dedup = list(set(missing_ids))
+  return missing_ids_dedup
   idx = 0
   groups = []
   while idx < len(l):
@@ -56,5 +94,9 @@ def main():
   print("EXISTING:", find_existing_companies())
   print("MISSING:", grouped_cos)
   format_groups(grouped_cos)
+
+  print("ALL")
+  print(find_all_companies())
+  print(len(find_all_companies()))
 
 main() 
