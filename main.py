@@ -53,8 +53,22 @@ def games():
 
 @app.route('/genres/')
 def genres():
-  genres = db.session.query(Genre).join((Game, Genre.games)).all()
+  field = request.args.get('field')
+  direction = request.args.get('direction')
+
+  if field == "name":
+    if direction == "desc":
+      genres = db.session.query(Genre).join((Genre, Game.genres)).order_by(Genre.name.desc()).all()
+    else:
+      genres = db.session.query(Genre).join((Genre, Game.genres)).order_by(Genre.name.asc()).all()
+
+  else:
+    genres = db.session.query(Genre).join((Game, Genre.games)).all()
   return render_template('genres.html', genres = genres)
+
+
+
+
 
 @app.route('/companies/')
 def companies():
