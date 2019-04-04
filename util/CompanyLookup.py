@@ -61,17 +61,16 @@ def find_missing_games():
   missing_ids = []
 
   for company in companies['Companies']:
-    games = company['developed']
+    if 'developed' in company:
+      games = company['developed']
+      for game_id in games:
+        if (game_id not in existing_ids) and (game_id not in missing_ids):
+          missing_ids.append(game_id)
 
-    for game_id in games:
-      if (game_id not in existing_ids) and (game_id not in missing_ids):
-        missing_ids.append(game_id)
-
-  return missing_ids
-
-def split_list(l):
   missing_ids_dedup = list(set(missing_ids))
   return missing_ids_dedup
+
+def split_list(l):
   idx = 0
   groups = []
   while idx < len(l):
@@ -89,7 +88,12 @@ def format_groups(g):
   for group in g:
     print("id = ", tuple(group), "|", end=" ")
 
+def print_curl(g):
+  for group in g:
+    print("curl -H 'user-key: 401df87a02a8f4c13842a135bad415a4' -d 'fields name, rating, genres, involved_companies, url, summary; limit 50; where id = ", tuple(group), ";' 'https://api-v3.igdb.com/games/' >> newgames.json", sep="")
+
 def main():
+  """
   grouped_cos = split_list(find_missing_companies())
   print("EXISTING:", find_existing_companies())
   print("MISSING:", grouped_cos)
@@ -98,5 +102,9 @@ def main():
   print("ALL")
   print(find_all_companies())
   print(len(find_all_companies()))
+
+  print("-----")
+  """
+  print_curl(split_list(find_missing_games()))
 
 main() 

@@ -1,24 +1,79 @@
-from flask import render_template
-from create_db import app, db, Game, Genre, create_games
+from flask import render_template, request
+from create_db import app, db, Game, Genre, Company, create_games
 import subprocess
 
 @app.route('/')
 def index():
 	return render_template('index.html')
 
+
+
 @app.route('/games/')
 def games():
-  #games = db.session.query(Game).all()
-  games = db.session.query(Game).join((Genre, Game.genres)).all()
-  return render_template('games2.html', games = games)
+  field = request.args.get('field')
+  direction = request.args.get('direction')
+
+  if field == "name":
+    if direction == "desc":
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.name.desc()).all()
+    else:
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.name.asc()).all()
+
+  elif field == "summary":
+    if direction == "desc":
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.summary.desc()).all()
+    else:
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.summary.asc()).all()
+
+  elif field == "genre":
+    if direction == "desc":
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Genre.name.desc()).all()
+    else:
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Genre.name.asc()).all()
+
+  elif field == "company":
+    if direction == "desc":
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Company.name.desc()).all()
+    else:
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Company.name.asc()).all()
+
+  elif field == "rating":
+    if direction == "desc":
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.rating.desc()).all()
+    else:
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.rating.asc()).all()
+
+  else:
+    games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).all()
+
+  return render_template('games.html', games = games)
+
+
+
 
 @app.route('/genres/')
 def genres():
-	return render_template('genres.html')
+  field = request.args.get('field')
+  direction = request.args.get('direction')
+
+  if field == "name":
+    if direction == "desc":
+      genres = db.session.query(Genre).join((Game, Genre.games)).order_by(Genre.name.desc()).all()
+    else:
+      genres = db.session.query(Genre).join((Game, Genre.games)).order_by(Genre.name.asc()).all()
+
+  else:
+    genres = db.session.query(Genre).join((Game, Genre.games)).all()
+  return render_template('genres.html', genres = genres)
+
+
+
+
 
 @app.route('/companies/')
 def companies():
-	return render_template('companies.html')
+  companies = db.session.query(Company).join((Game, Company.games)).all()
+  return render_template('companies.html', companies = companies)
 	
 @app.route('/about/')
 def about():

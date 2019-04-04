@@ -38,6 +38,7 @@ class Genre(db.Model):
 	genre_id = db.Column(db.Integer, primary_key = True)
 	name = db.Column(db.String(250), nullable = False)
 	url = db.Column(db.String(500), nullable = False)
+	description = db.Column(db.String(5000), nullable = False)
 
 class Company(db.Model):
   __tablename__ = 'companies'
@@ -50,5 +51,4 @@ class Company(db.Model):
 
 db.drop_all()
 db.create_all()
-print("tables created")
 # End of models.py
