@@ -59,7 +59,7 @@ class DBTestCases(unittest.TestCase):
     db.session.add(s)
     db.session.commit()
     r = db.session.query(Genre).filter_by(id = '23').one()
-    self.assertEqual(str(r.id), '23')
+    self.assertEqual(str(r.genre_id), '23')
     self.assertEqual(str(r.name), 'Shooting')
     self.assertEqual(str(r.url), 'google.com')
     db.session.query(Genre).filter_by(id = '23').delete()
