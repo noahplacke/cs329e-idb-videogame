@@ -14,17 +14,33 @@ def load_json(filename):
 # game1.genres.append(genre1)
 
 def create_games():
-  games = load_json('games.json')
+  games = load_json('newgames.json')
 
   for oneGame in games['Games']:
   
     game_id = oneGame['id']
     name = oneGame['name']
-    rating = oneGame['rating']
-    summary = oneGame['summary']
-    url = oneGame['url']
-    genres = oneGame['genres']
-    companies = oneGame['involved_companies']
+    
+    if 'rating' in oneGame:
+      rating = oneGame['rating']
+    else:
+      rating = 0.0
+    if 'summary' in oneGame:
+      summary = oneGame['summary']
+    else:
+      summary = ''
+    if 'url' in oneGame:
+      url = oneGame['url']
+    else:
+      url = ''
+    if 'genres' in oneGame:
+      genres = oneGame['genres']
+    else:
+      genres = []
+    if 'involved_companies' in oneGame:
+      companies = oneGame['involved_companies']
+    else:
+      companies = []
 
     newGame = Game(game_id = game_id, name = name, rating = rating, summary = summary, url = url)
     db.session.add(newGame)
@@ -35,6 +51,7 @@ def create_games():
       db.session.execute(statement)
       db.session.commit()
 
+    """
     for company_id in companies:
       try:
         statement = game_companies.insert().values(game_id = game_id, company_id = company_id)
@@ -44,7 +61,7 @@ def create_games():
       except:
         print("failed for", game_id, company_id)
         db.session.rollback()
-
+      """
 def create_genres():
     genres = load_json('genres.json')
 
@@ -52,9 +69,9 @@ def create_genres():
         name = oneGenre['name']
         id = oneGenre['id']
         url = oneGenre['url']
+        description = oneGenre['description']
 
-
-        newGenre = Genre(genre_id = id, name = name, url = url)
+        newGenre = Genre(genre_id = id, name = name, url = url, description = description)
 
         # After I create the book, I can then add it to my session.
         db.session.add(newGenre)
@@ -67,6 +84,11 @@ def create_companies():
   for oneCompany in companies['Companies']:
     company_id = oneCompany['id']
     name = oneCompany['name']
+
+    if 'developed' in oneCompany:
+      games = oneCompany['developed']
+    else:
+      games = []
 
     description = ''
     if 'description' in oneCompany:
@@ -83,11 +105,15 @@ def create_companies():
     # commit the session to my DB.
     db.session.commit()
 
+    for game_id in games:
+      try:
+        statement = game_companies.insert().values(game_id = game_id, company_id = company_id)
+        db.session.execute(statement)
+        db.session.commit()
+      except:
+        db.session.rollback()
 
 create_genres()
-print("genres done")
-create_companies()
-print("companies done")
 create_games()
-print("games done")
+create_companies()
 # end of create_db.py
