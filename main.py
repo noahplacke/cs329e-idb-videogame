@@ -105,6 +105,12 @@ def companies():
     else:
       companies = db.session.query(Company).join((Game, Company.games)).order_by(Company.description.asc()).all()
 
+  elif field == "games":
+    if direction == "desc":
+      companies = db.session.query(Company).join((Game, Company.games)).order_by(Game.name.desc()).all()
+    else:
+      companies = db.session.query(Company).join((Game, Company.games)).order_by(Game.name.asc()).all()
+
   elif field == "country":
     if direction == "desc":
       companies = db.session.query(Company).join((Game, Company.games)).order_by(Company.country.desc()).all()
