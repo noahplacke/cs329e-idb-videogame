@@ -48,46 +48,29 @@
 
 
 
-
-	<div class = "cardGrid">
-
+  <table class = "table table-bordered table-hover">
+    <thead class="thead-light">
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+    </thead>
   {% if genres == [] %}
     <p>No genres exist</p>
 
-
-
   {% else %}
     {% for genre in genres %}
-
-
-      <div class="card w-25" id = {{genre.genre_id}}>
-        <div class = "cropImage">
-          <img src = "../static/images/platform.jpeg" class = "card-img-top">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">{{genre.name}}</h5>
-            <p class="card-text">
-              {{genre.description}}
-            </p>
-          </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
-            {% for game in genre.games %}
-              <a href = "{{url_for('games')}}#{{game.game_id}}">{{game.name}}{{", " if not loop.last}}</a>
-            {% endfor %}
-          </li>
-        </ul>
-      </div>
-
-
+      <tr id={{genre.genre_id}}>
+        <td>{{genre.name}}</td>
+        <td>{{genre.description}}</td>
+      </tr>
     {% endfor %}
   {% endif %}
+  </table>
 
-	</div>
 
- <div class="citation">
-    <p>Content for this page from Wikipedia</p>
-  </div>
+
+
 
 {% endblock %}
 
