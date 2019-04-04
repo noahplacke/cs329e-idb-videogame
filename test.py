@@ -32,13 +32,14 @@ class DBTestCases(unittest.TestCase):
 
   def test_genre_insert_1(self):
     
-    s = Genre(genre_id='9999', name = 'GenreTest', url = 'google.com')
+    s = Genre(genre_id='9999', name = 'GenreTest', url = 'google.com', description = 'what a cool genre')
     db.session.add(s)
     db.session.commit()
     r = db.session.query(Genre).filter_by(genre_id = '9999').one()
     self.assertEqual(str(r.genre_id), '9999')
     self.assertEqual(str(r.name), 'GenreTest')
     self.assertEqual(str(r.url), 'google.com')
+    self.assertEqual(str(r.description), 'what a cool genre')
     db.session.query(Genre).filter_by(genre_id = '9999').delete()
     db.session.commit()
     
