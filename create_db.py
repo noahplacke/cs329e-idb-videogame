@@ -104,7 +104,10 @@ def create_companies():
 
     if 'start_date' in oneCompany:
         date_founded_unix = oneCompany['start_date']
-        date_founded = datetime.utcfromtimestamp(date_founded_unix).strftime('%Y-%m-%d')
+        if date_founded_unix < 86400:
+            date_founded_unix = 86400
+        else:
+            date_founded = datetime.utcfromtimestamp(date_founded_unix).strftime('%Y-%m-%d')
 
     newCompany = Company(company_id = company_id, name = name, description = description, logo = logo, country = country, date_founded = date_founded)
 

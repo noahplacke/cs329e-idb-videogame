@@ -1,7 +1,7 @@
 import os
 import sys
 import unittest
-from models import db, Game, Genre
+from models import db, Game, Genre, Company
 
 class DBTestCases(unittest.TestCase):
   def test_self_1(self):
@@ -131,8 +131,71 @@ class DBTestCases(unittest.TestCase):
     self.assertEqual(str(r.description), 'comp genre')
     db.session.query(Genre).filter_by(genre_id = '8323').delete()
     db.session.commit()
+	
+  def test_company_insert_1(self):
 
+    s = Company(company_id='626', name = 'stitch corp', country = '22', description = 'a new company')
+    db.session.add(s)
+    db.session.commit()
+    r = db.session.query(Company).filter_by(company_id = '626').one()
+    self.assertEqual(str(r.company_id), '626')
+    self.assertEqual(str(r.name), 'stitch corp')
+    self.assertEqual(str(r.country), '22')
+    self.assertEqual(str(r.description), 'a new company')
+    db.session.query(Company).filter_by(company_id = '626').delete()
+    db.session.commit()
 
+  def test_company_insert_2(self):
+
+    s = Company(company_id='6789', name = 'soulja inc', country = '77', description = 'soulja boy tell em')
+    db.session.add(s)
+    db.session.commit()
+    r = db.session.query(Company).filter_by(company_id = '6789').one()
+    self.assertEqual(str(r.company_id), '6789')
+    self.assertEqual(str(r.name), 'soulja inc')
+    self.assertEqual(str(r.country), '77')
+    self.assertEqual(str(r.description), 'soulja boy tell em')
+    db.session.query(Company).filter_by(company_id = '6789').delete()
+    db.session.commit()
+	
+  def test_company_insert_3(self):
+
+    s = Company(company_id='365', name = 'pizza pie', country = '85', description = 'its hot')
+    db.session.add(s)
+    db.session.commit()
+    r = db.session.query(Company).filter_by(company_id = '365').one()
+    self.assertEqual(str(r.company_id), '365')
+    self.assertEqual(str(r.name), 'pizza pie')
+    self.assertEqual(str(r.country), '85')
+    self.assertEqual(str(r.description), 'its hot')
+    db.session.query(Company).filter_by(company_id = '365').delete()
+    db.session.commit()
+	
+  def test_company_insert_4(self):
+
+    s = Company(company_id='999', name = 'final co', country = '105', description = 'is it the last?')
+    db.session.add(s)
+    db.session.commit()
+    r = db.session.query(Company).filter_by(company_id = '999').one()
+    self.assertEqual(str(r.company_id), '999')
+    self.assertEqual(str(r.name), 'final co')
+    self.assertEqual(str(r.country), '105')
+    self.assertEqual(str(r.description), 'is it the last?')
+    db.session.query(Company).filter_by(company_id = '999').delete()
+    db.session.commit()
+
+  def test_company_insert_5(self):
+
+    s = Company(company_id='69', name = 'uno mas', country = '219', description = 'es el final')
+    db.session.add(s)
+    db.session.commit()
+    r = db.session.query(Company).filter_by(company_id = '69').one()
+    self.assertEqual(str(r.company_id), '69')
+    self.assertEqual(str(r.name), 'uno mas')
+    self.assertEqual(str(r.country), '219')
+    self.assertEqual(str(r.description), 'es el final')
+    db.session.query(Company).filter_by(company_id = '69').delete()
+    db.session.commit()
 
 if __name__ == '__main__':
   unittest.main()
