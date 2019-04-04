@@ -10,7 +10,7 @@ def index():
 def games():
   #games = db.session.query(Game).all()
   games = db.session.query(Game).join((Genre, Game.genres)).all()
-  return render_template('games2.html', games = games)
+  return render_template('games.html', games = games)
 
 @app.route('/genres/')
 def genres():
