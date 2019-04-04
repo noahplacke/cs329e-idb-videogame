@@ -34,15 +34,17 @@ def create_games():
       statement = game_genres.insert().values(game_id = game_id, genre_id = genre_id)
       db.session.execute(statement)
       db.session.commit()
-    """
+
     for company_id in companies:
       try:
         statement = game_companies.insert().values(game_id = game_id, company_id = company_id)
         db.session.execute(statement)
         db.session.commit()
+        print("succeeded for", game_id, company_id)
       except:
         print("failed for", game_id, company_id)
-    """
+        db.session.rollback()
+
 def create_genres():
     genres = load_json('genres.json')
 
@@ -59,25 +61,20 @@ def create_genres():
         # commit the session to my DB.
         db.session.commit()
 
-
-"""
-  company_id = db.Column(db.Integer, primary_key = True)
-  name = db.Column(db.String(250), nullable = True)
-  description = db.Column(db.String(1000), nullable = True)
-  logo = db.Column(db.Integer, nullable = True)
-  country = db.Column(db.Integer, nullable = True)
-  games = db.Column(db.String(1000), nullable = True)
-"""
 def create_companies():
   companies = load_json('companies.json')
 
   for oneCompany in companies['Companies']:
     company_id = oneCompany['id']
     name = oneCompany['name']
-    description = oneCompany['description']
-    logo = oneCompany['logo']
-    games = oneCompany['developed']
 
+    description = ''
+    if 'description' in oneCompany:
+      description = oneCompany['description']
+
+    logo = 0
+    if 'logo' in oneCompany:
+      logo = oneCompany['logo']
 
     newCompany = Company(company_id = company_id, name = name, description = description, logo = logo)
 
@@ -88,6 +85,9 @@ def create_companies():
 
 
 create_genres()
+print("genres done")
 create_companies()
+print("companies done")
 create_games()
+print("games done")
 # end of create_db.py

@@ -1,5 +1,5 @@
 from flask import render_template
-from create_db import app, db, Game, create_games
+from create_db import app, db, Game, Genre, create_games
 
 @app.route('/')
 def index():
@@ -7,7 +7,8 @@ def index():
 
 @app.route('/games/')
 def games():
-  games = db.session.query(Game).all()
+  #games = db.session.query(Game).all()
+  games = db.session.query(Game).join((Genre, Game.genres)).all()
   return render_template('games2.html', games = games)
 
 @app.route('/genres/')

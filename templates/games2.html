@@ -55,7 +55,11 @@
           </div>
         <ul class="list-group list-group-flush">
           <li class="list-group-item"><a href="#" class="card-link">{{i.companies}}</a></li>
-          <li class="list-group-item"><a href="#" class="card-link">{{i.genres}}</a></li>
+          <li class="list-group-item">
+            {% for genre in i.genres %}
+              <p>{{genre.name}}</p>
+            {% endfor %}
+          </li>
         </ul>
           <div class="card-footer text-muted">Rating: {{i.rating}}</div>
       </div>
