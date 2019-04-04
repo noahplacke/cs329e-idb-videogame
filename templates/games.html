@@ -19,8 +19,41 @@
 {% extends "navbar.html" %}
 {% block content %}
 
+
+
 	<div id = "header">Games</div>
+
+
+
+<form action = "{{url_for('games')}}">
+
+  <input type = "text" name = "field"></input>
+
+  <input type = "text" name = "direction"></input>
+
+  <input type="submit" value="Submit">
+
+</form>
+
+
+
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+
+
+
+
 	<div class = "cardGrid">
+
 
 		<div class="card w-25" id = "super_smash_bros">
 			<div class = "cropImage">
@@ -39,10 +72,17 @@
 		  	<div class="card-footer text-muted">Rated Everyone 10+</div>
 		</div>
 
+
+
   {% if games == [] %}
     <p>No games exist</p>
+
+
+
   {% else %}
     {% for i in games %}
+
+
       <div class="card w-25" id = {{i.game_id}}>
         <div class = "cropImage">
           <img src = "../static/images/supersmashbros.jpg" class = "card-img-top">
@@ -63,9 +103,15 @@
         </ul>
           <div class="card-footer text-muted">Rating: {{i.rating}}</div>
       </div>
+
+
     {% endfor %}
   {% endif %}
   </div>
+
+
+
+
 {% endblock %}
 
 </body>

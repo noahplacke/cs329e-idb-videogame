@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, request
 from create_db import app, db, Game, Genre, create_games
 import subprocess
 
@@ -8,8 +8,12 @@ def index():
 
 @app.route('/games/')
 def games():
-  #games = db.session.query(Game).all()
-  games = db.session.query(Game).join((Genre, Game.genres)).all()
+  field = request.args.get('field')
+  direction = request.args.get('direction')
+  if field == "name":
+    games = db.session.query(Game).join((Genre, Game.genres)).order_by(Game.name.asc()).all()
+  else:
+    games = db.session.query(Game).join((Genre, Game.genres)).all()
   return render_template('games.html', games = games)
 
 @app.route('/genres/')
