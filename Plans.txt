@@ -1,3 +1,0 @@
-Games: titles, # players, rating, genres, companies
-Companies: name, location, employees, yelp, value
-Genres: demographic, popularity (copies sold), market share, subgenres
