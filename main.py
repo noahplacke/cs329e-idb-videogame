@@ -27,15 +27,15 @@ def games():
 
   elif field == "genre":
     if direction == "desc":
-      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.genre.desc()).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Genre.name.desc()).all()
     else:
-      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.genre.asc()).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Genre.name.asc()).all()
 
   elif field == "company":
     if direction == "desc":
-      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.companies.desc()).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Company.name.desc()).all()
     else:
-      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.companies.asc()).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Company.name.asc()).all()
 
   elif field == "rating":
     if direction == "desc":
