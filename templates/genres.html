@@ -59,6 +59,7 @@
       <th>Name</th>
       <th>Description</th>
       <th>Games</th>
+      <th>Popularity</th>
     </tr>
     </thead>
   {% if genres == [] %}
@@ -74,6 +75,7 @@
             <a href = "{{url_for('games')}}#{{game.game_id}}">{{game.name}}{{", " if not loop.last}}</a>
           {% endfor %}
         </td>
+        <td>{{ range(0, 100) | random }}</td>
       </tr>
     {% endfor %}
   {% endif %}
