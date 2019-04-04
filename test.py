@@ -20,13 +20,13 @@ class DBTestCases(unittest.TestCase):
 	
   def test_game_insert_2(self):
     
-    s = Game(game_id='99', name = '99th Game', rating = '4.3', companies = 'Rockstar Games')
+    s = Game(game_id='99', name = '99th Game', rating = '4.3', summary = 'I love this game')
     db.session.add(s)
     db.session.commit()
     r = db.session.query(Game).filter_by(game_id = '99').one()
     self.assertEqual(str(r.game_id), '99')
     self.assertEqual(str(r.rating), '4.3')
-    self.assertEqual(str(r.companies), 'Rockstar Games')
+    self.assertEqual(str(r.summary), 'I love this game')
     db.session.query(Game).filter_by(game_id = '99').delete()
     db.session.commit()
 
