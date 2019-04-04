@@ -3,7 +3,7 @@ import json
 from models import app, db, Genre, Game, Company, game_genres, game_companies
 
 def load_json(filename):
-    with open(filename, encoding="utf8") as file:
+    with open(filename, encoding = "utf8") as file:
         jsn = json.load(file)
         file.close()
 
