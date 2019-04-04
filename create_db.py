@@ -98,7 +98,10 @@ def create_companies():
     if 'logo' in oneCompany:
       logo = oneCompany['logo']
 
-    newCompany = Company(company_id = company_id, name = name, description = description, logo = logo)
+    if 'country' in oneCompany:
+        country = oneCompany['country']
+
+    newCompany = Company(company_id = company_id, name = name, description = description, logo = logo, country = country)
 
     # After I create the book, I can then add it to my session.
     db.session.add(newCompany)
