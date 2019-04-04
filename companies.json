@@ -1,5 +1,5 @@
 {
-"Companies": [
+  "Companies": [
   {
     "id": 13710,
     "country": 752,
@@ -10,7 +10,8 @@
       74977
     ],
     "logo": 1396,
-    "name": "Tomolo Games"
+    "name": "Tomolo Games",
+    "start_date": 1494547200
   },
   {
     "id": 16349,
@@ -21,7 +22,8 @@
       109260
     ],
     "logo": 1752,
-    "name": "Lightbound Studios"
+    "name": "Lightbound Studios",
+    "start_date": 1406764800
   },
   {
     "id": 4774,
@@ -33,7 +35,8 @@
       27698
     ],
     "logo": 634,
-    "name": "Chainsawesome Games"
+    "name": "Chainsawesome Games",
+    "start_date": 1443571200
   },
   {
     "id": 9730,
@@ -44,7 +47,8 @@
       27278
     ],
     "logo": 776,
-    "name": "Clifftop Games"
+    "name": "Clifftop Games",
+    "start_date": 1421884800
   },
   {
     "id": 15696,
@@ -164,7 +168,8 @@
       112658
     ],
     "logo": 463,
-    "name": "Bandai Namco Entertainment"
+    "name": "Bandai Namco Entertainment",
+    "start_date": -441936000
   },
   {
     "id": 16309,
@@ -175,7 +180,8 @@
       112983
     ],
     "logo": 1940,
-    "name": "Flow Fire Games"
+    "name": "Flow Fire Games",
+    "start_date": 1430179200
   },
   {
     "id": 10319,
@@ -187,7 +193,8 @@
       114156
     ],
     "logo": 1497,
-    "name": "Madmind Studio"
+    "name": "Madmind Studio",
+    "start_date": 1483142400
   },
   {
     "id": 7902,
@@ -218,7 +225,8 @@
       90108
     ],
     "logo": 1149,
-    "name": "Nintendo EPD"
+    "name": "Nintendo EPD",
+    "start_date": 1442361600
   },
   {
     "id": 5529,
@@ -239,7 +247,8 @@
       86224
     ],
     "logo": 1555,
-    "name": "Sinoze Co., Ltd."
+    "name": "Sinoze Co., Ltd.",
+    "start_date": 1356825600
   },
   {
     "id": 9108,
@@ -250,7 +259,8 @@
       37184
     ],
     "logo": 1389,
-    "name": "Chimera Entertainment"
+    "name": "Chimera Entertainment",
+    "start_date": 1167436800
   },
   {
     "id": 14933,
@@ -260,7 +270,8 @@
       89561
     ],
     "logo": 1544,
-    "name": "Coffee Owl Games"
+    "name": "Coffee Owl Games",
+    "start_date": 1514592000
   },
   {
     "id": 10359,
@@ -271,7 +282,8 @@
       26674
     ],
     "logo": 1453,
-    "name": "Mi\u0027pu\u0027mi Games"
+    "name": "Mi\u0027pu\u0027mi Games",
+    "start_date": 1262131200
   },
   {
     "id": 14440,
@@ -281,7 +293,8 @@
       82117
     ],
     "logo": 1739,
-    "name": "Two Point Studios"
+    "name": "Two Point Studios",
+    "start_date": 1469491200
   },
   {
     "id": 10219,
@@ -291,7 +304,8 @@
       19817
     ],
     "logo": 835,
-    "name": "ebb Software"
+    "name": "ebb Software",
+    "start_date": 1377993600
   },
   {
     "id": 223,
@@ -306,7 +320,8 @@
       10615
     ],
     "logo": 968,
-    "name": "Edge of Reality"
+    "name": "Edge of Reality",
+    "start_date": 914976000
   },
   {
     "id": 17078,
@@ -316,7 +331,8 @@
       90037
     ],
     "logo": 1929,
-    "name": "LINE Games Corporation"
+    "name": "LINE Games Corporation",
+    "start_date": 1531094400
   },
   {
     "id": 15416,
@@ -339,7 +355,8 @@
       13359
     ],
     "logo": 611,
-    "name": "Pixel Pi Games"
+    "name": "Pixel Pi Games",
+    "start_date": 1369008000
   },
   {
     "id": 108,
@@ -370,7 +387,8 @@
       102584
     ],
     "logo": 7,
-    "name": "Techland"
+    "name": "Techland",
+    "start_date": 694051200
   },
   {
     "id": 803,
@@ -396,7 +414,8 @@
       115282
     ],
     "logo": 1223,
-    "name": "Arika Co., Ltd."
+    "name": "Arika Co., Ltd.",
+    "start_date": 815184000
   },
   {
     "id": 6084,
@@ -408,7 +427,8 @@
       11693
     ],
     "logo": 528,
-    "name": "Yakiniku Banzai"
+    "name": "Yakiniku Banzai",
+    "start_date": 1344902400
   },
   {
     "id": 4824,
@@ -420,7 +440,8 @@
       51823
     ],
     "logo": 750,
-    "name": "Defiant Development"
+    "name": "Defiant Development",
+    "start_date": 1293667200
   },
   {
     "id": 747,
@@ -437,7 +458,8 @@
       53276
     ],
     "logo": 421,
-    "name": "Tarsier Studios"
+    "name": "Tarsier Studios",
+    "start_date": 1088640000
   },
   {
     "id": 13473,
@@ -449,7 +471,8 @@
       111253
     ],
     "logo": 1351,
-    "name": "Devespresso Games"
+    "name": "Devespresso Games",
+    "start_date": 1419897600
   },
   {
     "id": 2103,
@@ -459,7 +482,8 @@
       8577
     ],
     "logo": 819,
-    "name": "Aksys Games"
+    "name": "Aksys Games",
+    "start_date": 1152835200
   },
   {
     "id": 11759,
@@ -494,7 +518,8 @@
       98082
     ],
     "logo": 567,
-    "name": "Experience Inc."
+    "name": "Experience Inc.",
+    "start_date": 1175385600
   },
   {
     "id": 10897,
@@ -504,7 +529,8 @@
       23904
     ],
     "logo": 914,
-    "name": "Divine Gaming"
+    "name": "Divine Gaming",
+    "start_date": 1419984000
   },
   {
     "id": 3010,
@@ -582,7 +608,8 @@
       101063
     ],
     "logo": 1235,
-    "name": "Traveller\u0027s Tales"
+    "name": "Traveller\u0027s Tales",
+    "start_date": 630979200
   },
   {
     "id": 1009,
@@ -606,7 +633,8 @@
       115301
     ],
     "logo": 1382,
-    "name": "RedLynx"
+    "name": "RedLynx",
+    "start_date": 946684800
   },
   {
     "id": 2684,
@@ -618,7 +646,8 @@
       26268
     ],
     "logo": 1004,
-    "name": "Endlessfluff Games"
+    "name": "Endlessfluff Games",
+    "start_date": 1291766400
   },
   {
     "id": 2233,
@@ -639,7 +668,8 @@
       71489
     ],
     "logo": 1256,
-    "name": "Red Entertainment"
+    "name": "Red Entertainment",
+    "start_date": 975888000
   },
   {
     "id": 7853,
@@ -650,7 +680,8 @@
       26808
     ],
     "logo": 1992,
-    "name": "Jumpsuit Entertainment"
+    "name": "Jumpsuit Entertainment",
+    "start_date": 1409097600
   },
   {
     "id": 9907,
@@ -662,7 +693,8 @@
       26844
     ],
     "logo": 782,
-    "name": "Lone Hero Studios"
+    "name": "Lone Hero Studios",
+    "start_date": 1417219200
   },
   {
     "id": 10426,
@@ -672,7 +704,8 @@
       21062
     ],
     "logo": 1180,
-    "name": "PagodaWest Games"
+    "name": "PagodaWest Games",
+    "start_date": 1325203200
   },
   {
     "id": 16837,
@@ -682,7 +715,8 @@
       111148
     ],
     "logo": 1866,
-    "name": "Grunka Munka Games"
+    "name": "Grunka Munka Games",
+    "start_date": 1483056000
   },
   {
     "id": 95,
@@ -705,7 +739,8 @@
       75566
     ],
     "logo": 1384,
-    "name": "Disney Interactive"
+    "name": "Disney Interactive",
+    "start_date": 820368000
   },
   {
     "id": 10075,
@@ -725,7 +760,8 @@
       75999
     ],
     "logo": 898,
-    "name": "THQ Nordic"
+    "name": "THQ Nordic",
+    "start_date": 1470960000
   },
   {
     "id": 4356,
@@ -736,7 +772,8 @@
       11233
     ],
     "logo": 1009,
-    "name": "Giant Sparrow"
+    "name": "Giant Sparrow",
+    "start_date": 1237593600
   },
   {
     "id": 4509,
@@ -760,7 +797,8 @@
       115538
     ],
     "logo": 1956,
-    "name": "YMCAT"
+    "name": "YMCAT",
+    "start_date": 441676800
   },
   {
     "id": 5202,
@@ -771,7 +809,8 @@
       9736
     ],
     "logo": 442,
-    "name": "Seepia Games"
+    "name": "Seepia Games",
+    "start_date": 1326326400
   },
   {
     "id": 469,
@@ -781,7 +820,8 @@
       3219
     ],
     "logo": 988,
-    "name": "JoWooD Entertainment AG"
+    "name": "JoWooD Entertainment AG",
+    "start_date": 820281600
   },
   {
     "id": 14297,
@@ -804,7 +844,8 @@
       21604
     ],
     "logo": 511,
-    "name": "Broken Rules"
+    "name": "Broken Rules",
+    "start_date": 1240444800
   },
   {
     "id": 12487,
@@ -814,7 +855,8 @@
       28164
     ],
     "logo": 1360,
-    "name": "Anvil Game Studios"
+    "name": "Anvil Game Studios",
+    "start_date": 1402963200
   },
   {
     "id": 6151,
@@ -825,97 +867,6 @@
     ],
     "logo": 535,
     "name": "Eneme Entertainment"
-  },
-  {
-    "id": 7557,
-    "country": 826,
-    "developed": [
-      1405
-    ],
-    "name": "Reloaded Games"
-  },
-  {
-    "id": 4751,
-    "developed": [
-      8968,
-      28933
-    ],
-    "name": "Soviet Games"
-  },
-  {
-    "id": 11975,
-    "name": "WhisperGames"
-  },
-  {
-    "id": 18353,
-    "name": "Nelke Planning"
-  },
-  {
-    "id": 3116,
-    "country": 276,
-    "developed": [
-      3699,
-      11381,
-      18327
-    ],
-    "name": "Funatics Development"
-  },
-  {
-    "id": 7531,
-    "name": "1C:InoCo"
-  },
-  {
-    "id": 4750,
-    "country": 840,
-    "developed": [
-      5539,
-      11912,
-      23929
-    ],
-    "name": "Free Fall Associates"
-  },
-  {
-    "id": 3117,
-    "country": 276,
-    "developed": [
-      2197
-    ],
-    "name": "Massive Development"
-  },
-  {
-    "id": 11977,
-    "developed": [
-      26909,
-      38782,
-      90135,
-      115905
-    ],
-    "name": "Dead Drop Studios LLC"
-  },
-  {
-    "id": 7519,
-    "developed": [
-      15034
-    ],
-    "name": "Nicklas Nygren"
-  },
-  {
-    "id": 7518,
-    "name": "TaleWorlds Entertainment"
-  },
-  {
-    "id": 7530,
-    "developed": [
-      15071
-    ],
-    "name": "StarWraith 3D Games LLC"
-  },
-  {
-    "id": 11976,
-    "developed": [
-      20342
-    ],
-    "name": "Lukas Navratil"
   }
 ]
 }

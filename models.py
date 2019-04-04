@@ -48,6 +48,7 @@ class Company(db.Model):
   description = db.Column(db.String(5000), nullable = True)
   logo = db.Column(db.Integer, nullable = True)
   country = db.Column(db.Integer, nullable = True)
+  date_founded = db.Column(db.String(250), nullable = True)
 
 db.drop_all()
 db.create_all()
