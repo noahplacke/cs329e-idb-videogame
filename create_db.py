@@ -1,6 +1,7 @@
 import json
 #from models import app, db, Game, Genre, Company
 from models import app, db, Genre, Game, Company, game_genres, game_companies
+from datetime import datetime
 
 def load_json(filename):
     with open(filename, encoding = "utf8") as file:
@@ -101,7 +102,11 @@ def create_companies():
     if 'country' in oneCompany:
         country = oneCompany['country']
 
-    newCompany = Company(company_id = company_id, name = name, description = description, logo = logo, country = country)
+    if 'start_date' in oneCompany:
+        date_founded_unix = oneCompany['start_date']
+        date_founded = datetime.utcfromtimestamp(date_founded_unix).strftime('%Y-%m-%d')
+
+    newCompany = Company(company_id = company_id, name = name, description = description, logo = logo, country = country, date_founded = date_founded)
 
     # After I create the book, I can then add it to my session.
     db.session.add(newCompany)
