@@ -74,6 +74,12 @@ def genres():
     else:
       genres = db.session.query(Genre).join((Game, Genre.games)).order_by(Game.name.asc()).all()
 
+  elif field == "url":
+    if direction == "desc":
+      genres = db.session.query(Genre).join((Game, Genre.games)).order_by(Genre.url.desc()).all()
+    else:
+      genres = db.session.query(Genre).join((Game, Genre.games)).order_by(Genre.url.asc()).all()
+
   else:
     genres = db.session.query(Genre).join((Game, Genre.games)).all()
   return render_template('genres.html', genres = genres)
@@ -104,6 +110,12 @@ def companies():
       companies = db.session.query(Company).join((Game, Company.games)).order_by(Company.country.desc()).all()
     else:
       companies = db.session.query(Company).join((Game, Company.games)).order_by(Company.country.asc()).all()
+
+  elif field == "date_founded":
+    if direction == "desc":
+      companies = db.session.query(Company).join((Game, Company.games)).order_by(Company.date_founded.desc()).all()
+    else:
+      companies = db.session.query(Company).join((Game, Company.games)).order_by(Company.date_founded.asc()).all()
 
   else:
     companies = db.session.query(Company).join((Game, Company.games)).all()
