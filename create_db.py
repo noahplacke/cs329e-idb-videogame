@@ -110,15 +110,10 @@ def create_companies():
         statement = game_companies.insert().values(game_id = game_id, company_id = company_id)
         db.session.execute(statement)
         db.session.commit()
-        print("succeeded for", game_id, company_id)
       except:
-        print("failed for", game_id, company_id)
         db.session.rollback()
 
 create_genres()
-print("genres done")
 create_games()
-print("games done")
 create_companies()
-print("companies done")
 # end of create_db.py

@@ -51,5 +51,4 @@ class Company(db.Model):
 
 db.drop_all()
 db.create_all()
-print("tables created")
 # End of models.py
