@@ -57,7 +57,7 @@
           <li class="list-group-item"><a href="#" class="card-link">{{i.companies}}</a></li>
           <li class="list-group-item">
             {% for genre in i.genres %}
-              <p>{{genre.name}}</p>
+              {{genre.name}}{{", " if not loop.last}}
             {% endfor %}
           </li>
         </ul>
