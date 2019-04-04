@@ -3,102 +3,122 @@
   {
     "id": 13,
     "name": "Simulator",
-    "url": "https://www.igdb.com/genres/simulator"
+    "url": "https://www.igdb.com/genres/simulator",
+  	"description": "about genre"
   },
   {
     "id": 24,
     "name": "Tactical",
-    "url": "https://www.igdb.com/genres/tactical"
+    "url": "https://www.igdb.com/genres/tactical",
+  	"description": "about genre"
   },
   {
     "id": 26,
     "name": "Quiz/Trivia",
-    "url": "https://www.igdb.com/genres/quiz-trivia"
+    "url": "https://www.igdb.com/genres/quiz-trivia",
+  	"description": "about genre"
   },
   {
     "id": 4,
     "name": "Fighting",
-    "url": "https://www.igdb.com/genres/fighting"
+    "url": "https://www.igdb.com/genres/fighting",
+  	"description": "about genre"
   },
   {
     "id": 15,
     "name": "Strategy",
-    "url": "https://www.igdb.com/genres/strategy"
+    "url": "https://www.igdb.com/genres/strategy",
+  	"description": "about genre"
   },
   {
     "id": 31,
     "name": "Adventure",
-    "url": "https://www.igdb.com/genres/adventure"
+    "url": "https://www.igdb.com/genres/adventure",
+  	"description": "about genre"
   },
   {
     "id": 12,
     "name": "Role-playing (RPG)",
-    "url": "https://www.igdb.com/genres/role-playing-rpg"
+    "url": "https://www.igdb.com/genres/role-playing-rpg",
+  	"description": "about genre"
   },
   {
     "id": 5,
     "name": "Shooter",
-    "url": "https://www.igdb.com/genres/shooter"
+    "url": "https://www.igdb.com/genres/shooter",
+  	"description": "about genre"
   },
   {
     "id": 7,
     "name": "Music",
-    "url": "https://www.igdb.com/genres/music"
+    "url": "https://www.igdb.com/genres/music",
+  	"description": "about genre"
   },
   {
     "id": 32,
     "name": "Indie",
-    "url": "https://www.igdb.com/genres/indie"
+    "url": "https://www.igdb.com/genres/indie",
+  	"description": "about genre"
   },
   {
     "id": 16,
     "name": "Turn-based strategy (TBS)",
-    "url": "https://www.igdb.com/genres/turn-based-strategy-tbs"
+    "url": "https://www.igdb.com/genres/turn-based-strategy-tbs",
+  	"description": "about genre"
   },
   {
     "id": 30,
     "name": "Pinball",
-    "url": "https://www.igdb.com/genres/pinball"
+    "url": "https://www.igdb.com/genres/pinball",
+  	"description": "about genre"
   },
   {
     "id": 9,
     "name": "Puzzle",
-    "url": "https://www.igdb.com/genres/puzzle"
+    "url": "https://www.igdb.com/genres/puzzle",
+  	"description": "about genre"
   },
   {
     "id": 11,
     "name": "Real Time Strategy (RTS)",
-    "url": "https://www.igdb.com/genres/real-time-strategy-rts"
+    "url": "https://www.igdb.com/genres/real-time-strategy-rts",
+  	"description": "about genre"
   },
   {
     "id": 25,
     "name": "Hack and slash/Beat \u0027em up",
-    "url": "https://www.igdb.com/genres/hack-and-slash-beat-em-up"
+    "url": "https://www.igdb.com/genres/hack-and-slash-beat-em-up",
+  	"description": "about genre"
   },
   {
     "id": 8,
     "name": "Platform",
-    "url": "https://www.igdb.com/genres/platform"
+    "url": "https://www.igdb.com/genres/platform",
+  	"description": "about genre"
   },
   {
     "id": 10,
     "name": "Racing",
-    "url": "https://www.igdb.com/genres/racing"
+    "url": "https://www.igdb.com/genres/racing",
+  	"description": "about genre"
   },
   {
     "id": 14,
     "name": "Sport",
-    "url": "https://www.igdb.com/genres/sport"
+    "url": "https://www.igdb.com/genres/sport",
+  	"description": "about genre"
   },
   {
     "id": 33,
     "name": "Arcade",
-    "url": "https://www.igdb.com/genres/arcade"
+    "url": "https://www.igdb.com/genres/arcade",
+  	"description": "about genre"
   },
   {
     "id": 2,
     "name": "Point-and-click",
-    "url": "https://www.igdb.com/genres/point-and-click"
+    "url": "https://www.igdb.com/genres/point-and-click",
+  	"description": "about genre"
   }
 ]
 }

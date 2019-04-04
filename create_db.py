@@ -69,9 +69,9 @@ def create_genres():
         name = oneGenre['name']
         id = oneGenre['id']
         url = oneGenre['url']
+        description = oneGenre['description']
 
-
-        newGenre = Genre(genre_id = id, name = name, url = url)
+        newGenre = Genre(genre_id = id, name = name, url = url, description = description)
 
         # After I create the book, I can then add it to my session.
         db.session.add(newGenre)
