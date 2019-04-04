@@ -1,5 +1,5 @@
 from flask import render_template, request
-from create_db import app, db, Game, Genre, create_games
+from create_db import app, db, Game, Genre, Company, create_games
 import subprocess
 
 @app.route('/')
@@ -15,9 +15,9 @@ def games():
 
   if field == "name":
     if direction == "desc":
-      games = db.session.query(Game).join((Genre, Game.genres)).order_by(Game.name.desc()).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.name.desc()).all()
     else:
-      games = db.session.query(Game).join((Genre, Game.genres)).order_by(Game.name.asc()).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.name.asc()).all()
 
   elif field == "summary":
     if direction == "desc":
@@ -72,7 +72,8 @@ def genres():
 
 @app.route('/companies/')
 def companies():
-	return render_template('companies.html')
+  companies = db.session.query(Company).join((Game, Company.games)).all()
+  return render_template('companies.html', companies = companies)
 	
 @app.route('/about/')
 def about():
