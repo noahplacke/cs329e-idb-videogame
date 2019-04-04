@@ -1,5 +1,5 @@
 from flask import render_template, request
-from create_db import app, db, Game, Genre, create_games
+from create_db import app, db, Game, Genre, Company, create_games
 import subprocess
 
 @app.route('/')
@@ -23,7 +23,8 @@ def genres():
 
 @app.route('/companies/')
 def companies():
-	return render_template('companies.html')
+  companies = db.session.query(Company).join((Game, Company.games)).all()
+  return render_template('companies.html', companies = companies)
 	
 @app.route('/about/')
 def about():
