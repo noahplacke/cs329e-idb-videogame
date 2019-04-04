@@ -59,7 +59,11 @@
       {% for company in companies %}
         <div class="card w-25" id = "{{company.company_id}}">
           <div class = "cropImage">
-            <img src = "../static/images/{{company.logo}}.jpg" class = "card-img-top">
+            {% if company.logo > 0 %}
+              <img src = "../static/images/{{company.logo}}.jpg" class = "card-img-top">
+            {% else %}
+              <img src = "../static/images/unavailable.jpg" class = "card-img-top">
+            {% endif %}
             </div>
             <div class="card-body">
               <h5 class="card-title">{{company.name}}</h5>
