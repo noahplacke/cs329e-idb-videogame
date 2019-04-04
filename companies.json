@@ -609,18 +609,6 @@
     "name": "RedLynx"
   },
   {
-    "id": 859,
-    "country": 840,
-    "description": "\"Seventeen souls banded together to form upstart Runic Games in 2008, drawn together by the belief that our combined talents could make something absolutely awesome. \n \nBased in the heart of downtown Seattle just blocks from Pike Place Market and the Pacific Ocean, we’re a small studio with a big personality. In 2009 we released our award-winning debut title Torchlight and were named by Gamasutra as one of its \"Top 5 Developers.\" We launched a sequel, Torchlight II, in 2012 to incredible critical and commercial success. \n \nWe love games and the creative process of developing them. As we embark on our next big adventure, we are steadfast in our commitment to what we know makes us great: tenacity, vision, and creating original and imaginative journeys of adventure and skill.\"",
-    "developed": [
-      1337,
-      2480,
-      14763
-    ],
-    "logo": 341,
-    "name": "Runic Games"
-  },
-  {
     "id": 2684,
     "country": 840,
     "description": "\"Endless Fluff Games is an NYC based independent developer that provides fun yet challenging games. Our goal is to deliver a rich and deep experience through our strengths in art, character and setting. We aim to explore many genres and game design possibilities to offer diversity to our fans.\"",
@@ -827,6 +815,107 @@
     ],
     "logo": 1360,
     "name": "Anvil Game Studios"
+  },
+  {
+    "id": 6151,
+    "country": 826,
+    "description": "Two developers, one passion, on a mission to share their vision with the world.",
+    "developed": [
+      11181
+    ],
+    "logo": 535,
+    "name": "Eneme Entertainment"
+  },
+  {
+    "id": 7557,
+    "country": 826,
+    "developed": [
+      1405
+    ],
+    "name": "Reloaded Games"
+  },
+  {
+    "id": 4751,
+    "developed": [
+      8968,
+      28933
+    ],
+    "name": "Soviet Games"
+  },
+  {
+    "id": 11975,
+    "name": "WhisperGames"
+  },
+  {
+    "id": 18353,
+    "name": "Nelke Planning"
+  },
+  {
+    "id": 3116,
+    "country": 276,
+    "developed": [
+      3699,
+      11381,
+      18327
+    ],
+    "name": "Funatics Development"
+  },
+  {
+    "id": 7531,
+    "name": "1C:InoCo"
+  },
+  {
+    "id": 4750,
+    "country": 840,
+    "developed": [
+      5539,
+      11912,
+      23929
+    ],
+    "name": "Free Fall Associates"
+  },
+  {
+    "id": 3117,
+    "country": 276,
+    "developed": [
+      2197
+    ],
+    "name": "Massive Development"
+  },
+  {
+    "id": 11977,
+    "developed": [
+      26909,
+      38782,
+      90135,
+      115905
+    ],
+    "name": "Dead Drop Studios LLC"
+  },
+  {
+    "id": 7519,
+    "developed": [
+      15034
+    ],
+    "name": "Nicklas Nygren"
+  },
+  {
+    "id": 7518,
+    "name": "TaleWorlds Entertainment"
+  },
+  {
+    "id": 7530,
+    "developed": [
+      15071
+    ],
+    "name": "StarWraith 3D Games LLC"
+  },
+  {
+    "id": 11976,
+    "developed": [
+      20342
+    ],
+    "name": "Lukas Navratil"
   }
 ]
 }
