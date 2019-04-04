@@ -24,6 +24,30 @@
 	<div id = "header">Companies</div>
 
 
+  <div id = "orderingForm">
+    Choose order of companies:
+    <form class = "form-inline" action = "{{url_for('games')}}">
+      <div class = "form-group">
+        <select class = "form-control field" name = "field">
+            <option value = "">Select attribute</option>
+            <option value = "name">Name</option>
+            <option value = "description">Description</option>
+            <option value = "country">Country</option>
+        </select>
+      </div>
+      <div class = "form-group">
+        <select class = "form-control direction" name = "direction">
+            <option value = "">Select order</option>
+            <option value = "asc">Ascending</option>
+            <option value = "desc">Descending</option>
+
+        </select>
+      </div>
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+  </div>
+
+
 
 
 
