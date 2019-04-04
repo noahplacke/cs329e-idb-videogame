@@ -2,8 +2,8 @@ import json
 #from models import app, db, Game, Genre, Company
 from models import app, db, Genre, Game, Company, game_genres, game_companies
 
-def load_json(filename, encoding = "utf8"):
-    with open(filename) as file:
+def load_json(filename):
+    with open(filename, encoding="utf8") as file:
         jsn = json.load(file)
         file.close()
 
@@ -17,10 +17,10 @@ def create_games():
   games = load_json('newgames.json')
 
   for oneGame in games['Games']:
-  
+
     game_id = oneGame['id']
     name = oneGame['name']
-    
+
     if 'rating' in oneGame:
       rating = oneGame['rating']
     else:
