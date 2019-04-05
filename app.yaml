@@ -33,4 +33,3 @@ resources:
   memory_gb: 0.5
   disk_size_gb: 10
 #[END cloudsql_settings]
-
