@@ -13,40 +13,51 @@ def games():
   field = request.args.get('field')
   direction = request.args.get('direction')
   limit = 100
+  page = request.args.get('offset')
   offset = 0
+
+  if page == '2':
+    print("page 2")
+    offset = 100
+  elif page == '3':
+    offset = 200
+  elif page == '4':
+    offset = 300
+  else:
+    offset = 0 
 
   if field == "name":
     if direction == "desc":
-      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.name.desc()).limit(limit).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.name.desc()).limit(limit).offset(offset).all()
     else:
-      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.name.asc()).limit(limit).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.name.asc()).limit(limit).offset(offset).all()
 
   elif field == "summary":
     if direction == "desc":
-      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.summary.desc()).limit(limit).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.summary.desc()).limit(limit).offset(offset).all()
     else:
-      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.summary.asc()).limit(limit).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.summary.asc()).limit(limit).offset(offset).all()
 
   elif field == "genre":
     if direction == "desc":
-      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Genre.name.desc()).limit(limit).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Genre.name.desc()).limit(limit).offset(offset).all()
     else:
-      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Genre.name.asc()).limit(limit).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Genre.name.asc()).limit(limit).offset(offset).all()
 
   elif field == "company":
     if direction == "desc":
-      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Company.name.desc()).limit(limit).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Company.name.desc()).limit(limit).offset(offset).all()
     else:
-      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Company.name.asc()).limit(limit).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Company.name.asc()).limit(limit).offset(offset).all()
 
   elif field == "rating":
     if direction == "desc":
-      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.rating.desc()).limit(limit).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.rating.desc()).limit(limit).offset(offset).all()
     else:
-      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.rating.asc()).limit(limit).all()
+      games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).order_by(Game.rating.asc()).limit(limit).offset(offset).all()
 
   else:
-    games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).limit(limit).all()
+    games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).limit(limit).offset(offset).all()
 
   return render_template('games.html', games = games)
 
