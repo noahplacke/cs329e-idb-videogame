@@ -32,6 +32,7 @@
             <option value = "">Select attribute</option>
             <option value = "name">Name</option>
             <option value = "description">Description</option>
+            <option value = "games">Games Developed</option>
             <option value = "country">Country</option>
             <option value = "date_founded">Date Founded</option>
         </select>
@@ -83,9 +84,95 @@
 		{% endif %}
 	</div>
 
-  <div class="citation">
-    <p>Content for this page from Wikipedia</p>
-  </div>
+
+
+
+<footer class="page-footer font-small bg-light pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class = "col-md-2">
+        </div>
+
+        <div class="col col-md-2 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Pillars</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="{{url_for('games')}}">Games</a>
+              </li>
+              <li>
+                <a href="{{url_for('genres')}}">Genres</a>
+              </li>
+              <li>
+                <a href="{{url_for('companies')}}">Companies</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col col-md-2 mb-md-0 mb-3">
+            <h5 class="text-uppercase">About us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="{{url_for('about')}}#brandon_ford">Brandon Ford</a>
+              </li>
+              <li>
+                <a href="{{url_for('about')}}#william_kwon">William Kwon</a>
+              </li>
+              <li>
+                <a href="{{url_for('about')}}#madalyn_marabella">Madalyn Marabella</a>
+              </li>
+              <li>
+                <a href="{{url_for('about')}}#alejandro_palacios">Alejandro Palacios</a>
+              </li>
+              <li>
+                <a href="{{url_for('about')}}#noah_placke">Noah Placke</a>
+              </li>
+            </ul>
+          </div>
+
+        <div class="col col-md-2 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Sources</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.igdb.com/discover">IGDB</a>
+              </li>
+              <li>
+                <a href="https://www.wikipedia.org/">Wikipedia</a>
+              </li>
+              <li>
+                <a href="https://www.gamespot.com/news/">Gamespot</a>
+              </li>
+            </ul>
+        </div>
+
+        <div class="col col-md-2 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Tools</h5>
+            <ul class="list-unstyled">
+              <li>
+                Python
+              </li>
+              <li>
+                Flask
+              </li>
+              <li>
+                PostgreSQL
+              </li>
+              <li>
+                API System
+              </li>
+              <li>
+                GitLab
+              </li>
+            </ul>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2019 Copyright: Video Game Library
+    </div>
+  </footer>
+
+  
 {% endblock %}
 </body>
 

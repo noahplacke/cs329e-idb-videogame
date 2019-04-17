@@ -29,7 +29,7 @@
 {% extends "navbar.html" %}
 {% block content %}
 
-	<div id = "header">About Us</div>
+	<div id = "header">Video Game Library Team</div>
 
 
 
@@ -52,9 +52,9 @@
 		  	</div>
 			<ul class="list-group list-group-flush">
 				<li class="list-group-item">Major Responsibilities: Front-end, unit tests</li>
-				<li class="list-group-item">No. of Commits: </li>
-				<li class="list-group-item">No. of Issues: </li>
-				<li class="list-group-item">No. of Unit Tests: </li>
+				<li class="list-group-item">No. of Commits: 6</li>
+				<li class="list-group-item">No. of Issues: 10</li>
+				<li class="list-group-item">No. of Unit Tests: 5</li>
 			</ul>
 		  	<div class="card-footer text-muted">Role: Front-end developer</div>
 		</div>
@@ -73,9 +73,9 @@
 		  	</div>
 			<ul class="list-group list-group-flush">
 				<li class="list-group-item">Major Responsibilities: Front-End </li>
-				<li class="list-group-item">No. of Commits: </li>
-				<li class="list-group-item">No. of Issues: </li>
-				<li class="list-group-item">No. of Unit Tests: </li>
+				<li class="list-group-item">No. of Commits: 7</li>
+				<li class="list-group-item">No. of Issues: 0</li>
+				<li class="list-group-item">No. of Unit Tests: 2</li>
 			</ul>
 		  	<div class="card-footer text-muted">Role: Front-end developer </div>
 		</div>
@@ -116,9 +116,9 @@
 		  	</div>
 			<ul class="list-group list-group-flush">
 				<li class="list-group-item">Major Responsibilities: Front-end, back-end to front-end integration</li>
-				<li class="list-group-item">No. of Commits: </li>
-				<li class="list-group-item">No. of Issues: </li>
-				<li class="list-group-item">No. of Unit Tests: </li>
+				<li class="list-group-item">No. of Commits: 27</li>
+				<li class="list-group-item">No. of Issues: 7</li>
+				<li class="list-group-item">No. of Unit Tests: 3</li>
 			</ul>
 		  	<div class="card-footer text-muted">Role: Front-end developer</div>
 		</div>
@@ -131,14 +131,14 @@
 		  	<div class="card-body">
 		    	<h5 class="card-title">Noah Placke</h5>
 		    	<p class="card-text">
-					Third year Economics major.
+					Third year Economics major who likes to take baths and do face masks.
 		    	</p>
 		  	</div>
 			<ul class="list-group list-group-flush">
 				<li class="list-group-item">Major Responsibilities: Technical Report - GCP Maintainer</li>
-				<li class="list-group-item">No. of Commits: </li>
-				<li class="list-group-item">No. of Issues: </li>
-				<li class="list-group-item">No. of Unit Tests: </li>
+				<li class="list-group-item">No. of Commits: 17</li>
+				<li class="list-group-item">No. of Issues: 11</li>
+				<li class="list-group-item">No. of Unit Tests: 6</li>
 			</ul>
 		  	<div class="card-footer text-muted">Role: GCP Maintainer, back-end developer</div>
 		</div>
@@ -152,12 +152,13 @@
 		    	<h5 class="card-title">Total</h5>
 		  	</div>
 			<ul class="list-group list-group-flush">
-				<li class="list-group-item bg-dark">Total no. of Commits: </li>
-				<li class="list-group-item bg-dark">Total no. of Issues: </li>
-				<li class="list-group-item bg-dark">Total no. of Unit Tests: </li>
-				<li class="list-group-item bg-dark"><a href="#" class="card-link">GitLab Issue Tracker</a></li>
-				<li class="list-group-item bg-dark"><a href="#" class="card-link">GitLab Repo</a></li>
-				<li class="list-group-item bg-dark"><a href="#" class="card-link">GitLab Wiki</a></li>
+				<li class="list-group-item bg-dark">Total no. of Commits: 138</li>
+				<li class="list-group-item bg-dark">Total no. of Issues: 30</li>
+				<li class="list-group-item bg-dark">Total no. of Unit Tests: 16</li>
+				<li class="list-group-item bg-dark"><a href="https://gitlab.com/noah_pl/cs329e-idb/issues" class="card-link">GitLab Issue Tracker</a></li>
+				<li class="list-group-item bg-dark"><a href="https://gitlab.com/noah_pl/cs329e-idb" class="card-link">GitLab Repo</a></li>
+				<li class="list-group-item bg-dark"><a href="https://gitlab.com/noah_pl/cs329e-idb/wikis/Technical-Report" class="card-link">GitLab Wiki</a></li>
+				<li class="list-group-item bg-dark"><a href="{{url_for('test')}}">Link to the tests</a></li>
 			</ul>
 		</div>
 
@@ -166,9 +167,92 @@
 	</div>
 
 
-<a href="{{url_for('test')}}">Link to the tests</a>
 
 
+<footer class="page-footer font-small bg-light pt-4">
+    <div class="container-fluid text-center text-md-left">
+      <div class="row">
+        <div class = "col-md-2">
+        </div>
+
+        <div class="col col-md-2 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Pillars</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="{{url_for('games')}}">Games</a>
+              </li>
+              <li>
+                <a href="{{url_for('genres')}}">Genres</a>
+              </li>
+              <li>
+                <a href="{{url_for('companies')}}">Companies</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col col-md-2 mb-md-0 mb-3">
+            <h5 class="text-uppercase">About us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="{{url_for('about')}}#brandon_ford">Brandon Ford</a>
+              </li>
+              <li>
+                <a href="{{url_for('about')}}#william_kwon">William Kwon</a>
+              </li>
+              <li>
+                <a href="{{url_for('about')}}#madalyn_marabella">Madalyn Marabella</a>
+              </li>
+              <li>
+                <a href="{{url_for('about')}}#alejandro_palacios">Alejandro Palacios</a>
+              </li>
+              <li>
+                <a href="{{url_for('about')}}#noah_placke">Noah Placke</a>
+              </li>
+            </ul>
+          </div>
+
+        <div class="col col-md-2 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Sources</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.igdb.com/discover">IGDB</a>
+              </li>
+              <li>
+                <a href="https://www.wikipedia.org/">Wikipedia</a>
+              </li>
+              <li>
+                <a href="https://www.gamespot.com/news/">Gamespot</a>
+              </li>
+            </ul>
+        </div>
+
+        <div class="col col-md-2 mb-md-0 mb-3">
+            <h5 class="text-uppercase">Tools</h5>
+            <ul class="list-unstyled">
+              <li>
+                Python
+              </li>
+              <li>
+                Flask
+              </li>
+              <li>
+                PostgreSQL
+              </li>
+              <li>
+                API System
+              </li>
+              <li>
+                GitLab
+              </li>
+            </ul>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="footer-copyright text-center py-3">© 2019 Copyright: Video Game Library
+    </div>
+  </footer>
 
 <script>
 function more(elem) {
@@ -190,7 +274,7 @@ function more(elem) {
   }
 }
 </script>
-
 {% endblock %}
+
 </body>
 </html>
