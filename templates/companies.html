@@ -73,7 +73,7 @@
             </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Games Developed: {% for game in company.games %}
-                <a href="{{url_for('games')}}#{{game.game_id}}">{{game.name}}{{", " if not loop.last}}</a>
+                <a href="{{url_for('games')}}{{game.game_id}}">{{game.name}}{{", " if not loop.last}}</a>
               {% endfor %}
             </li>
             <li class="list-group-item">Country Code: {{company.country}}</li>

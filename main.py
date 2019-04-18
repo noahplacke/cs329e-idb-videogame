@@ -10,7 +10,7 @@ def index():
 @app.route('/games/<game_id>')
 def games(game_id = None):
   if game_id is not None:
-    game = db.session.query(Game).filter(Game.game_id == (int(game_id))).first()
+    game = db.session.query(Game).filter(Game.game_id == (int(game_id))).join((Genre, Game.genres)).join((Company, Game.companies)).first()
     return render_template('game_details.html', game = game)
 
   field = request.args.get('field')

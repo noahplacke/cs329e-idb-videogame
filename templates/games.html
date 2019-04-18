@@ -68,7 +68,7 @@
   {% else %}
     {% for game in games %}
       <tr id={{game.game_id}}>
-        <td>{{game.name}}</td>
+        <td><a href = "{{url_for('games')}}{{game.game_id}}">{{game.name}}</a></td>
         <td>{{game.summary}}</td>
         <td>{{game.rating}}</td>
         <td>

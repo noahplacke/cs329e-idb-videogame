@@ -76,7 +76,7 @@
         <td>{{genre.description}}</td>
         <td>
           {% for game in genre.games %}
-            <a href = "{{url_for('games')}}#{{game.game_id}}">{{game.name}}{{", " if not loop.last}}</a>
+            <a href = "{{url_for('games')}}{{game.game_id}}">{{game.name}}{{", " if not loop.last}}</a>
           {% endfor %}
         </td>
         <td>{{ range(0, 100) | random }}</td>
