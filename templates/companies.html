@@ -52,7 +52,7 @@
 
 
 
-
+<!--
 	<div class = "cardGrid">
 
     {% if companies == [] %}
@@ -83,7 +83,47 @@
       {% endfor %}
 		{% endif %}
 	</div>
+-->
 
+	<table class = "table table-bordered table-hover" id="myTable">
+		<thead class="thead-light">
+		<tr>
+			<th>Logo</th>
+			<th>Company</th>
+			<th>Description</th>
+			<th>Games Developed</th>
+			<th>Country</th>
+			<th>Date Founded</th>
+		</tr>
+		</thead>
+	{% if companies == [] %}
+		<p>No companies exist</p>
+
+	{% else %}
+		{% for company in companies %}
+			<tr id={{company.company_id}}>
+				<td>
+					<div class = "cropImage">
+            {% if company.logo > 0 %}
+              <img src = "../static/images/{{company.logo}}.jpg" class = "card-img-top">
+            {% else %}
+              <img src = "../static/images/unavailable.jpg" class = "card-img-top">
+            {% endif %}
+            </div>
+				</td>
+				<td><a href = "{{url_for('companies')}}{{company.company_id}}">{{company.name}}</a></td>
+				<td>{{company.description}}</td>
+				<td>
+					{% for game in company.games %}
+							<a href="{{url_for('games')}}{{game.game_id}}">{{game.name}}{{", " if not loop.last}}</a>
+						{% endfor %}
+				</td>
+				<td>{{company.country}}</td>
+				<td>{{company.date_founded}}</td>
+			</tr>
+		{% endfor %}
+	{% endif %}
+	</table>
 
 
 
@@ -172,7 +212,7 @@
     </div>
   </footer>
 
-  
+
 {% endblock %}
 </body>
 
