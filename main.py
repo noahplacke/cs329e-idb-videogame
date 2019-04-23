@@ -27,27 +27,27 @@ def genres():
 
   if field == "name":
     if direction == "desc":
-      genres = db.session.query(Genre).join((Game, Genre.games)).order_by(Genre.name.desc()).all()
+      genres = db.session.query(Genre).join((Game, Genre.games)).all()
     else:
-      genres = db.session.query(Genre).join((Game, Genre.games)).order_by(Genre.name.asc()).all()
+      genres = db.session.query(Genre).join((Game, Genre.games)).all()
 
   elif field == "description":
     if direction == "desc":
-      genres = db.session.query(Genre).join((Game, Genre.games)).order_by(Genre.description.desc()).all()
+      genres = db.session.query(Genre).join((Game, Genre.games)).all()
     else:
-      genres = db.session.query(Genre).join((Game, Genre.games)).order_by(Genre.description.asc()).all()
+      genres = db.session.query(Genre).join((Game, Genre.games)).all()
 
   elif field == "games":
     if direction == "desc":
-      genres = db.session.query(Genre).join((Game, Genre.games)).order_by(Game.name.desc()).all()
+      genres = db.session.query(Genre).join((Game, Genre.games)).all()
     else:
-      genres = db.session.query(Genre).join((Game, Genre.games)).order_by(Game.name.asc()).all()
+      genres = db.session.query(Genre).join((Game, Genre.games)).all()
 
   elif field == "url":
     if direction == "desc":
-      genres = db.session.query(Genre).join((Game, Genre.games)).order_by(Genre.url.desc()).all()
+      genres = db.session.query(Genre).join((Game, Genre.games)).all()
     else:
-      genres = db.session.query(Genre).join((Game, Genre.games)).order_by(Genre.url.asc()).all()
+      genres = db.session.query(Genre).join((Game, Genre.games)).all()
 
   else:
     genres = db.session.query(Genre).join((Game, Genre.games)).all()
@@ -64,40 +64,39 @@ def companies():
 
   if field == "name":
     if direction == "desc":
-      companies = db.session.query(Company).join((Game, Company.games)).order_by(Company.name.desc()).all()
+      companies = db.session.query(Company).join((Game, Company.games)).all()
     else:
-      companies = db.session.query(Company).join((Game, Company.games)).order_by(Company.name.asc()).all()
+      companies = db.session.query(Company).join((Game, Company.games)).all()
 
   elif field == "description":
     if direction == "desc":
-      companies = db.session.query(Company).join((Game, Company.games)).order_by(Company.description.desc()).all()
+      companies = db.session.query(Company).join((Game, Company.games)).all()
     else:
-      companies = db.session.query(Company).join((Game, Company.games)).order_by(Company.description.asc()).all()
+      companies = db.session.query(Company).join((Game, Company.games)).all()
 
   elif field == "games":
     if direction == "desc":
-      companies = db.session.query(Company).join((Game, Company.games)).order_by(Game.name.desc()).all()
+      companies = db.session.query(Company).join((Game, Company.games)).all()
     else:
-      companies = db.session.query(Company).join((Game, Company.games)).order_by(Game.name.asc()).all()
+      companies = db.session.query(Company).join((Game, Company.games)).all()
 
   elif field == "country":
     if direction == "desc":
-      companies = db.session.query(Company).join((Game, Company.games)).order_by(Company.country.desc()).all()
+      companies = db.session.query(Company).join((Game, Company.games)).all()
     else:
-      companies = db.session.query(Company).join((Game, Company.games)).order_by(Company.country.asc()).all()
+      companies = db.session.query(Company).join((Game, Company.games)).all()
 
   elif field == "date_founded":
     if direction == "desc":
-      companies = db.session.query(Company).join((Game, Company.games)).order_by(Company.date_founded.desc()).all()
+      companies = db.session.query(Company).join((Game, Company.games)).all()
     else:
-      companies = db.session.query(Company).join((Game, Company.games)).order_by(Company.date_founded.asc()).all()
+      companies = db.session.query(Company).join((Game, Company.games)).all()
 
   else:
     companies = db.session.query(Company).join((Game, Company.games)).all()
 
   return render_template('companies.html', companies = companies)
 	
-
 
 
 
