@@ -10,6 +10,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
 	<link rel = "stylesheet" href = "../static/css/pillars.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MDBootstrap Datatables  -->
+    <link href="../static/css/addons/datatables.min.css" rel="stylesheet">
 
 
 </head>
@@ -22,33 +31,6 @@
 
 
 	<div id = "header">Companies</div>
-
-
-  <div id = "orderingForm">
-    Choose order of companies:
-    <form class = "form-inline" action = "{{url_for('companies')}}">
-      <div class = "form-group">
-        <select class = "form-control field" name = "field">
-            <option value = "">Select attribute</option>
-            <option value = "name">Name</option>
-            <option value = "description">Description</option>
-            <option value = "games">Games Developed</option>
-            <option value = "country">Country</option>
-            <option value = "date_founded">Date Founded</option>
-        </select>
-      </div>
-      <div class = "form-group">
-        <select class = "form-control direction" name = "direction">
-            <option value = "">Select order</option>
-            <option value = "asc">Ascending</option>
-            <option value = "desc">Descending</option>
-
-        </select>
-      </div>
-      <button class="btn btn-primary" type="submit">Submit</button>
-    </form>
-  </div>
-
 
 
 
@@ -211,6 +193,25 @@
     <div class="footer-copyright text-center py-3">© 2019 Copyright: Video Game Library
     </div>
   </footer>
+
+
+<!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../static/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+  <!-- MDBootstrap Datatables  -->
+  <script type="text/javascript" src="../static/js/addons/datatables.min.js"></script>
+  <script>
+  $(document).ready(function () {
+    $('#myTable').DataTable();
+    $('.dataTables_length').addClass('bs-select');
+    });
+  </script>
 
 
 {% endblock %}
