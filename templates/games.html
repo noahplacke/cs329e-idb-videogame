@@ -14,15 +14,10 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <!-- Bootstrap core CSS -->
     <link href="../static/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="../static/css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
-    <link href="../static/css/style.css" rel="stylesheet">
     <!-- MDBootstrap Datatables  -->
     <link href="../static/css/addons/datatables.min.css" rel="stylesheet">
 
@@ -36,33 +31,6 @@
 
 
 	<div id = "header">Games</div>
-
-
-
-  <div id = "orderingForm">
-    Choose order of games:
-    <form class = "form-inline" action = "{{url_for('games')}}">
-      <div class = "form-group">
-        <select class = "form-control field" name = "field">
-            <option value = "">Select attribute</option>
-            <option value = "name">Name</option>
-            <option value = "summary">Summary</option>
-            <option value = "genre">Genre</option>
-            <option value = "company">Company</option>
-            <option value = "rating">Rating</option>
-        </select>
-      </div>
-      <div class = "form-group">
-        <select class = "form-control direction" name = "direction">
-            <option value = "">Select order</option>
-            <option value = "asc">Ascending</option>
-            <option value = "desc">Descending</option>
-
-        </select>
-      </div>
-      <button class="btn btn-primary" type="submit">Submit</button>
-    </form>
-  </div>
 
 
 
@@ -99,24 +67,6 @@
     {% endfor %}
   {% endif %}
   </table>
-
-
-
-  <div class = "page-buttons">
-    <form action = "{{url_for('games')}}">
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="submit" class="btn btn-secondary" name = "offset" value = "1">1</button>
-        <button type="submit" class="btn btn-secondary" name = "offset" value = "2">2</button>
-        <button type="submit" class="btn btn-secondary" name = "offset" value = "3">3</button>
-        <button type="submit" class="btn btn-secondary" name = "offset" value = "4">4</button>
-      </div>
-    </form>
-
-  </div>
-
-
-
-
 
 
 
