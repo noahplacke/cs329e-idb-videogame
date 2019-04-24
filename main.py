@@ -29,6 +29,13 @@ def companies():
   companies = db.session.query(Company).join((Game, Company.games)).all()
   return render_template('companies.html', companies = companies)
 
+@app.route('/search/')
+def search():
+  games = db.session.query(Game).limit(5).all()
+  companies = db.session.query(Company).limit(5).all()
+  genres = db.session.query(Genre).limit(5).all()
+  return render_template('search.html', games = games, companies = companies, genres = genres)
+
 
 @app.route('/about/')
 def about():
