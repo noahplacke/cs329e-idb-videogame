@@ -31,11 +31,15 @@ def companies():
 
 @app.route('/search/')
 def search():
-  games = db.session.query(Game).limit(5).all()
+  search_str = request.args.get('search_str')
+  print("SEARCH STRING:", search_str)
+  if search_str is None:
+    return render_template('search.html', games = [], companies = [], genres = [])
+
+  games = db.session.query(Game).filter(Game.name.ilike("%" + search_str + "%")).all()
   companies = db.session.query(Company).limit(5).all()
   genres = db.session.query(Genre).limit(5).all()
   return render_template('search.html', games = games, companies = companies, genres = genres)
-
 
 @app.route('/about/')
 def about():
