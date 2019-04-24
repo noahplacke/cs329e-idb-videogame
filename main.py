@@ -18,87 +18,28 @@ def games(game_id = None):
   return render_template('games.html', games = games)
 
 
-
-
 @app.route('/genres/')
 def genres():
-  field = request.args.get('field')
-  direction = request.args.get('direction')
-
-  if field == "name":
-    if direction == "desc":
-      genres = db.session.query(Genre).join((Game, Genre.games)).all()
-    else:
-      genres = db.session.query(Genre).join((Game, Genre.games)).all()
-
-  elif field == "description":
-    if direction == "desc":
-      genres = db.session.query(Genre).join((Game, Genre.games)).all()
-    else:
-      genres = db.session.query(Genre).join((Game, Genre.games)).all()
-
-  elif field == "games":
-    if direction == "desc":
-      genres = db.session.query(Genre).join((Game, Genre.games)).all()
-    else:
-      genres = db.session.query(Genre).join((Game, Genre.games)).all()
-
-  elif field == "url":
-    if direction == "desc":
-      genres = db.session.query(Genre).join((Game, Genre.games)).all()
-    else:
-      genres = db.session.query(Genre).join((Game, Genre.games)).all()
-
-  else:
-    genres = db.session.query(Genre).join((Game, Genre.games)).all()
+  genres = db.session.query(Genre).join((Game, Genre.games)).all()
   return render_template('genres.html', genres = genres)
-
-
-
 
 
 @app.route('/companies/')
 def companies():
-  field = request.args.get('field')
-  direction = request.args.get('direction')
-
-  if field == "name":
-    if direction == "desc":
-      companies = db.session.query(Company).join((Game, Company.games)).all()
-    else:
-      companies = db.session.query(Company).join((Game, Company.games)).all()
-
-  elif field == "description":
-    if direction == "desc":
-      companies = db.session.query(Company).join((Game, Company.games)).all()
-    else:
-      companies = db.session.query(Company).join((Game, Company.games)).all()
-
-  elif field == "games":
-    if direction == "desc":
-      companies = db.session.query(Company).join((Game, Company.games)).all()
-    else:
-      companies = db.session.query(Company).join((Game, Company.games)).all()
-
-  elif field == "country":
-    if direction == "desc":
-      companies = db.session.query(Company).join((Game, Company.games)).all()
-    else:
-      companies = db.session.query(Company).join((Game, Company.games)).all()
-
-  elif field == "date_founded":
-    if direction == "desc":
-      companies = db.session.query(Company).join((Game, Company.games)).all()
-    else:
-      companies = db.session.query(Company).join((Game, Company.games)).all()
-
-  else:
-    companies = db.session.query(Company).join((Game, Company.games)).all()
-
+  companies = db.session.query(Company).join((Game, Company.games)).all()
   return render_template('companies.html', companies = companies)
-	
 
+@app.route('/search/')
+def search():
+  search_str = request.args.get('search_str')
+  print("SEARCH STRING:", search_str)
+  if search_str is None:
+    return render_template('search.html', games = [], companies = [], genres = [])
 
+  games = db.session.query(Game).filter(Game.name.ilike("%" + search_str + "%")).all()
+  companies = db.session.query(Company).filter(Company.name.ilike("%" + search_str + "%")).all()
+  genres = db.session.query(Genre).filter(Genre.name.ilike("%" + search_str + "%")).all()
+  return render_template('search.html', games = games, companies = companies, genres = genres)
 
 @app.route('/about/')
 def about():
