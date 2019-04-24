@@ -39,9 +39,9 @@
     <tr>
       <th>Name</th>
       <th>Description</th>
-      <th>Games</th>
       <th>Popularity</th>
       <th>URL</th>
+	  <th>Games</th>
     </tr>
     </thead>
   {% if genres == [] %}
@@ -52,13 +52,18 @@
       <tr id={{genre.genre_id}}>
         <td><a href="{{url_for('genres')}}{{genre.genre_id}}">{{genre.name}}</a></td>
         <td>{{genre.description}}</td>
+		<!--
         <td>
           {% for game in genre.games %}
             <a href = "{{url_for('games')}}{{game.game_id}}">{{game.name}}{{", " if not loop.last}}</a>
           {% endfor %}
         </td>
-        <td>{{ range(0, 100) | random }}</td>
+		-->
+        <td>{{ range(25, 100) | random }}</td>
         <td><a href = "{{genre.url}}">{{genre.url}}</a></td>
+		<td>
+		<button type="button" class="btn btn-outline-primary my-2 my-sm-0" onclick="window.location.href = '{{url_for('genres')}}{{genre.genre_id}}';">Read More</button>
+		</td>
       </tr>
     {% endfor %}
   {% endif %}
@@ -117,29 +122,5 @@ function search_func() {
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 

@@ -73,9 +73,9 @@
 			<th>Logo</th>
 			<th>Company</th>
 			<th>Description</th>
-			<th>Games Developed</th>
 			<th>Country</th>
 			<th>Date Founded</th>
+			<th>Games Developed</th>
 		</tr>
 		</thead>
 	{% if companies == [] %}
@@ -95,13 +95,18 @@
 				</td>
 				<td><a href = "{{url_for('companies')}}{{company.company_id}}">{{company.name}}</a></td>
 				<td>{{company.description}}</td>
+				<!--
 				<td>
 					{% for game in company.games %}
 							<a href="{{url_for('games')}}{{game.game_id}}">{{game.name}}{{", " if not loop.last}}</a>
 						{% endfor %}
 				</td>
+				-->
 				<td>{{company.country}}</td>
 				<td>{{company.date_founded}}</td>
+				<td>
+				<button type="button" class="btn btn-outline-primary my-2 my-sm-0" onclick="window.location.href = '{{url_for('companies')}}{{company.company_id}}';">Read More</button>
+				</td>
 			</tr>
 		{% endfor %}
 	{% endif %}
