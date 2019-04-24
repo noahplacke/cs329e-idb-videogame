@@ -37,8 +37,8 @@ def search():
     return render_template('search.html', games = [], companies = [], genres = [])
 
   games = db.session.query(Game).filter(Game.name.ilike("%" + search_str + "%")).all()
-  companies = db.session.query(Company).limit(5).all()
-  genres = db.session.query(Genre).limit(5).all()
+  companies = db.session.query(Company).filter(Company.name.ilike("%" + search_str + "%")).all()
+  genres = db.session.query(Genre).filter(Genre.name.ilike("%" + search_str + "%")).all()
   return render_template('search.html', games = games, companies = companies, genres = genres)
 
 @app.route('/about/')
