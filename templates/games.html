@@ -73,12 +73,12 @@
         <td>{{game.rating}}</td>
         <td>
           {% for genre in game.genres %}
-            <a href = "{{url_for('genres')}}#{{genre.genre_id}}">{{genre.name}}{{", " if not loop.last}}</a>
+            <a href = "{{url_for('genres')}}{{genre.genre_id}}">{{genre.name}}{{", " if not loop.last}}</a>
           {% endfor %}
         </td>
         <td>
           {% for company in game.companies %}
-            <a href = "{{url_for('companies')}}#{{company.company_id}}">{{company.name}}{{", " if not loop.last}}</a>
+            <a href = "{{url_for('companies')}}{{company.company_id}}">{{company.name}}{{", " if not loop.last}}</a>
           {% endfor %} 
         </td>
       </tr>
