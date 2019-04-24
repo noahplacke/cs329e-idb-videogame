@@ -50,7 +50,7 @@
   {% else %}
     {% for genre in genres %}
       <tr id={{genre.genre_id}}>
-        <td>{{genre.name}}</td>
+        <td><a href="{{url_for('genres')}}{{genre.genre_id}}">{{genre.name}}</a></td>
         <td>{{genre.description}}</td>
         <td>
           {% for game in genre.games %}
