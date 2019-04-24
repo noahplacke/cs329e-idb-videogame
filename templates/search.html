@@ -23,28 +23,70 @@
 
 	<div id = "header">Search Results</div>
   <br>
-  <div class="container">
+
+	<table class = "table table-bordered">
+    <thead class="thead-light">
+    <tr>
+      <th>Game Results</th>
+      <th>Company Results</th>
+      <th>Genre Results</th>
+    </tr>
+    </thead>
+    <tr>
+      <td>
+        {% if games == [] %}
+          <p>No games match search</p>
+        {% else %}
+          {% for game in games %}
+            <p><a href = "{{url_for('games')}}{{game.game_id}}">{{game.name}}</a></p>
+          {% endfor %}
+        {% endif %}
+      </td>
+      <td>
+        {% if companies == [] %}
+          <p>No companies match search</p>
+        {% else %}
+          {% for company in companies %}
+            <p><a href = "{{url_for('companies')}}{{company.company_id}}">{{company.name}}</a></p>
+          {% endfor %}
+        {% endif %}
+      </td>
+      <td>
+        {% if genres == [] %}
+          <p>No genres match search</p>
+        {% else %}
+          {% for genre in genres %}
+            <p><a href = "{{url_for('genres')}}{{genre.genre_id}}">{{genre.name}}</a></p>
+          {% endfor %}
+        {% endif %}
+      </td>
+    </tr>
+  </table>
+
+<!--  <div class="container">
     <div class="row">
       <div class="col-sm-4 border-left">
-        <h3>Game Results</h3>
+        <h4>Game Results</h4>
         {% for game in games %}
           <p><a href = "{{url_for('games')}}{{game.game_id}}">{{game.name}}</a></p>
         {% endfor %}
       </div>
       <div class="col-sm-4 border-left border-right">
-        <h3>Company Results</h3>
+        <h4>Company Results</h4>
         {% for company in companies %}
           <p>{{company.name}}</p>
         {% endfor %}
       </div>
       <div class="col-sm-4 border-right">
-        <h3>Genre Results</h3>
+        <h4>Genre Results</h4>
         {% for genre in genres %}
           <p>{{genre.name}}</p>
         {% endfor %}
       </div>
     </div>
-  </div>
+  </div>-->
+
+<br><br>
 
 
 <footer class="page-footer font-small bg-light pt-4">
