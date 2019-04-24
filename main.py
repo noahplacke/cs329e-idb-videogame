@@ -9,25 +9,35 @@ def index():
 @app.route('/games/')
 @app.route('/games/<game_id>')
 def games(game_id = None):
-  if game_id is not None:
-    game = db.session.query(Game).filter(Game.game_id == (int(game_id))).join((Genre, Game.genres)).join((Company, Game.companies)).first()
-    return render_template('game_details.html', game = game)
+  if game_id is None:
+    games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).all()
+    return render_template('games.html', games = games)
 
-  games = db.session.query(Game).join((Genre, Game.genres)).join((Company, Game.companies)).all()
-
-  return render_template('games.html', games = games)
+  game = db.session.query(Game).filter(Game.game_id == (int(game_id))).join((Genre, Game.genres)).join((Company, Game.companies)).first()
+  return render_template('game_details.html', game = game)
 
 
 @app.route('/genres/')
-def genres():
-  genres = db.session.query(Genre).join((Game, Genre.games)).all()
-  return render_template('genres.html', genres = genres)
+@app.route('/genres/<genre_id>')
+def genres(genre_id = None):
+  if genre_id is None:
+    genres = db.session.query(Genre).join((Game, Genre.games)).all()
+    return render_template('genres.html', genres = genres)
+
+  genre = db.session.query(Genre).filter(Genre.genre_id == (int(genre_id))).join((Game, Genre.games)).first()
+  return render_template('genre_details.html', genre = genre)
 
 
 @app.route('/companies/')
-def companies():
-  companies = db.session.query(Company).join((Game, Company.games)).all()
-  return render_template('companies.html', companies = companies)
+@app.route('/companies/<company_id>')
+def companies(company_id = None):
+  if company_id is None:
+    companies = db.session.query(Company).join((Game, Company.games)).all()
+    return render_template('companies.html', companies = companies)
+
+  company = db.session.query(Company).filter(Company.company_id == (int(company_id))).join((Game, Company.games)).first()
+  return render_template('company_details.html', company = company)
+
 
 @app.route('/search/')
 def search():
