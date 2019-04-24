@@ -22,20 +22,23 @@
 
 
 	<div id = "header">Search Results</div>
-
+  <br>
   <div class="container">
     <div class="row">
       <div class="col-sm-4 border-left">
+        <h3>Game Results</h3>
         {% for game in games %}
           <p><a href = "{{url_for('games')}}{{game.game_id}}">{{game.name}}</a></p>
         {% endfor %}
       </div>
       <div class="col-sm-4 border-left border-right">
+        <h3>Company Results</h3>
         {% for company in companies %}
           <p>{{company.name}}</p>
         {% endfor %}
       </div>
       <div class="col-sm-4 border-right">
+        <h3>Genre Results</h3>
         {% for genre in genres %}
           <p>{{genre.name}}</p>
         {% endfor %}
