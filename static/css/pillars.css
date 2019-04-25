@@ -57,26 +57,10 @@ a:hover {
 
 }
 
-
-
-.cropImage {
-	height: 350px;
-	overflow: hidden;
-}
-
 .cropImage img {
-	object-fit: cover;
-	height: 100%;
-
-	transition-duration: 200ms;
-	transition-property: transform;
+	height: 75px;
+	width: 75px;
 }
-
-.cropImage img:hover {
-	transform: scale(1.1);
-}
-
-
 
 
 .page-buttons {
