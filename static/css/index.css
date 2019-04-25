@@ -39,14 +39,17 @@
 
 
 
-
+a:hover {
+  text-decoration: none;
+  color: orange;
+}
 
 
 
 #header {
 	text-align: center;
 	font-size: 40px;
-	padding-bottom: 30px;	
+	padding-bottom: 30px;
 }
 
 
@@ -77,13 +80,3 @@ img {
 .footer-copyright {
 	color: grey;
 }
-
-
-
-
-
-
-
-
-
-
