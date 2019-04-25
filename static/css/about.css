@@ -2,17 +2,15 @@
 
 
 
-
+a:hover {
+  text-decoration: none;
+  color: orange;
+}
 
 #header {
 	text-align: center;
-	font-size: 40px;	
+	font-size: 40px;
 }
-
-
-
-
-
 
 
 .peopleGrid{
@@ -39,7 +37,3 @@
 	text-align: left;
 	margin-right: 20px;
 }
-
-
-
-
