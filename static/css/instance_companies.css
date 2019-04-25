@@ -35,6 +35,11 @@ h4.inline {
   font-size: 17px;
 }
 
+.logo {
+  width: 75px;
+  height: 75px;
+}
+
 #company-info {
   padding: 15px;
   border: double;

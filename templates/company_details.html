@@ -27,6 +27,13 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div id="header">{{company.name}}</div>
+					<div>
+						{% if company.logo > 0 %}
+              <img src = "../static/images/{{company.logo}}.jpg" class = "logo">
+            {% else %}
+              <img src = "../static/images/unavailable.jpg" class = "logo">
+            {% endif %}
+					</div>
 				</div>
 			</div>
 			<div class="row">
