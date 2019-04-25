@@ -10,7 +10,13 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
-	<link rel = "stylesheet" href = "../static/css/pillars.css">
+
+	  <link rel = "stylesheet" href = "../static/css/pillars.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- MDBootstrap Datatables  -->
+    <link href="../static/css/addons/datatables.css" rel="stylesheet">
 
 </head>
 
@@ -25,41 +31,18 @@
 
 
 
-  <div id = "orderingForm">
-    Choose order of games:
-    <form class = "form-inline" action = "{{url_for('games')}}">
-      <div class = "form-group">
-        <select class = "form-control field" name = "field">
-            <option value = "">Select attribute</option>
-            <option value = "name">Name</option>
-            <option value = "summary">Summary</option>
-            <option value = "genre">Genre</option>
-            <option value = "company">Company</option>
-            <option value = "rating">Rating</option>
-        </select>
-      </div>
-      <div class = "form-group">
-        <select class = "form-control direction" name = "direction">
-            <option value = "">Select order</option>
-            <option value = "asc">Ascending</option>
-            <option value = "desc">Descending</option>
 
-        </select>
-      </div>
-      <button class="btn btn-primary" type="submit">Submit</button>
-    </form>
-  </div>
+<div id = "gamesTable">
 
 
-
-	<table class = "table table-bordered table-hover" id="myTable">
+	<table class = "table table-striped table-bordered table-sm" id="myTable" cellspacing="0">
     <thead class="thead-light">
     <tr>
-      <th>Name</th>
-      <th>Summary</th>
-      <th>Rating</th>
-      <th>Genres</th>
-      <th>Companies</th>
+      <th class="th-sm">Name</th>
+      <th class="th-sm">Summary</th>
+      <th class="th-sm">Rating</th>
+      <th class="th-sm">Genres</th>
+      <th class="th-sm">Companies</th>
     </tr>
     </thead>
   {% if games == [] %}
@@ -87,112 +70,31 @@
   </table>
 
 
-
-  <div class = "page-buttons">
-    <form action = "{{url_for('games')}}">
-      <div class="btn-group" role="group" aria-label="Basic example">
-        <button type="submit" class="btn btn-secondary" name = "offset" value = "1">1</button>
-        <button type="submit" class="btn btn-secondary" name = "offset" value = "2">2</button>
-        <button type="submit" class="btn btn-secondary" name = "offset" value = "3">3</button>
-        <button type="submit" class="btn btn-secondary" name = "offset" value = "4">4</button>
-      </div>
-    </form>
-
-  </div>
+</div>
 
 
 
 
 
-
-
-
-<footer class="page-footer font-small bg-light pt-4">
-    <div class="container-fluid text-center text-md-left">
-      <div class="row">
-        <div class = "col-md-2">
-        </div>
-
-        <div class="col col-md-2 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Pillars</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="{{url_for('games')}}">Games</a>
-              </li>
-              <li>
-                <a href="{{url_for('genres')}}">Genres</a>
-              </li>
-              <li>
-                <a href="{{url_for('companies')}}">Companies</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col col-md-2 mb-md-0 mb-3">
-            <h5 class="text-uppercase">About us</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="{{url_for('about')}}#brandon_ford">Brandon Ford</a>
-              </li>
-              <li>
-                <a href="{{url_for('about')}}#william_kwon">William Kwon</a>
-              </li>
-              <li>
-                <a href="{{url_for('about')}}#madalyn_marabella">Madalyn Marabella</a>
-              </li>
-              <li>
-                <a href="{{url_for('about')}}#alejandro_palacios">Alejandro Palacios</a>
-              </li>
-              <li>
-                <a href="{{url_for('about')}}#noah_placke">Noah Placke</a>
-              </li>
-            </ul>
-          </div>
-
-        <div class="col col-md-2 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Sources</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="https://www.igdb.com/discover">IGDB</a>
-              </li>
-              <li>
-                <a href="https://www.wikipedia.org/">Wikipedia</a>
-              </li>
-              <li>
-                <a href="https://www.gamespot.com/news/">Gamespot</a>
-              </li>
-            </ul>
-        </div>
-
-        <div class="col col-md-2 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Tools</h5>
-            <ul class="list-unstyled">
-              <li>
-                Python
-              </li>
-              <li>
-                Flask
-              </li>
-              <li>
-                PostgreSQL
-              </li>
-              <li>
-                API System
-              </li>
-              <li>
-                GitLab
-              </li>
-            </ul>
-        </div>
-
-
-      </div>
-    </div>
-    <div class="footer-copyright text-center py-3">© 2019 Copyright: Video Game Library
-    </div>
-  </footer>
-  
-<script>
+ 
+<!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../static/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+  <!-- MDBootstrap Datatables  -->
+  <script type="text/javascript" src="../static/js/addons/datatables.min.js"></script>
+  <script>
+  $(document).ready(function () {
+    $('#myTable').DataTable();
+    $('.dataTables_length').addClass('bs-select');
+    });
+  </script>
+<!-- <script>
 function search_func() {
   // Declare variables 
   var input, filter, table, tr, td, i, txtValue;
@@ -215,35 +117,11 @@ function search_func() {
   }
 }
 </script>
+-->
 
   
 {% endblock %}
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

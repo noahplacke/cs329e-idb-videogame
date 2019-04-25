@@ -1,6 +1,6 @@
 #header {
 	text-align: center;
-	font-size: 40px;	
+	font-size: 40px;
 }
 
 
@@ -16,14 +16,28 @@
 	margin-right: 5px;
 }
 
+a:hover {
+  text-decoration: none;
+  color: orange;
+}
+
+
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.col-sm-12 {
+	padding-right: 0px;
+	padding-left: 0px;
+}
 
 
 
 
 
-
-
-.cardGrid {	
+.cardGrid {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -68,8 +82,3 @@
 .page-buttons {
 	text-align: center;
 }
-
-
-
-
-

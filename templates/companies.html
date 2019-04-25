@@ -10,6 +10,15 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
 	<link rel = "stylesheet" href = "../static/css/pillars.css">
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MDBootstrap Datatables  -->
+    <link href="../static/css/addons/datatables.min.css" rel="stylesheet">
 
 
 </head>
@@ -22,33 +31,6 @@
 
 
 	<div id = "header">Companies</div>
-
-
-  <div id = "orderingForm">
-    Choose order of companies:
-    <form class = "form-inline" action = "{{url_for('companies')}}">
-      <div class = "form-group">
-        <select class = "form-control field" name = "field">
-            <option value = "">Select attribute</option>
-            <option value = "name">Name</option>
-            <option value = "description">Description</option>
-            <option value = "games">Games Developed</option>
-            <option value = "country">Country</option>
-            <option value = "date_founded">Date Founded</option>
-        </select>
-      </div>
-      <div class = "form-group">
-        <select class = "form-control direction" name = "direction">
-            <option value = "">Select order</option>
-            <option value = "asc">Ascending</option>
-            <option value = "desc">Descending</option>
-
-        </select>
-      </div>
-      <button class="btn btn-primary" type="submit">Submit</button>
-    </form>
-  </div>
-
 
 
 
@@ -91,9 +73,9 @@
 			<th>Logo</th>
 			<th>Company</th>
 			<th>Description</th>
-			<th>Games Developed</th>
 			<th>Country</th>
 			<th>Date Founded</th>
+			<th>Games Developed</th>
 		</tr>
 		</thead>
 	{% if companies == [] %}
@@ -113,13 +95,18 @@
 				</td>
 				<td><a href = "{{url_for('companies')}}{{company.company_id}}">{{company.name}}</a></td>
 				<td>{{company.description}}</td>
+				<!--
 				<td>
 					{% for game in company.games %}
 							<a href="{{url_for('games')}}{{game.game_id}}">{{game.name}}{{", " if not loop.last}}</a>
 						{% endfor %}
 				</td>
+				-->
 				<td>{{company.country}}</td>
 				<td>{{company.date_founded}}</td>
+				<td>
+				<button type="button" class="btn btn-outline-primary my-2 my-sm-0" onclick="window.location.href = '{{url_for('companies')}}{{company.company_id}}';">Read More</button>
+				</td>
 			</tr>
 		{% endfor %}
 	{% endif %}
@@ -127,90 +114,26 @@
 
 
 
-<footer class="page-footer font-small bg-light pt-4">
-    <div class="container-fluid text-center text-md-left">
-      <div class="row">
-        <div class = "col-md-2">
-        </div>
-
-        <div class="col col-md-2 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Pillars</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="{{url_for('games')}}">Games</a>
-              </li>
-              <li>
-                <a href="{{url_for('genres')}}">Genres</a>
-              </li>
-              <li>
-                <a href="{{url_for('companies')}}">Companies</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col col-md-2 mb-md-0 mb-3">
-            <h5 class="text-uppercase">About us</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="{{url_for('about')}}#brandon_ford">Brandon Ford</a>
-              </li>
-              <li>
-                <a href="{{url_for('about')}}#william_kwon">William Kwon</a>
-              </li>
-              <li>
-                <a href="{{url_for('about')}}#madalyn_marabella">Madalyn Marabella</a>
-              </li>
-              <li>
-                <a href="{{url_for('about')}}#alejandro_palacios">Alejandro Palacios</a>
-              </li>
-              <li>
-                <a href="{{url_for('about')}}#noah_placke">Noah Placke</a>
-              </li>
-            </ul>
-          </div>
-
-        <div class="col col-md-2 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Sources</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="https://www.igdb.com/discover">IGDB</a>
-              </li>
-              <li>
-                <a href="https://www.wikipedia.org/">Wikipedia</a>
-              </li>
-              <li>
-                <a href="https://www.gamespot.com/news/">Gamespot</a>
-              </li>
-            </ul>
-        </div>
-
-        <div class="col col-md-2 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Tools</h5>
-            <ul class="list-unstyled">
-              <li>
-                Python
-              </li>
-              <li>
-                Flask
-              </li>
-              <li>
-                PostgreSQL
-              </li>
-              <li>
-                API System
-              </li>
-              <li>
-                GitLab
-              </li>
-            </ul>
-        </div>
 
 
-      </div>
-    </div>
-    <div class="footer-copyright text-center py-3">© 2019 Copyright: Video Game Library
-    </div>
-  </footer>
+
+<!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="../static/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="../static/js/mdb.min.js"></script>
+  <!-- MDBootstrap Datatables  -->
+  <script type="text/javascript" src="../static/js/addons/datatables.min.js"></script>
+  <script>
+  $(document).ready(function () {
+    $('#myTable').DataTable();
+    $('.dataTables_length').addClass('bs-select');
+    });
+  </script>
 
 
 {% endblock %}

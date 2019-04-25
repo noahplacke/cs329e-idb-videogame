@@ -10,13 +10,6 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
 	<link rel = "stylesheet" href = "../static/css/pillars.css">
-	<style>
-	#more1 {display: none;}
-	#more2 {display: none;}
-	#more3 {display: none;}
-	#more4 {display: none;}
-	#more5 {display: none;}
-	</style>
 
 	<!--<script type="text/javascript" src="../static/js/about.js"></script>-->
 
@@ -158,6 +151,7 @@
 				<li class="list-group-item bg-dark"><a href="https://gitlab.com/noah_pl/cs329e-idb/issues" class="card-link">GitLab Issue Tracker</a></li>
 				<li class="list-group-item bg-dark"><a href="https://gitlab.com/noah_pl/cs329e-idb" class="card-link">GitLab Repo</a></li>
 				<li class="list-group-item bg-dark"><a href="https://gitlab.com/noah_pl/cs329e-idb/wikis/Technical-Report" class="card-link">GitLab Wiki</a></li>
+				<li class="list-group-item bg-dark"><a href="https://speakerdeck.com/noahplacke/cs329e-presentation" class="card-link">Speaker Deck</a></li>
 				<li class="list-group-item bg-dark"><a href="{{url_for('test')}}">Link to the tests</a></li>
 			</ul>
 		</div>
@@ -169,90 +163,6 @@
 
 
 
-<footer class="page-footer font-small bg-light pt-4">
-    <div class="container-fluid text-center text-md-left">
-      <div class="row">
-        <div class = "col-md-2">
-        </div>
-
-        <div class="col col-md-2 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Pillars</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="{{url_for('games')}}">Games</a>
-              </li>
-              <li>
-                <a href="{{url_for('genres')}}">Genres</a>
-              </li>
-              <li>
-                <a href="{{url_for('companies')}}">Companies</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col col-md-2 mb-md-0 mb-3">
-            <h5 class="text-uppercase">About us</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="{{url_for('about')}}#brandon_ford">Brandon Ford</a>
-              </li>
-              <li>
-                <a href="{{url_for('about')}}#william_kwon">William Kwon</a>
-              </li>
-              <li>
-                <a href="{{url_for('about')}}#madalyn_marabella">Madalyn Marabella</a>
-              </li>
-              <li>
-                <a href="{{url_for('about')}}#alejandro_palacios">Alejandro Palacios</a>
-              </li>
-              <li>
-                <a href="{{url_for('about')}}#noah_placke">Noah Placke</a>
-              </li>
-            </ul>
-          </div>
-
-        <div class="col col-md-2 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Sources</h5>
-            <ul class="list-unstyled">
-              <li>
-                <a href="https://www.igdb.com/discover">IGDB</a>
-              </li>
-              <li>
-                <a href="https://www.wikipedia.org/">Wikipedia</a>
-              </li>
-              <li>
-                <a href="https://www.gamespot.com/news/">Gamespot</a>
-              </li>
-            </ul>
-        </div>
-
-        <div class="col col-md-2 mb-md-0 mb-3">
-            <h5 class="text-uppercase">Tools</h5>
-            <ul class="list-unstyled">
-              <li>
-                Python
-              </li>
-              <li>
-                Flask
-              </li>
-              <li>
-                PostgreSQL
-              </li>
-              <li>
-                API System
-              </li>
-              <li>
-                GitLab
-              </li>
-            </ul>
-        </div>
-
-
-      </div>
-    </div>
-    <div class="footer-copyright text-center py-3">© 2019 Copyright: Video Game Library
-    </div>
-  </footer>
 
 <script>
 function more(elem) {
@@ -275,6 +185,7 @@ function more(elem) {
 }
 </script>
 {% endblock %}
+
 
 </body>
 </html>
