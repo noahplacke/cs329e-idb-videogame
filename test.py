@@ -67,6 +67,18 @@ class DBTestCases(unittest.TestCase):
     db.session.query(Game).filter_by(game_id = '23').delete()
     db.session.commit()
 
+  def test_game_insert_6(self):
+
+    s = Game(game_id='25', name = 'Shooting', url = '')
+    db.session.add(s)
+    db.session.commit()
+    r = db.session.query(Game).filter_by(game_id = '25').one()
+    self.assertEqual(str(r.game_id), '25')
+    self.assertEqual(str(r.name), 'Shooting')
+    self.assertEqual(str(r.url), '')
+    db.session.query(Game).filter_by(game_id = '25').delete()
+    db.session.commit()
+
   def test_genre_insert_1(self):
 
     s = Genre(genre_id='9999', name = 'GenreTest', url = 'google.com', description = 'what a cool genre')
@@ -195,6 +207,19 @@ class DBTestCases(unittest.TestCase):
     self.assertEqual(str(r.country), '219')
     self.assertEqual(str(r.description), 'es el final')
     db.session.query(Company).filter_by(company_id = '69').delete()
+    db.session.commit()
+
+  def test_company_insert_6(self):
+
+    s = Company(company_id='70', name = 'uno mas', country = '219', description = '')
+    db.session.add(s)
+    db.session.commit()
+    r = db.session.query(Company).filter_by(company_id = '70').one()
+    self.assertEqual(str(r.company_id), '70')
+    self.assertEqual(str(r.name), 'uno mas')
+    self.assertEqual(str(r.country), '219')
+    self.assertEqual(str(r.description), '')
+    db.session.query(Company).filter_by(company_id = '70').delete()
     db.session.commit()
 
 if __name__ == '__main__':
