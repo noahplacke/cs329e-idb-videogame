@@ -1,3 +1,15 @@
+commit a0d73f6081d69f5c32efe17dbe0b0cfade2fcbac
+Author: Madalyn Marabella <mmarabella@utexas.edu>
+Date:   Thu Apr 25 19:23:44 2019 -0500
+
+    updates about page count
+
+commit 82d2db38a671702d20eb3cfa7118ca71e5b32921
+Author: Madalyn Marabella <mmarabella@utexas.edu>
+Date:   Thu Apr 25 19:20:52 2019 -0500
+
+    adds IDB3.log
+
 commit 22d7a2f25dd18dcb0c619ffb753119acea42279d
 Merge: 29fdc57 5d141a2
 Author: Brandon Ford <brandonford002@gmail.com>
