@@ -33,12 +33,13 @@ class Game(db.Model):
     backref=db.backref('games', lazy=True))
 
 class Genre(db.Model):
-	__tablename__ = 'genres'
+  __tablename__ = 'genres'
 
-	genre_id = db.Column(db.Integer, primary_key = True)
-	name = db.Column(db.String(250), nullable = False)
-	url = db.Column(db.String(500), nullable = False)
-	description = db.Column(db.String(5000), nullable = False)
+  genre_id = db.Column(db.Integer, primary_key = True)
+  name = db.Column(db.String(250), nullable = False)
+  url = db.Column(db.String(500), nullable = False)
+  description = db.Column(db.String(5000), nullable = False)
+  popularity = db.Column(db.Integer, nullable = True)
 
 class Company(db.Model):
   __tablename__ = 'companies'

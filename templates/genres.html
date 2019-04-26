@@ -59,7 +59,7 @@
           {% endfor %}
         </td>
 		-->
-        <td>{{ range(25, 100) | random }}</td>
+        <td>{{genre.popularity}}</td>
         <td><a href = "{{genre.url}}">{{genre.url}}</a></td>
 		<td>
 		<button type="button" class="btn btn-outline-primary my-2 my-sm-0" onclick="window.location.href = '{{url_for('genres')}}{{genre.genre_id}}';">Read More</button>
