@@ -34,11 +34,16 @@
 				</div>
 				<div class="col-md-6">
 					<div id="game-info">
+						<div><h4 class="inline">Company:</h4>
+							{% for company in game.companies %}
+		            <a href = "{{url_for('companies')}}{{company.company_id}}">{{company.name}}{{" | " if not loop.last}}</a>
+		          {% endfor %}
+						</div>
 						<div><h4 class="inline">Rating:</h4>{{game.rating}}</div>
 				    <div><h4 class="inline">Summary:</h4>{{game.summary}}</div>
 				    <div><h4 class="inline">Genre(s):</h4>
 							{% for genre in game.genres %}
-				        <a href="{{url_for('genres')}}#{{genre.genre_id}}">{{genre.name}}</a>{{" | " if not loop.last}}
+				        <a href="{{url_for('genres')}}{{genre.genre_id}}">{{genre.name}}</a>{{" | " if not loop.last}}
 				      {% endfor %}
 						</div>
 						<div><h4 class="inline">Game Id:</h4>{{game.game_id}}</div>
