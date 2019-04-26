@@ -40,7 +40,7 @@
                 <a href = "{{url_for('games')}}{{game.game_id}}">{{game.name}}</a>{{" | " if not loop.last}}
               {% endfor %}
             </div>
-				    <div><h4 class="inline">Popularity:</h4>{{ range(0, 100) | random }}</div>
+				    <div><h4 class="inline">Popularity:</h4>{{genre.popularity}}</div>
 						<div><h4 class="inline">IDB Genre:</h4><a href = "{{genre.url}}">{{genre.url}}</a></div>
 					</div>
 				</div>

@@ -1,4 +1,5 @@
 import json
+import random
 #from models import app, db, Game, Genre, Company
 from models import app, db, Genre, Game, Company, game_genres, game_companies
 from datetime import datetime
@@ -71,8 +72,9 @@ def create_genres():
         id = oneGenre['id']
         url = oneGenre['url']
         description = oneGenre['description']
+        popularity = random.randint(1, 100)
 
-        newGenre = Genre(genre_id = id, name = name, url = url, description = description)
+        newGenre = Genre(genre_id = id, name = name, url = url, description = description, popularity = popularity)
 
         # After I create the book, I can then add it to my session.
         db.session.add(newGenre)
